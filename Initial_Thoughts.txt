@@ -1,0 +1,18 @@
+The following are based on quick plots made
+in Excel
+
+Bad Buy Indicators:
+MMRAcquisitionAuctionAveragePrice > 20000
+MMRAcquisitionAuctionCleanPrice > 25000
+MMRAcquisitionRetailAveragePrice > 25000
+MMRAcquisitionRetailCleanPrice > 27500
+MMRCurrentAuctionAveragePrice > 20000
+MMRCurrentAuctionCleanPrice > 22500
+MMRCurrentRetailAveragePrice > 25000
+MMRCurrentRetailCleanPrice > 27500
+VehBCost > 17500
+
+Good Buy Indicators:
+WarrantyCost > 6500
+
+
