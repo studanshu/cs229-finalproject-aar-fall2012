@@ -1,8 +1,10 @@
-% Albert
 % CS 229 Final Project
 % 
 % Data Parsing Script
-% Coded by Bijou
+% Coded by:
+%   Robert Romano
+%   Albert Ho
+%   Alice Wu
 clear;
 clc;
 close all;
@@ -78,12 +80,12 @@ end
 %%
 if Set == 1
     Labels_Train = Labels;
-    Data_Train = ParsedData;
-    keep('Labels_Train','Data_Train','Set');
+    Features_Train = ParsedData;
+    keep('Labels_Train','Features_Train','Set');
 else
     Labels_Test = Labels;
-    Data_Test = ParsedData;
-    keep('Labels_Test','Data_Test','Set');
+    Features_Test = ParsedData;
+    keep('Labels_Test','Features_Test','Set');
 end
 
 if Set == 1
