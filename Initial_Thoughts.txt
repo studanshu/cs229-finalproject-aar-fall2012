@@ -1,5 +1,4 @@
-The following are based on quick plots made
-in Excel
+The following are based on quick plots made in Excel
 
 Bad Buy Indicators:
 MMRAcquisitionAuctionAveragePrice > 20000
