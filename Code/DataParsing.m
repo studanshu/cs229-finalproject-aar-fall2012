@@ -13,7 +13,7 @@ close all;
 
 % Is this run for the test or training set?
 %   1-Training Set, 0-Test Set
-Set = 0;
+Set = 1;
 
 % converts dates to datenum format
 if Set == 1
@@ -87,9 +87,9 @@ dateNumVec = cell2mat(dateNumVec);
 [year month day] = datevec(dateNumVec);
 
 ParsedData = [ParsedData year month day];
-Labels{end+1} = 'Year';
-Labels{end+1} = 'Month';
-Labels{end+1} = 'Day';
+Labels{end+1} = 'PurchYear';
+Labels{end+1} = 'PurchMonth';
+Labels{end+1} = 'PurchDay';
 
 % % Replace specified string with 1.0
 % R = cellfun(@(x) ischar(x) && strcmp(x,'MAZDA'),raw); % Find non-numeric cells

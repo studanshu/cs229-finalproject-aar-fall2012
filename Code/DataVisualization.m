@@ -20,7 +20,7 @@ Bad = TrainSorted(i:end,:);
 %% Histograms
 factor = length(Good)/length(Bad);
 
-for i = 2:n
+for i = 1:n
     edges = linspace(min(Features_Train(:,i)),max(Features_Train(:,i)),10);
     G = histc(Good(:,i),edges);
     B = histc(Bad(:,i),edges);
@@ -29,6 +29,6 @@ for i = 2:n
     bar(edges,[G,B*factor],1);
     title(Labels_Train{i});
     legend('Good','Bad');
-    saveas(gcf, strcat('Plots\Histogram_',Labels_Train{i}), 'png')
+    saveas(gcf, strcat('..\Plots\Histogram_',Labels_Train{i}), 'png')
     close;
 end
