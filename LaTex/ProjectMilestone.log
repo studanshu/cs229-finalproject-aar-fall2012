@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 02:14
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 02:16
 entering extended mode
 **ProjectMilestone.tex
 
@@ -498,7 +498,7 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.40001pt
-* \headheight=10.0pt
+* \headheight=17.0pt
 * \headsep=20.40001pt
 * \footskip=47.60002pt
 * \marginparwidth=61.42949pt
@@ -615,7 +615,7 @@ fb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourie
 r-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putb8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on ProjectMilestone.pdf (3 pages, 91010 bytes).
+Output written on ProjectMilestone.pdf (3 pages, 91007 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
