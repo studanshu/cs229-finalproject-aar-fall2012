@@ -30,7 +30,7 @@ Y_SVM_train(Y_SVM_train == 0) = -1;
 
 % Set up the SVM testing matrix (replace 0's with -1's)
 Y_SVM_test = Y_test; 
-Y_SVM_test(Y_SVM_test == 0) = -1;
+Y_SVM_test(Y_SVM_test == 0) = -1
 
 % Run liblinear to train on the data set and get a model
 X_train_S = sparse(X_train);

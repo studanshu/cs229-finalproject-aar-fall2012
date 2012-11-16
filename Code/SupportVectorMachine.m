@@ -1,5 +1,5 @@
 % CS 229 Final Project Script 
-%   Applying SVM to Car Auction Data
+% Applying SVM to Car Auction Data
 %
 % Written by Robert Romano
 clear;
@@ -28,7 +28,19 @@ X_CV = X(N_train+1:end,:);
 
 
 %%
-% Run SVM using custom SVM function that uses liblinear
-[Prediction, Accuracy, DV] = SVM_fun(Y_train,X_train,Y_CV,X_CV);
+% Run SVM using custom SVM function that uses liblinear on cross
+%   validation set
+[Prediction, Accuracy, DV] = ...
+    SVM_fun(Y_train,X_train,Y_CV,X_CV);
 
 %%
+% Run SVM using custom SVM function that uses liblinear on all
+%   available training data
+% Y_dummy = zeros(size(Features_Test,1),1);
+Y_dummy = zeros(size(X_CV,1),1);
+[Submission, Accuracy, DV] = ...
+    SVM_fun(Y_train,X_train,Y_dummy,X_CV);
+
+
+
+
