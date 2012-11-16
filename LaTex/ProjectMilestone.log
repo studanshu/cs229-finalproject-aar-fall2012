@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 03:02
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 14:43
 entering extended mode
 **ProjectMilestone.tex
 
@@ -641,23 +641,9 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 191.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 191.
-
-Overfull \hbox (24.0pt too wide) in paragraph at lines 202--203
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-
- []
-
-[3]
+ [3]
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
-oject-aar-fall2012\LaTex\ProjectMilestone.aux")
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+oject-aar-fall2012\LaTex\ProjectMilestone.aux") ) 
 Here is how much of TeX's memory you used:
  6319 strings out of 495285
  93935 string characters out of 3179877
@@ -666,17 +652,17 @@ Here is how much of TeX's memory you used:
  75556 words of font info for 93 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  40i,15n,47p,1056b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Alice\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecsx1095.pk>{C:/Program Files (x86)/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}
- <C:\Users\Alice\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-sx1200.pk> <C:\Users\Alice\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecsx1440.pk><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/publ
-ic/fourier/fourier-mex.pfb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/typ
-e1/public/fourier/fourier-mlit.pfb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/f
-onts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fon
-ts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
-/adobe/utopia/putri8a.pfb>
-Output written on ProjectMilestone.pdf (3 pages, 105551 bytes).
+ <C:\Users\Alice\AppData\Local
+\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk>{C:/Program Files (x
+86)/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc} <C:\Users\Alice\AppData\Local\M
+iKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\Alice\AppDa
+ta\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk><C:/Users/Al
+ice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-mex.pfb><C:/U
+sers/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-mlit.p
+fb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourie
+r-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb
+><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on ProjectMilestone.pdf (3 pages, 106266 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

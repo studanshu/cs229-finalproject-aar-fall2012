@@ -195,10 +195,10 @@
 \end{align}
 
 \subsubsection{Logistic Gradient Ascent}
-	Using logistic gradient ascent with a learning rate of alpha = 0.0001 and 500 iterations. We 
+	Using logistic gradient ascent with a learning rate of alpha = 0.0001 and 500 iterations. We were not able to generate any log-likelihood data past the first iteration. The first 
+One possible hypothesis we have about this method is that the data may not be convex
+
 \subsubsection{Newton's Method}
-
-
-\horrule{2pt} \\[0.3cm] % Thick bottom horizontal rule
+	We first used Newton's method in a 70/30 cross validation scheme. We found that the algorithm converged after 7 iterations, with a relative difference of -1.6007e-010. Although at this point the algorithm was only run on the the numerical data from the total data set, it yielded a generalization error of 0.1178, which is highly promising. However, when the data was visualized 
 
 \end{document}
