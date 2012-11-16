@@ -17,14 +17,14 @@ X = Features_Train(:,2:end);
 % Create a 70-30 split of training data for cross-validation
 % Record number of samples in 70-30 split
 N = size(Y,1);
-N_train = floor(0.7*N);
+N_train = floor(1*N);
 N_CV = N-N_train;
 
 % Split the Y and X data
 Y_train = Y(1:N_train);
 Y_CV = Y(N_train+1:end);
-X_train = X(1:N_train,:);
-X_CV = X(N_train+1:end,:);
+X_train = X(1:N_train,[2:14,15,17]);
+X_CV = X(N_train+1:end,[2:14,15,17]);
 
 
 %%
@@ -37,9 +37,9 @@ X_CV = X(N_train+1:end,:);
 % Run SVM using custom SVM function that uses liblinear on all
 %   available training data
 % Y_dummy = zeros(size(Features_Test,1),1);
-Y_dummy = zeros(size(X_CV,1),1);
+Y_dummy = ones(size(Features_Test,1),1);
 [Submission, Accuracy, DV] = ...
-    SVM_fun(Y_train,X_train,Y_dummy,X_CV);
+    SVM_fun(Y_train,X_train,Y_dummy,Features_Test(:,[2:14,15,17]));
 
 
 
