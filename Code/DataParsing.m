@@ -9,19 +9,18 @@ clear;
 clc;
 close all;
 
-%% Import Numeric Data
+%% Import Data
 
 % Is this run for the test or training set?
 %   1-Training Set, 0-Test Set
-Set = 1;
+Set = 0;
 
-% Import numeric data into matrix
+% converts dates to datenum format
 if Set == 1
-    [Numeric,~,~] = xlsread('training.xlsx');
+    [Numeric, Txt, Raw, dateNums] = xlsread('training.csv','training','','',@convertSpreadsheetDates);
 else
-    [Numeric,~,~] = xlsread('test.xlsx');
+    [Numeric, Txt, Raw, dateNums] = xlsread('test.csv','test','','',@convertSpreadsheetDates);
 end
-
 %% Numeric Data Parsing
 % Set up variables for easier manipulation
 [m,n] = size(Numeric);
@@ -72,17 +71,6 @@ for i = 1:n
     end
 end
 
-%% Import Non-Numeric Data
-% Import all data into cells, extracting spreadsheet dates in MATLAB datenum format
-clear all;
-Set = 1;
-
-if Set == 1
-    [~, ~, ~, dateNums] = xlsread('training.csv','training','','',@convertSpreadsheetDates);
-else
-    [~, ~, ~, dateNums] = xlsread('test.csv','training','','',@convertSpreadsheetDates);
-end
-
 %% Non-Numeric Data Parsing
 
 % Generate year, month, and day features
@@ -90,9 +78,18 @@ end
 % R = ~cellfun(@isequalwithequalnans,dateNums,raw) & cellfun('isclass',raw,'char'); % Find Excel dates
 % raw(R) = dateNums(R);
 
-dateNumVec = dateNums(2:end,3);
+if Set == 1
+    dateNumVec = dateNums(2:end,3);
+else
+    dateNumVec = dateNums(2:end,2);
+end
 dateNumVec = cell2mat(dateNumVec);
 [year month day] = datevec(dateNumVec);
+
+ParsedData = [ParsedData year month day];
+Labels{end+1} = 'Year';
+Labels{end+1} = 'Month';
+Labels{end+1} = 'Day';
 
 % % Replace specified string with 1.0
 % R = cellfun(@(x) ischar(x) && strcmp(x,'MAZDA'),raw); % Find non-numeric cells
