@@ -25,6 +25,9 @@
 \usepackage[english]{babel} % English language/hyphenation
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 \usepackage{comment}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
@@ -84,6 +87,8 @@
 
 \section{Early Interpretation}
 	We obtained our data set from the Kaggle.com challenge "Don't Get Kicked" hosted by Carvana. Our first step was to graph the data we had to gain some initial insight into which features would be the most important. The features we were provided along with their descriptions are shown in Table 1. 
+
+\begin{comment}
 \begin{table}[!ht]
 	\begin{center}
 	 \begin{tabular}{ | p{3cm} | p{4cm} | p{3cm} | p{4cm} |}
@@ -125,6 +130,7 @@
 	*MMR refers to Manheim Market Report and is the source of these values
 	\end{center}
 \end{table}
+\end{comment}
 
 \section{Data Parsing}
 	Many of the features we were looking at came in a text format, so we had to decide how to properly bin them. Furthermore, some data entries were missing, so we had to make some choices for how to replace them.
@@ -141,10 +147,37 @@
 \begin{figure}[!ht]
   \centering
 	\includegraphics[width=0.8\columnwidth] %width=0.5\textwidth
-		{figures/dielectriconfabricdimension.pdf}
-	\caption{.}
+		{}
+	\caption{blehblehbleh}
 \end{figure}
 \end{comment}
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png}
+                \caption{Ratio of MMRCurrentAuctionAvgPrice}
+                \label{fig:MMRCurrentAuctionAveragePrice}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figures/HistogramRatio_VehicleAge}
+                \caption{Ratio of VehicleAge}
+                \label{fig:VehicleAge}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figures/HistogramScaled_VehicleAge}
+                \caption{Ratio of Scaled VehicleAge}
+                \label{fig:Scaled_VehicleAge}
+        \end{subfigure}
+        \caption{blehbleblehblehbleh}\label{fig:Histograms}
+\end{figure}
 
 \section{Machine Learning Algorithms}
 	With the data parsed and some initial insights to guide us, we started to apply some machine learning algorithms that would identify where we needed improvement and what strategy would be most effective.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 02:16
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 02:55
 entering extended mode
 **ProjectMilestone.tex
 
@@ -401,9 +401,50 @@ Package: amsthm 2004/08/06 v2.20
 \CommentStream=\write3
 
 Excluding comment 'comment')
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count104
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count105
+)
+(C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count106
+\c@subtable=\count107
+)
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count104
+\c@lips@count=\count108
 )
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -425,59 +466,59 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box29
 \beforetitleunit=\skip62
 \aftertitleunit=\skip63
-\ttl@plus=\dimen121
-\ttl@minus=\dimen122
+\ttl@plus=\dimen129
+\ttl@minus=\dimen130
 \ttl@toksa=\toks27
-\titlewidth=\dimen123
-\titlewidthlast=\dimen124
-\titlewidthfirst=\dimen125
+\titlewidth=\dimen131
+\titlewidthlast=\dimen132
+\titlewidthfirst=\dimen133
 )
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
 oject-aar-fall2012\LaTex\ProjectMilestone.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 76.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 73.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 76.
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -514,82 +555,99 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 * \@reversemarginfalse
 * (1in=72.27pt, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 76.
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1cmss.fd"
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen134
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen135
+\MPnumerator=\count113
+\everyMPtoPDFconversion=\toks29
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 79.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 76
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 79
 .
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 76.
+(Font)              scaled to size 13.24796pt on input line 79.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 76.
+(Font)              scaled to size 9.19998pt on input line 79.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 76.
+(Font)              scaled to size 7.35999pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 76.
+(Font)              scaled to size 13.24796pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 76.
+(Font)              scaled to size 9.19998pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 76.
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+(Font)              scaled to size 7.35999pt on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
+) [1
+
+
+{C:/Users/Alice/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}]
+<figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png, id=7, 578.16pt x 433
+.62pt>
+File: figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png Graphic file (ty
+pe png)
+ <use figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png>
+<figures/HistogramRatio_VehicleAge.png, id=8, 578.16pt x 433.62pt>
+File: figures/HistogramRatio_VehicleAge.png Graphic file (type png)
+
+<use figures/HistogramRatio_VehicleAge.png>
+<figures/HistogramScaled_VehicleAge.png, id=9, 578.16pt x 433.62pt>
+File: figures/HistogramScaled_VehicleAge.png Graphic file (type png)
+
+<use figures/HistogramScaled_VehicleAge.png>
+Overfull \hbox (3.43825pt too wide) in paragraph at lines 157--179
+ [][]  [] 
+ []
+
+[2 <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-final
+project-aar-fall2012/LaTex/figures/HistogramRatio_MMRCurrentAuctionAveragePrice
+.png (PNG copy)> <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Proje
+ct/cs229-finalproject-aar-fall2012/LaTex/figures/HistogramRatio_VehicleAge.png 
+(PNG copy)> <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs
+229-finalproject-aar-fall2012/LaTex/figures/HistogramScaled_VehicleAge.png (PNG
+ copy)>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 89.
+(Font)              scaled to size 10.07397pt on input line 190.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 89.
+(Font)              scaled to size 7.63599pt on input line 190.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 89.
+(Font)              scaled to size 5.51999pt on input line 190.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 89.
+(Font)              scaled to size 10.07397pt on input line 190.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 89.
+(Font)              scaled to size 7.63599pt on input line 190.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 89.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 91.
+(Font)              scaled to size 5.51999pt on input line 190.
 
-Underfull \hbox (badness 1622) in paragraph at lines 96--96
-[]\T1/futs/m/n/10.95 (Auction buy, Trade in,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]\T1/futs/m/n/10.95 AucGuart Guar-an-tee
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
-[]\T1/futs/m/n/10.95 Unique iden-ti-fier for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]\T1/futs/m/n/10.95 Vehicle trans-mis-sion
- []
-
-[1
-
-
-{C:/Users/Alice/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (24.0pt too wide) in paragraph at lines 168--169
+Overfull \hbox (24.0pt too wide) in paragraph at lines 201--202
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
@@ -597,13 +655,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
 oject-aar-fall2012\LaTex\ProjectMilestone.aux") ) 
 Here is how much of TeX's memory you used:
- 4590 strings out of 495285
- 65087 string characters out of 3179877
- 244381 words of memory out of 3000000
- 7697 multiletter control sequences out of 15000+200000
- 79659 words of font info for 94 fonts, out of 3000000 for 9000
+ 6319 strings out of 495285
+ 93935 string characters out of 3179877
+ 264067 words of memory out of 3000000
+ 9394 multiletter control sequences out of 15000+200000
+ 75556 words of font info for 93 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,15n,47p,1056b,316s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,47p,1056b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alice\AppData\Local
 \MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk>{C:/Program Files (x
 86)/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc} <C:\Users\Alice\AppData\Local\M
@@ -612,12 +670,11 @@ ta\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk><C:/Users/Al
 ice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-mex.pfb><C:/U
 sers/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-mlit.p
 fb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourie
-r-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putb8a.pfb
-><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on ProjectMilestone.pdf (3 pages, 91007 bytes).
+r-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb
+><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on ProjectMilestone.pdf (3 pages, 105532 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
