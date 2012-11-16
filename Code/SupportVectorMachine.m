@@ -1,35 +1,34 @@
+% CS 229 Final Project Script 
+%   Applying SVM to Car Auction Data
+%
+% Written by Robert Romano
 clear;
 clc;
 close all;
 
+% Load data resulting from data parsing MATLAB script
 load('CarAuction_Parsed_Test');
 load('CarAuction_Parsed_Train');
 
+% Split Y values from X values in training set
 Y = Features_Train(:,1);
 X = Features_Train(:,2:end);
 
-N = size(Y);
+% Create a 70-30 split of training data for cross-validation
+% Record number of samples in 70-30 split
+N = size(Y,1);
 N_train = floor(0.7*N);
 N_CV = N-N_train;
+
+% Split the Y and X data
 Y_train = Y(1:N_train);
+Y_CV = Y(N_train+1:end);
+X_train = X(1:N_train,:);
+X_CV = X(N_train+1:end,:);
 
 
 %%
-% Add Liblinear to the path
-addpath('liblinear-1.92/matlab');
-
-% Set up the SVM training matrix (replace 0's with -1's)
-Y_SVM = Y; 
-Y_SVM(Y_SVM == 0) = -1;
-
-% Run liblinear to train on the data set and get a model
-X_S = sparse(X);
-model = train(Y_SVM, X_S);
-
-% Run liblinear to come up with a predictive label on the test set
-X_test = Features_Test;
-X_test_S = sparse(X_test);
-[predict_label, accuracy, decision_val] = ...
-    predict(ones(size(X_test,1),1),X_test_S,model);
+% Run SVM using custom SVM function that uses liblinear
+[Prediction, Accuracy, DV] = SVM_fun(Y_train,X_train,Y_CV,X_CV);
 
 %%
