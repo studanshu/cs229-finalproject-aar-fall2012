@@ -40,7 +40,3 @@ X_CV = X(N_train+1:end,:);
 Y_dummy = ones(size(Features_Test,1),1);
 [Submission, Accuracy, DV] = ...
     SVM_fun(Y_train,X_train,Y_dummy,Features_Test);
-
-
-
-
