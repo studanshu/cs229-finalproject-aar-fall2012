@@ -87,7 +87,38 @@
 	The following paper is split up into 3 main sections describing our approach to solve this problem: Early Interpretation, Data Parsing, and Machine Learning Algorithms. First we identified possible trends by simply graphing data. Next, we came up with strategies for dealing with missing data and data presented in a text format. Finally, we applied various machine learning algorithms to the parsed data set in an attempt to predict which cars would have the highest risk of being kicked.
 
 \section{Early Interpretation}
-	We obtained our data set from the Kaggle.com challenge "Don't Get Kicked" hosted by Carvana. Our first step was to graph the data we had to gain some initial insight into which features would be the most important. The features we were provided along with their descriptions are shown in Table 1. 
+	We obtained our data set from the Kaggle.com challenge "Don't Get Kicked" hosted by Carvana. Our first step was to plot the data we had to gain some initial insight into which features would be the most important. The features we were provided along with their descriptions tabulated in Table 1. 
+
+	Out dataset is heavily skewed toward good cars, representing 87.7\% of our data. This means that we will need to use something like a Precision/Recall curve to evaluate our learning algorithm's performance.
+
+	The first thing we tried to do was visualize the data with plots to gain some intuition about the features. The training data was separated into Good and Bad datasets and compared, looking for differences. Histograms were plotted over each feature with the frequency normalized. This allowed comparison of the relative frequency over a feature. An example is Figure 1a, showing that Bad cars are generally older. To get an idea of how discriminatory a feature is, the ratio of the relative frequency of Bad to Good was plotted. An example is Figure 1b, which shows that the older a car is the stronger the feature. Similarly, Figure 1c shows that Current Auction Average Price is a strong feature, however this needs to be taken with a grain of salt because the areas where the features are most discriminating are generally in small tail regions that apply to a very small subset of cars.
+
+\begin{figure}[!ht]
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figures/HistogramScaled_VehicleAge.png}
+                \caption{Ratio of Scaled VehicleAge}
+                \label{fig:Scaled_VehicleAge}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{figures/HistogramRatio_VehicleAge.png}
+                \caption{Ratio of VehicleAge}
+                \label{fig:VehicleAge}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+\begin{subfigure}[b]{0.3\textwidth}
+					 \centering
+\includegraphics[width=\textwidth]{figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png}
+                \caption{Ratio of CurrAuctnAvgPrice}
+                \label{fig:MMRCurrentAuctionAveragePrice}
+        \end{subfigure}
+        \caption{Histogram plots depicting ratio of scaled vehicle age, ratio of vehicle age, and current auction average price}\label{fig:Histograms}
+\end{figure}
 
 \begin{comment}
 \begin{table}[!ht]
@@ -142,63 +173,36 @@
 \subsection{Missing Features}
 	For many of the samples, particular features were missing. We had the option of throwing out the sample completely, but we believed that it would be a waste. We decided to implement the following rules: if the feature was represented with a continuous value, we would replace the missing value with the average of the feature over the other samples and if the feature was represented with a discrete value, we would create a new value specifically to identify missing data.
 
-\section{Data Visualization}
-
-\begin{comment}
-\begin{figure}[!ht]
-  \centering
-	\includegraphics[width=0.8\columnwidth] %width=0.5\textwidth
-		{}
-	\caption{blehblehbleh}
-\end{figure}
-\end{comment}
-
-\begin{figure}[!ht]
-        \centering
-        \begin{subfigure}[b]{0.5\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{figures/HistogramScaled_VehicleAge}
-                \caption{Ratio of Scaled VehicleAge}
-                \label{fig:Scaled_VehicleAge}
-        \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
-          %(or a blank line to force the subfigure onto a new line)
-        \begin{subfigure}[b]{0.5\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{figures/HistogramRatio_VehicleAge}
-                \caption{Ratio of VehicleAge}
-                \label{fig:VehicleAge}
-        \end{subfigure}
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
-          %(or a blank line to force the subfigure onto a new line)
-        \begin{subfigure}[b]{0.5\textwidth}
-                \centering
-					 \includegraphics[width=\textwidth]{figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png}
-                \caption{Ratio of MMRCurrentAuctionAvgPrice}
-                \label{fig:MMRCurrentAuctionAveragePrice}
-        \end{subfigure}
-        \caption{blehbleblehblehbleh}\label{fig:Histograms}
-\end{figure}
-
 \section{Machine Learning Algorithms}
 	With the data parsed and some initial insights to guide us, we started to apply some machine learning algorithms that would identify where we needed improvement and what strategy would be most effective.
 
 \subsection{Support Vector Machine}
-	First, we tested our data with an SVM. We used the liblinear package v. 1.92. Our initial runs thus far have only been on raw numerical data (not on all post-processed data), so there is lots of room for improvement. We submitted our solution to Kaggle and placed 526 out of 571 teams on our first run.
+	First, we tested our data with an SVM. We used the liblinear package v. 1.92. Our initial runs thus far have only been on raw numerical data (not on all post-processed data), so there is lots of room for improvement. With this limited data set, every run with liblinear results in the null hypothesis, which gives 86\% accuracy, but has a Recall of 0 and an undefined Precision (0/0). Our goal is to improve these results by expanding the set of available features.
 
 \subsection{Logistic Regression}
-	Since the output of our data is binary, we decided to fit two logistic regression models as a fist pass. Adopting code from the course website and assignment 1, we implemented logistic gradient ascent and Newton's method. Both of the algorithms are run on the numerical training data only. When possible, a 70/30 cross validation was performed. The generalization error is defined as:
+	Since the output of our data is binary, we decided to fit two logistic regression models as a first pass. Adopting code from the course website and assignment 1, we implemented logistic regression using gradient ascent and Newton's method. Both of the algorithms are run on the numerical training data only. A 70/30 cross validation was performed. The generalization error is defined as:
 \begin{align} 
-\begin{split}
-\varepsilon(h) &= \frac{\sum|y_{true} - y_{predicted}|}{n} \\
-\end{split}					
+	\begin{split}
+		\varepsilon(h) &= \frac{\sum|y_{true} - y_{predicted}|}{n} \\
+	\end{split}					
 \end{align}
 
-\subsubsection{Logistic Gradient Ascent}
-	Using logistic gradient ascent with a learning rate of alpha = 0.0001 and 500 iterations. We were not able to generate any log-likelihood data past the first iteration. The first 
-One possible hypothesis we have about this method is that the data may not be convex
+\subsubsection{Gradient Ascent}
+	We used gradient ascent with a learning rate of alpha 1e-14 with 500 iterations and the algorithm converged with a relative difference of 0.1355. Using 70/30 cross validation, we obtained a generalization error of 0.1308.
 
 \subsubsection{Newton's Method}
-	We first used Newton's method in a 70/30 cross validation scheme. We found that the algorithm converged after 7 iterations, with a relative difference of -1.6007e-010. Although at this point the algorithm was only run on the the numerical data from the total data set, it yielded a generalization error of 0.1178, which is highly promising. However, when the data was visualized 
+	We first used Newton's method in a 70/30 cross validation scheme. We found that the algorithm converged after 7 iterations, with a relative difference of -1.6007e-010. Although at this point the algorithm was only run on the the numerical data from the total data set, it yielded a generalization error of 0.1178.
+
+\subsection{Analysis}
+Although the generalization error was small for the logistic regression algorithms, we see that the data is highly overlapping and nonseparable when we visualized the data along a sample of 3 categories (Vehicle Age, MMRCurrentAuctionAveragePrice, and Warranty Cost - see Figure.2). Furthermore, the data is heavily skewed so the low generalization error may not be indicative for algorithm performance. We are now looking into alternative implementations of theses algorithms for skewed data. As we mentioned previously, we will also be generating Precision/Recall curves to evaluate our learning algorithm's performance more accurately.
+
+%\begin{comment}
+\begin{figure}[!h]
+  \centering
+	\includegraphics[width=0.5\columnwidth] %width=0.5\textwidth
+		{figures/Age_AvgPrice_Warranty.png}
+	\caption{Plot of Vehicle Age v. MMRCurrentAuctionAveragePrice v. and Warranty Cost}
+\end{figure}
+%\end{comment}
 
 \end{document}

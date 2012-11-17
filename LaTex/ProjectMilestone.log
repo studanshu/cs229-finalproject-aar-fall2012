@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 14:43
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  16 NOV 2012 16:50
 entering extended mode
-**ProjectMilestone.tex
+**projectmilestone.tex
 
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
-oject-aar-fall2012\LaTex\ProjectMilestone.tex"
+oject-aar-fall2012\LaTex\projectmilestone.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
@@ -474,7 +474,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthfirst=\dimen133
 )
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
-oject-aar-fall2012\LaTex\ProjectMilestone.aux")
+oject-aar-fall2012\LaTex\projectmilestone.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
@@ -617,41 +617,42 @@ File: figures/HistogramRatio_VehicleAge.png Graphic file (type png)
 .62pt>
 File: figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png Graphic file (ty
 pe png)
- <use figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png>
-Overfull \hbox (3.43825pt too wide) in paragraph at lines 158--180
- [][]  [] 
- []
+ <use figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png> [2 <C:/Users/Al
+ice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproject-aar-fal
+l2012/LaTex/figures/HistogramScaled_VehicleAge.png (PNG copy)> <C:/Users/Alice/
+Documents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproject-aar-fall201
+2/LaTex/figures/HistogramRatio_VehicleAge.png (PNG copy)> <C:/Users/Alice/Docum
+ents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproject-aar-fall2012/LaT
+ex/figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png (PNG copy)>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 184.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 184.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 184.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 184.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 184.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 184.
 
-[2 <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-final
-project-aar-fall2012/LaTex/figures/HistogramScaled_VehicleAge.png (PNG copy)> <
-C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproj
-ect-aar-fall2012/LaTex/figures/HistogramRatio_VehicleAge.png (PNG copy)> <C:/Us
-ers/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproject-a
-ar-fall2012/LaTex/figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png (PNG
- copy)>]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 191.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 191.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 191.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 191.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 191.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 191.
- [3]
+<figures/Age_AvgPrice_Warranty.png, id=14, 421.575pt x 316.18124pt>
+File: figures/Age_AvgPrice_Warranty.png Graphic file (type png)
+
+<use figures/Age_AvgPrice_Warranty.png> [3 <C:/Users/Alice/Documents/Stanford/F
+all 2012/CS229/Final Project/cs229-finalproject-aar-fall2012/LaTex/figures/Age_
+AvgPrice_Warranty.png (PNG copy)>]
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
-oject-aar-fall2012\LaTex\ProjectMilestone.aux") ) 
+oject-aar-fall2012\LaTex\projectmilestone.aux") ) 
 Here is how much of TeX's memory you used:
- 6319 strings out of 495285
- 93935 string characters out of 3179877
- 264067 words of memory out of 3000000
- 9394 multiletter control sequences out of 15000+200000
+ 6324 strings out of 495285
+ 94111 string characters out of 3179877
+ 265067 words of memory out of 3000000
+ 9398 multiletter control sequences out of 15000+200000
  75556 words of font info for 93 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 40i,15n,47p,1056b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,47p,1056b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alice\AppData\Local
 \MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk>{C:/Program Files (x
 86)/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc} <C:\Users\Alice\AppData\Local\M
@@ -662,9 +663,9 @@ sers/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-mlit.p
 fb><C:/Users/Alice/AppData/Roaming/MiKTeX/2.8/fonts/type1/public/fourier/fourie
 r-ms.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on ProjectMilestone.pdf (3 pages, 106266 bytes).
+Output written on projectmilestone.pdf (3 pages, 124731 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

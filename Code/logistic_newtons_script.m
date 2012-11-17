@@ -26,7 +26,7 @@ N_CV = N-N_train;
 Y_train = Y(1:N_train);
 Y_true = Y(N_train:N);
 %% run newton's method on 70% of the data set
-[theta, ll] = logistic_newtons(X(1:N_train,:), Y, 10); % X, Y, max_iters
+[theta, ll] = logistic_newtons(X(1:N_train,:), Y_train, 10); % X, Y, max_iters
 
 %% calculate the generalization error using 30% of the data set
 %Y_test = sigmoid(X(j,:)*theta);
@@ -62,9 +62,9 @@ plot3(temp1(:,1), temp1(:,2), temp1(:,3), 'rx');
 hold on;
 plot3(temp2(:,1), temp2(:,2), temp2(:,3), 'go');
 hold off;
-xlabel('Vehicle Age');
-ylabel('MMRCurrentAuctionAvgPrice');
-zlabel('Warranty Cost');
+xlabel('Vehicle Age (Years)');
+ylabel('MMRCurrentAuctionAvgPrice (Dollars)');
+zlabel('Warranty Cost (Dollars)');
 grid on;
 %% run newton's method on the test data for submission onto Kaggle
 [theta, ll] = logistic_newtons(X, Y, 10); % X, Y, max_iters
