@@ -13,7 +13,7 @@ close all;
 
 % Is this run for the test or training set?
 %   1-Training Set, 0-Test Set
-Set = 1;
+Set = 0;
 
 % converts dates to datenum format
 if Set == 1
@@ -71,7 +71,7 @@ for i = 1:n
     end
 end
 
-%% Non-Numeric Data Parsing
+%% Date Parsing
 
 % Generate year, month, and day features
 % Replace date strings by MATLAB datenums
@@ -91,19 +91,28 @@ Labels{end+1} = 'PurchYear';
 Labels{end+1} = 'PurchMonth';
 Labels{end+1} = 'PurchDay';
 
-% % Replace specified string with 1.0
-% R = cellfun(@(x) ischar(x) && strcmp(x,'MAZDA'),raw); % Find non-numeric cells
-% raw(R) = {1.0}; % Replace non-numeric cells
-% 
-% % Replace non-numeric cells with 0.0
-% R = cellfun(@(x) ~isnumeric(x) || isnan(x),raw); % Find non-numeric cells
-% raw(R) = {0.0}; % Replace non-numeric cells
-% 
-% % Create output variables
-% Numeric = cell2mat(raw);
+%% Non-Numeric Data Parsing
+% load('Txt.mat');
+% keep('TxtB');
+% Txt = TxtB;
 
-% Clear temporary variables
-% clearvars raw dateNums R;
+% Remove empty columns from Txt
+Knockout = [1:3,5:6,13,15,19:26,29:30,32:34];
+if Set == 0
+    Knockout = Knockout - 1;
+    Knockout = Knockout(2:end);
+end
+Knockout = fliplr(Knockout);
+for i = Knockout
+    Txt(:,i) = [];
+end
+
+% Enumerate unique strings and replace them with enumeration
+for i = 1:size(Txt,2)
+    newParsed = enumText(Txt(2:end,i));
+    ParsedData = [ParsedData newParsed];
+    Labels(end+1) = Txt(1,i);
+end
 
 %% Clean Up and Save Parsed Data
 if Set == 1
