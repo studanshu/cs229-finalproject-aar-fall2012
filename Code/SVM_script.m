@@ -20,11 +20,20 @@ N = size(Y,1);
 N_train = floor(0.7*N);
 N_CV = N-N_train;
 
+% Choose a random set of indices to train on and ensure they are unique
+train_index = ceil(N.*rand(N_train,1));
+while (size(unique(train_index),1) ~= size(train_index,1))
+    train_index = unique(train_index);
+    unique_needed = N_train - size(train_index,1);
+    train_index = [train_index ; ceil(N.*rand(unique_needed,1))];
+end
+test_index = setdiff(1:N,train_index)';
+
 % Split the Y and X data
-Y_train = Y(1:N_train);
-Y_CV = Y(N_train+1:end);
-X_train = X(1:N_train,:);
-X_CV = X(N_train+1:end,:);
+Y_train = Y(train_index);
+Y_CV = Y(test_index);
+X_train = X(train_index,:);
+X_CV = X(test_index,:);
 
 
 %%
