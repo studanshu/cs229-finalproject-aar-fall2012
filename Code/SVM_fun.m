@@ -34,7 +34,7 @@ Y_SVM_test(Y_SVM_test == 0) = -1;
 
 % Run liblinear to train on the data set and get a model
 X_train_S = sparse(X_train);
-model = train(Y_SVM_train, X_train_S);
+model = train(Y_SVM_train, X_train_S,'c',1);
 
 % Run liblinear to come up with a predictive label on the test set
 X_test_S = sparse(X_test);
