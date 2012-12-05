@@ -13,7 +13,7 @@ close all;
 
 % Is this run for the test or training set?
 %   1-Training Set, 0-Test Set
-Set = 0;
+Set = 1;
 
 % converts dates to datenum format
 if Set == 1
@@ -41,7 +41,7 @@ end
 WhTyID = 13;    % Wheel Type ID
 MMR = 19:26;    % All MMR values
 if Set == 0
-    WhTyID = WhTyID -1;    
+    WhTyID = WhTyID -1;
     MMR = MMR -1;
 end
 
@@ -61,6 +61,13 @@ for i = Knockout
     Labels{i} = {};
     ParsedData(:,i) = [];
 end
+
+% Normalize numeric data
+maxes = max(ParsedData);
+maxes_expand = repmat(maxes,size(ParsedData,1),1);
+ParsedData = ParsedData./maxes_expand;
+
+% Create category labels
 TempLabel = Labels;
 Labels = cell(n-length(Knockout),1);
 index = 1;
@@ -85,6 +92,11 @@ else
 end
 dateNumVec = cell2mat(dateNumVec);
 [year month day] = datevec(dateNumVec);
+
+% normalize data
+year = year./max(year);
+month = month./max(month);
+day = day./max(day);
 
 ParsedData = [ParsedData year month day];
 Labels{end+1} = 'PurchYear';
