@@ -1,4 +1,4 @@
-function [predict_label, accuracy, decision_val] = ...
+function [predict_label, accuracy, decision_val, precision, recall] = ...
     SVM_fun(Y_train,X_train,Y_test,X_test)
 % Code for implementing Liblinear v. 1.92
 % 
@@ -34,10 +34,19 @@ Y_SVM_test(Y_SVM_test == 0) = -1;
 
 % Run liblinear to train on the data set and get a model
 X_train_S = sparse(X_train);
-model = train(Y_SVM_train, X_train_S,'c',1);
+model = train(Y_SVM_train, X_train_S);
 
 % Run liblinear to come up with a predictive label on the test set
 X_test_S = sparse(X_test);
 [predict_label, accuracy, decision_val] = ...
     predict(Y_SVM_test,X_test_S,model);
 
+% Find Precision: TP/(TP + FP)
+TP = sum(Y_test(predict_label == 1));
+FP = size(Y_test(predict_label == 1),1)-TP;
+precision = TP/(TP + FP);
+
+% Find Recall: TN/(TN + FN)
+FN = sum(Y_test(predict_label == -1));
+TN = size(Y_test(predict_label == -1),1)-FN;
+recall = TP/(TP + FN);

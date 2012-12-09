@@ -4,7 +4,7 @@
 % Written by Robert Romano
 clear;
 clc;
-close all;
+%close all;
 
 % Load data resulting from data parsing MATLAB script
 load('CarAuction_Parsed_Test');
@@ -15,13 +15,13 @@ Y = Features_Train(:,1);
 X = Features_Train(:,2:end);
 
 % Repeat positive examples so that there is a more even distribution
-X_positive = X(Y==1,:);
-Y_positive = ones(length(X_positive),1);
-for i = 1:3
-    X = [X; X_positive];
-    Y = [Y; Y_positive];
-end
-clear('X_positive','Y_positive');
+% X_positive = X(Y==1,:);
+% Y_positive = ones(length(X_positive),1);
+% for i = 1:3
+%     X = [X; X_positive];
+%     Y = [Y; Y_positive];
+% end
+% clear('X_positive','Y_positive');
 
 % Create a 70-30 split of training data for cross-validation
 % Record number of samples in 70-30 split
@@ -48,15 +48,18 @@ X_CV = X(test_index,:);
 %%
 % Run SVM using custom SVM function that uses liblinear on cross
 %   validation set
-[Prediction, Accuracy, DV] = ...
-    SVM_fun(Y,X,Y,X);
+[Prediction, Accuracy, DV, Precision, Recall] = ...
+    SVM_fun(Y_train,X_train,Y_CV,X_CV);
+
+figure(1);
+hold all;
+plot(Precision,Recall,'.');
 
 %%
 % Run SVM using custom SVM function that uses liblinear on all
 %   available training data
 % Y_dummy = zeros(size(Features_Test,1),1);
-
-
 % Y_dummy = ones(size(Features_Test,1),1);
-% [Submission, Accuracy, DV] = ...
-%     SVM_fun(Y_train,X_train,Y_dummy,Features_Test);
+
+% [Submission, Accuracy, DV, Precision, Recall] = ...
+%     SVM_fun(Y,X,Y_dummy,Features_Test);
