@@ -13,13 +13,15 @@ close all;
 
 % Is this run for the test or training set?
 %   1-Training Set, 0-Test Set
-Set = 1;
+Set = 0;
 
 % converts dates to datenum format
 if Set == 1
     [Numeric, Txt, Raw, dateNums] = xlsread('training.csv','training','','',@convertSpreadsheetDates);
+    Txt(2:end,30) = cellstr(num2str(Numeric(:,30)));
 else
     [Numeric, Txt, Raw, dateNums] = xlsread('test.csv','test','','',@convertSpreadsheetDates);
+    Txt(2:end,29) = cellstr(num2str(Numeric(:,29)));
 end
 %% Numeric Data Parsing
 % Set up variables for easier manipulation
@@ -31,7 +33,7 @@ end
 ParsedData = Numeric;
 
 % Columns of data containing non-numeric or irrelevant data that will be knocked out of the data set
-Knockout = [1,3:4,7:12,14,16:18,27:28,31];
+Knockout = [1,3:4,7:12,14,16:18,27:28,30,31];
 if Set == 0
     Knockout = Knockout - 1;
     Knockout(1) = 1;
@@ -79,29 +81,31 @@ for i = 1:n
 end
 
 %% Date Parsing
-
-% Generate year, month, and day features
-% Replace date strings by MATLAB datenums
-% R = ~cellfun(@isequalwithequalnans,dateNums,raw) & cellfun('isclass',raw,'char'); % Find Excel dates
-% raw(R) = dateNums(R);
-
-if Set == 1
-    dateNumVec = dateNums(2:end,3);
-else
-    dateNumVec = dateNums(2:end,2);
-end
-dateNumVec = cell2mat(dateNumVec);
-[year month day] = datevec(dateNumVec);
-
-% normalize data
-year = year./max(year);
-month = month./max(month);
-day = day./max(day);
-
-ParsedData = [ParsedData year month day];
-Labels{end+1} = 'PurchYear';
-Labels{end+1} = 'PurchMonth';
-Labels{end+1} = 'PurchDay';
+% 
+% % Generate year, month, and day features
+% % Replace date strings by MATLAB datenums
+% % R = ~cellfun(@isequalwithequalnans,dateNums,raw) & cellfun('isclass',raw,'char'); % Find Excel dates
+% % raw(R) = dateNums(R);
+% 
+% if Set == 1
+%     dateNumVec = dateNums(2:end,3);
+% else
+%     dateNumVec = dateNums(2:end,2);
+% end
+% dateNumVec = cell2mat(dateNumVec);
+% [year month day] = datevec(dateNumVec);
+% 
+% year = year - min(year);
+% 
+% % normalize data
+% year = year./max(year);
+% month = month./max(month);
+% day = day./max(day);
+% 
+% ParsedData = [ParsedData year month day];
+% Labels{end+1} = 'DeltaPurchYear';
+% Labels{end+1} = 'PurchMonth';
+% Labels{end+1} = 'PurchDay';
 
 %% Non-Numeric Data Parsing
 % load('Txt.mat');
@@ -109,7 +113,7 @@ Labels{end+1} = 'PurchDay';
 % Txt = TxtB;
 
 % Remove empty columns from Txt
-Knockout = [1:3,5:6,13,15,19:26,29:30,32:34];
+Knockout = [1:3,5:6,13,15,19:26,29,32:34];
 if Set == 0
     Knockout = Knockout - 1;
     Knockout = Knockout(2:end);
