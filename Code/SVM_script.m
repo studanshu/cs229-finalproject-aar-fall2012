@@ -12,7 +12,7 @@ load('CarAuction_Parsed_Train');
 
 % Split Y values from X values in training set
 Y = Features_Train(:,1);
-X = Features_Train(:,2:34);
+X = Features_Train(:,[2:20,23:26,28:end]);
 
 % Repeat positive examples so that there is a more even distribution
 % X_positive = X(Y==1,:);
@@ -50,20 +50,8 @@ X_CV = X(test_index,:);
 %%
 % Run SVM using custom SVM function that uses liblinear on cross
 %   validation set
-[Prediction, Accuracy, DV, Precision, Recall,Model] = ...
+[Prediction, Accuracy, DV, Precision, Recall] = ...
     SVM_fun(Y_train,X_train,Y_CV,X_CV);
-
-figure(1);
-hold on;
-plot(size(X,2),100-Accuracy(1),'b.');
-
-Y_SVM_test = Y_train; 
-Y_SVM_test(Y_SVM_test == 0) = -1;
-
-[Prediction, Accuracy, DV] = ...
-    predict(Y_SVM_test,sparse(X_train),Model);
-
-plot(size(X,2),100-Accuracy(1),'g.');
 
 %%
 % Run SVM using custom SVM function that uses liblinear on all
