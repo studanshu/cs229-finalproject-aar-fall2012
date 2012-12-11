@@ -32,23 +32,20 @@ for i = 1:n
 end
 ParsedData = Numeric;
 
+IsOnlineSale = ParsedData(:,33);
+
 % Columns of data containing non-numeric or irrelevant data that will be knocked out of the data set
-Knockout = [1,3:4,7:12,14,16:18,27:28,30,31];
+Knockout = [1,3:4,7:14,16:18,27:29,30,31,33];
 if Set == 0
     Knockout = Knockout - 1;
     Knockout(1) = 1;
 end
 
 % Identifiers for particular columns 
-WhTyID = 13;    % Wheel Type ID
 MMR = 19:26;    % All MMR values
 if Set == 0
-    WhTyID = WhTyID -1;
     MMR = MMR -1;
 end
-
-% Replace empty values in WheelTypeID column with 4's
-ParsedData(isnan(ParsedData(:,WhTyID)),WhTyID) = 4;
 
 % Replace all empty MMR values with the average value across all samples
 for i = MMR
@@ -65,9 +62,13 @@ for i = Knockout
 end
 
 % Normalize numeric data
+mins = min(ParsedData);
 maxes = max(ParsedData);
-maxes_expand = repmat(maxes,size(ParsedData,1),1);
-ParsedData = ParsedData./maxes_expand;
+mins_expand = repmat(mins,size(ParsedData,1),1);
+ranges = maxes - mins;
+ranges_expand = repmat(ranges,size(ParsedData,1),1);
+ParsedData = ParsedData - mins_expand;
+ParsedData = ParsedData./ranges_expand;
 
 % Create category labels
 TempLabel = Labels;
@@ -82,30 +83,40 @@ end
 
 %% Date Parsing
 % 
-% % Generate year, month, and day features
-% % Replace date strings by MATLAB datenums
-% % R = ~cellfun(@isequalwithequalnans,dateNums,raw) & cellfun('isclass',raw,'char'); % Find Excel dates
-% % raw(R) = dateNums(R);
-% 
-% if Set == 1
-%     dateNumVec = dateNums(2:end,3);
-% else
-%     dateNumVec = dateNums(2:end,2);
-% end
-% dateNumVec = cell2mat(dateNumVec);
-% [year month day] = datevec(dateNumVec);
-% 
+% Generate year, month, and day features
+% Replace date strings by MATLAB datenums
+% R = ~cellfun(@isequalwithequalnans,dateNums,raw) & cellfun('isclass',raw,'char'); % Find Excel dates
+% raw(R) = dateNums(R);
+
+if Set == 1
+    dateNumVec = dateNums(2:end,3);
+else
+    dateNumVec = dateNums(2:end,2);
+end
+dateNumVec = cell2mat(dateNumVec);
+[year month day] = datevec(dateNumVec);
+dateData = [year month day];
+
 % year = year - min(year);
-% 
+
+% Normalize data
+mins = min(dateData);
+maxes = max(dateData);
+mins_expand = repmat(mins,size(dateData,1),1);
+ranges = maxes - mins;
+ranges_expand = repmat(ranges,size(dateData,1),1);
+dateData = dateData - mins_expand;
+dateData = dateData./ranges_expand;
+
 % % normalize data
 % year = year./max(year);
 % month = month./max(month);
 % day = day./max(day);
-% 
-% ParsedData = [ParsedData year month day];
-% Labels{end+1} = 'DeltaPurchYear';
-% Labels{end+1} = 'PurchMonth';
-% Labels{end+1} = 'PurchDay';
+
+ParsedData = [ParsedData dateData];
+Labels{end+1} = 'PurchYear';
+Labels{end+1} = 'PurchMonth';
+Labels{end+1} = 'PurchDay';
 
 %% Non-Numeric Data Parsing
 % load('Txt.mat');
@@ -122,6 +133,13 @@ Knockout = fliplr(Knockout);
 for i = Knockout
     Txt(:,i) = [];
 end
+
+% Add IsOnlineSale
+% IsOnlineSale = num2cell(IsOnlineSale);
+% IsOnlineSale = num2str(IsOnlineSale);
+IsOnlineSale = cellstr(num2str(IsOnlineSale(:)));
+IsOnlineSale = ['IsOnlineSale'; IsOnlineSale];
+Txt = [Txt IsOnlineSale];
 
 % Enumerate unique strings and replace them with enumeration
 for i = 1:size(Txt,2)

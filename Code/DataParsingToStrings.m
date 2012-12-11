@@ -10,19 +10,22 @@ if Set == 1
     load('CarAuction_Parsed_Train.mat');
     data = Labels_Train';
     data = [data; num2cell(Features_Train)];
-    start = 18;
+    start = 15;
 else
     load('CarAuction_Parsed_Test.mat');
-    data = num2cell(Features_Test);
-    start = 17;
+    data = Labels_Test';
+    data = [data; num2cell(Features_Test)];
+    start = 14;
 end
     
 %% Replace isBadBuy with true/false
-for i = 2:size(data,1)
-    if data{i,1} == 0
-        data{i,1} = 'false';
-    else
-        data{i,1} = 'true';
+if Set == 1
+    for i = 2:size(data,1)
+        if data{i,1} == 0
+            data{i,1} = 'false';
+        else
+            data{i,1} = 'true';
+        end
     end
 end
 
