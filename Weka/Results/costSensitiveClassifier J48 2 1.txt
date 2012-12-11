@@ -1,0 +1,303 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 2.0; 1.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+WheelTypeID <= 0.75: false (70797.61/3590.81)
+WheelTypeID > 0.75
+|   Auction = a1
+|   |   IsOnlineSale <= 0: true (651.03/105.49)
+|   |   IsOnlineSale > 0: false (31.97/11.72)
+|   Auction = a2
+|   |   VNZIP1 = a1: true (0.0)
+|   |   VNZIP1 = a2: true (0.0)
+|   |   VNZIP1 = a3: true (0.0)
+|   |   VNZIP1 = a4: true (0.0)
+|   |   VNZIP1 = a5: true (0.0)
+|   |   VNZIP1 = a6: true (2.66)
+|   |   VNZIP1 = a7: true (0.0)
+|   |   VNZIP1 = a8: true (0.0)
+|   |   VNZIP1 = a9: true (0.0)
+|   |   VNZIP1 = a10: true (0.0)
+|   |   VNZIP1 = a11: true (14.92/1.07)
+|   |   VNZIP1 = a12: true (0.0)
+|   |   VNZIP1 = a13: true (9.59)
+|   |   VNZIP1 = a14: true (1.6)
+|   |   VNZIP1 = a15: true (0.0)
+|   |   VNZIP1 = a16: true (9.06)
+|   |   VNZIP1 = a17: true (0.0)
+|   |   VNZIP1 = a18: true (0.0)
+|   |   VNZIP1 = a19: true (0.0)
+|   |   VNZIP1 = a20: true (0.0)
+|   |   VNZIP1 = a21: true (0.0)
+|   |   VNZIP1 = a22: true (0.0)
+|   |   VNZIP1 = a23: true (0.0)
+|   |   VNZIP1 = a24: true (0.0)
+|   |   VNZIP1 = a25: true (0.0)
+|   |   VNZIP1 = a26: true (0.0)
+|   |   VNZIP1 = a27: true (14.38/1.07)
+|   |   VNZIP1 = a28: true (32.5/1.07)
+|   |   VNZIP1 = a29
+|   |   |   BYRNO <= 0.53373: true (74.59/24.51)
+|   |   |   BYRNO > 0.53373: false (28.77/2.13)
+|   |   VNZIP1 = a30: false (3.2)
+|   |   VNZIP1 = a31: true (2.66)
+|   |   VNZIP1 = a32: true (0.0)
+|   |   VNZIP1 = a33: true (165.16/73.52)
+|   |   VNZIP1 = a34: true (0.0)
+|   |   VNZIP1 = a35: true (8.52/1.07)
+|   |   VNZIP1 = a36: true (0.0)
+|   |   VNZIP1 = a37: false (8.52)
+|   |   VNZIP1 = a38: true (0.0)
+|   |   VNZIP1 = a39: true (0.53)
+|   |   VNZIP1 = a40: false (47.42/1.6)
+|   |   VNZIP1 = a41: true (0.0)
+|   |   VNZIP1 = a42: true (0.0)
+|   |   VNZIP1 = a43: true (9.59/4.26)
+|   |   VNZIP1 = a44: true (0.0)
+|   |   VNZIP1 = a45: false (1.07)
+|   |   VNZIP1 = a46: true (0.0)
+|   |   VNZIP1 = a47: true (0.0)
+|   |   VNZIP1 = a48: true (0.0)
+|   |   VNZIP1 = a49: true (3.2)
+|   |   VNZIP1 = a50: true (0.0)
+|   |   VNZIP1 = a51: true (1.6)
+|   |   VNZIP1 = a52: true (4.79)
+|   |   VNZIP1 = a53: true (1.6)
+|   |   VNZIP1 = a54: true (28.24/3.2)
+|   |   VNZIP1 = a55: true (0.0)
+|   |   VNZIP1 = a56: true (53.28/15.98)
+|   |   VNZIP1 = a57: true (3.73)
+|   |   VNZIP1 = a58: true (0.0)
+|   |   VNZIP1 = a59
+|   |   |   VehOdo <= 0.44083: true (35.7/1.07)
+|   |   |   VehOdo > 0.44083
+|   |   |   |   VehicleAge <= 0.11111
+|   |   |   |   |   MMRAcquisitionAuctionAveragePrice <= 0.22885: false (17.05/3.2)
+|   |   |   |   |   MMRAcquisitionAuctionAveragePrice > 0.22885: true (3.2)
+|   |   |   |   VehicleAge > 0.11111
+|   |   |   |   |   MMRAcquisitionAuctionAveragePrice <= 0.20444: false (3.2/1.07)
+|   |   |   |   |   MMRAcquisitionAuctionAveragePrice > 0.20444: true (7.46)
+|   |   VNZIP1 = a60: true (0.0)
+|   |   VNZIP1 = a61: true (9.06/4.26)
+|   |   VNZIP1 = a62: true (0.0)
+|   |   VNZIP1 = a63: true (0.0)
+|   |   VNZIP1 = a64: true (33.56/1.07)
+|   |   VNZIP1 = a65: true (1.6)
+|   |   VNZIP1 = a66: false (7.99/0.53)
+|   |   VNZIP1 = a67: true (0.0)
+|   |   VNZIP1 = a68: true (0.0)
+|   |   VNZIP1 = a69: true (0.0)
+|   |   VNZIP1 = a70: true (0.0)
+|   |   VNZIP1 = a71: true (7.46)
+|   |   VNZIP1 = a72: true (0.0)
+|   |   VNZIP1 = a73: true (0.0)
+|   |   VNZIP1 = a74: true (0.0)
+|   |   VNZIP1 = a75: true (21.84)
+|   |   VNZIP1 = a76: true (0.0)
+|   |   VNZIP1 = a77: true (2.13)
+|   |   VNZIP1 = a78: true (0.0)
+|   |   VNZIP1 = a79: true (0.0)
+|   |   VNZIP1 = a80: true (0.0)
+|   |   VNZIP1 = a81: true (0.0)
+|   |   VNZIP1 = a82: true (0.0)
+|   |   VNZIP1 = a83: true (0.0)
+|   |   VNZIP1 = a84: true (0.0)
+|   |   VNZIP1 = a85: true (0.0)
+|   |   VNZIP1 = a86: true (0.0)
+|   |   VNZIP1 = a87: true (0.0)
+|   |   VNZIP1 = a88: true (0.0)
+|   |   VNZIP1 = a89: true (0.0)
+|   |   VNZIP1 = a90: true (0.0)
+|   |   VNZIP1 = a91: true (0.0)
+|   |   VNZIP1 = a92: true (0.0)
+|   |   VNZIP1 = a93: true (0.0)
+|   |   VNZIP1 = a94: true (0.0)
+|   |   VNZIP1 = a95: true (0.0)
+|   |   VNZIP1 = a96: true (0.53)
+|   |   VNZIP1 = a97: true (5.33/1.07)
+|   |   VNZIP1 = a98: true (0.0)
+|   |   VNZIP1 = a99: true (0.0)
+|   |   VNZIP1 = a100: true (0.0)
+|   |   VNZIP1 = a101: true (0.0)
+|   |   VNZIP1 = a102: true (0.0)
+|   |   VNZIP1 = a103: true (0.0)
+|   |   VNZIP1 = a104: true (0.0)
+|   |   VNZIP1 = a105: true (0.0)
+|   |   VNZIP1 = a106: true (0.0)
+|   |   VNZIP1 = a107: true (0.0)
+|   |   VNZIP1 = a108: true (1.6)
+|   |   VNZIP1 = a109: true (0.0)
+|   |   VNZIP1 = a110: true (0.0)
+|   |   VNZIP1 = a111: true (0.0)
+|   |   VNZIP1 = a112: true (0.0)
+|   |   VNZIP1 = a113: true (0.0)
+|   |   VNZIP1 = a114: true (0.0)
+|   |   VNZIP1 = a115: true (0.0)
+|   |   VNZIP1 = a116: true (0.0)
+|   |   VNZIP1 = a117: true (0.53)
+|   |   VNZIP1 = a118: true (0.0)
+|   |   VNZIP1 = a119: true (0.0)
+|   |   VNZIP1 = a120: true (0.0)
+|   |   VNZIP1 = a121
+|   |   |   BYRNO <= 0.11437
+|   |   |   |   VehBCost <= 0.14405: true (2.13)
+|   |   |   |   VehBCost > 0.14405: false (5.86/0.53)
+|   |   |   BYRNO > 0.11437: true (8.52)
+|   |   VNZIP1 = a122: false (18.65/3.73)
+|   |   VNZIP1 = a123: false (10.12/2.66)
+|   |   VNZIP1 = a124: true (0.0)
+|   |   VNZIP1 = a125: true (0.0)
+|   |   VNZIP1 = a126: true (0.0)
+|   |   VNZIP1 = a127: true (0.0)
+|   |   VNZIP1 = a128: true (18.11/6.39)
+|   |   VNZIP1 = a129: true (0.0)
+|   |   VNZIP1 = a130: true (0.0)
+|   |   VNZIP1 = a131: true (0.0)
+|   |   VNZIP1 = a132: true (0.0)
+|   |   VNZIP1 = a133: false (6.39/2.13)
+|   |   VNZIP1 = a134: true (7.46)
+|   |   VNZIP1 = a135: true (0.0)
+|   |   VNZIP1 = a136: true (0.0)
+|   |   VNZIP1 = a137: true (0.0)
+|   |   VNZIP1 = a138: true (0.0)
+|   |   VNZIP1 = a139: true (0.0)
+|   |   VNZIP1 = a140: true (0.0)
+|   |   VNZIP1 = a141: true (0.0)
+|   |   VNZIP1 = a142: true (0.0)
+|   |   VNZIP1 = a143: true (0.0)
+|   |   VNZIP1 = a144: true (0.0)
+|   |   VNZIP1 = a145: true (0.0)
+|   |   VNZIP1 = a146: true (0.0)
+|   |   VNZIP1 = a147: true (0.0)
+|   |   VNZIP1 = a148: true (0.0)
+|   |   VNZIP1 = a149: true (0.0)
+|   |   VNZIP1 = a150: true (0.0)
+|   |   VNZIP1 = a151: true (0.0)
+|   |   VNZIP1 = a152: true (0.0)
+|   |   VNZIP1 = a153: true (0.0)
+|   Auction = a3
+|   |   VNST = a1: false (158.23/19.71)
+|   |   VNST = a2: true (2.13)
+|   |   VNST = a3: false (0.0)
+|   |   VNST = a4: false (0.0)
+|   |   VNST = a5: false (0.0)
+|   |   VNST = a6: false (26.11/3.73)
+|   |   VNST = a7: true (0.53)
+|   |   VNST = a8: true (1.6)
+|   |   VNST = a9: false (0.0)
+|   |   VNST = a10: false (0.0)
+|   |   VNST = a11: false (51.68/13.32)
+|   |   VNST = a12: true (0.53)
+|   |   VNST = a13: false (0.0)
+|   |   VNST = a14: true (6.39)
+|   |   VNST = a15: false (49.01/9.59)
+|   |   VNST = a16: false (225.36/15.45)
+|   |   VNST = a17: true (18.11/1.07)
+|   |   VNST = a18: false (77.25/28.24)
+|   |   VNST = a19: false (1.07)
+|   |   VNST = a20: false (13.32/0.53)
+|   |   VNST = a21: false (47.42/1.6)
+|   |   VNST = a22: true (21.84/7.46)
+|   |   VNST = a23: false (0.0)
+|   |   VNST = a24: false (15.98/4.26)
+|   |   VNST = a25: false (0.0)
+|   |   VNST = a26: false (0.0)
+|   |   VNST = a27: false (0.0)
+|   |   VNST = a28
+|   |   |   BYRNO <= 0.53373: true (5.33)
+|   |   |   BYRNO > 0.53373: false (4.26)
+|   |   VNST = a29: false (0.0)
+|   |   VNST = a30: true (2.13)
+|   |   VNST = a31: false (1.6/0.53)
+|   |   VNST = a32: false (5.33)
+|   |   VNST = a33: false (0.0)
+|   |   VNST = a34: true (0.53)
+|   |   VNST = a35: false (0.0)
+|   |   VNST = a36: false (0.0)
+|   |   VNST = a37: false (0.0)
+
+Number of Leaves  : 	201
+
+Size of the tree : 	214
+
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 12.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65743               90.0799 %
+Incorrectly Classified Instances      7240                9.9201 %
+Kappa statistic                          0.3223
+Mean absolute error                      0.1428
+Root mean squared error                  0.3018
+Relative absolute error                 66.1882 %
+Root relative squared error             91.8834 %
+Coverage of cases (0.95 level)          99.9603 %
+Mean rel. region size (0.95 level)      99.6205 %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.996    0.777    0.901      0.996   0.946      0.414  0.614     0.902     false
+                 0.223    0.004    0.883      0.223   0.356      0.414  0.614     0.35      true
+Weighted Avg.    0.901    0.682    0.899      0.901   0.874      0.414  0.614     0.834
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63743   264 |     a = false
+  6976  2000 |     b = true
+

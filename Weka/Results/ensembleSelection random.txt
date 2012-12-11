@@ -1,0 +1,91 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.EnsembleSelection -W C:\Users\Albert\Ensemble-7 -P rmse -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+143 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -N -P 1 -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+26 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -N -P 1 -mbc -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+28 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1 -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+84 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -R -N -P 1 -S ENTROPY -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+31 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -R -N -P 1 -mbc -S MDL -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+2 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -R -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+42 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -mbc -S MDL -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+9 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -R -mbc -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+2 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+7 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+3 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+10 weka.classifiers.bayes.NaiveBayes 
+375 weka.classifiers.trees.J48 -C 0.2 -M 4 -A
+22 weka.classifiers.trees.REPTree -M 4 -V 0.001 -N 3 -S 3 -L -1 -P -I 0.0
+133 weka.classifiers.trees.REPTree -M 4 -V 0.01 -N 3 -S 3 -L 1 -I 0.0
+
+
+Time taken to build model: 238.2 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 31.27 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       22349               90.0661 %
+Incorrectly Classified Instances      2465                9.9339 %
+Kappa statistic                          0.3286
+Mean absolute error                      0.1794
+Root mean squared error                  0.293 
+Relative absolute error                 83.4935 %
+Root relative squared error             89.9853 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)     100      %
+Total Number of Instances            24814     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.992    0.762    0.905      0.992   0.946      0.4    0.752     0.948     false
+                 0.238    0.008    0.794      0.238   0.366      0.4    0.752     0.435     true
+Weighted Avg.    0.901    0.671    0.891      0.901   0.876      0.4    0.752     0.886
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 21638   184 |     a = false
+  2281   711 |     b = true
+

@@ -1,0 +1,2375 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -F 0 -R 1 -L -1.7976931348623157E308 -H 1.0 -S 1 -I 100 -W weka.classifiers.trees.DecisionStump
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : 1.6138255052783865
+WheelTypeID > 0.875 : -0.8223414326285895
+WheelTypeID is missing : 1.5080430791153983
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : -1.6138255052783865
+WheelTypeID > 0.875 : 0.8223414326285895
+WheelTypeID is missing : -1.5080430791153983
+
+
+Iteration 2
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : 0.6682210382991589
+VehicleAge > 0.5 : 0.0769869048828071
+VehicleAge is missing : 0.4264880856929632
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : -0.6682210382991589
+VehicleAge > 0.5 : -0.0769869048828071
+VehicleAge is missing : -0.4264880856929632
+
+
+Iteration 3
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.120905 : -0.19400535906094782
+VehBCost > 0.120905 : 0.2573647816790119
+VehBCost is missing : 0.12148039435248642
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.120905 : 0.19400535906094782
+VehBCost > 0.120905 : -0.25736478167901194
+VehBCost is missing : -0.12148039435248645
+
+
+Iteration 4
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a3 : -0.5488717412314663
+aWheelType != a3 : 0.08549521105511229
+aWheelType is missing : 0.02946850894349478
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a3 : 0.5488717412314663
+aWheelType != a3 : -0.08549521105511229
+aWheelType is missing : -0.02946850894349478
+
+
+Iteration 5
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : -0.031940423525066736
+BYRNO > 0.999845 : 0.6200864562218109
+BYRNO is missing : 0.012095001132895142
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : 0.031940423525066736
+BYRNO > 0.999845 : -0.6200864562218108
+BYRNO is missing : -0.012095001132895135
+
+
+Iteration 6
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : 0.7327017244451293
+aPRIMEUNIT != a2 : -0.02683192287303539
+aPRIMEUNIT is missing : 0.006065409002445923
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : -0.7327017244451294
+aPRIMEUNIT != a2 : 0.026831922873035437
+aPRIMEUNIT is missing : -0.006065409002445898
+
+
+Iteration 7
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.722225 : 0.06663656069151405
+VehicleAge > 0.722225 : -0.35281313558463145
+VehicleAge is missing : 0.0050164573036889405
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.722225 : -0.06663656069151405
+VehicleAge > 0.722225 : 0.35281313558463145
+VehicleAge is missing : -0.00501645730368894
+
+
+Iteration 8
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.65236 : 0.10188190024763848
+VehOdo > 0.65236 : -0.09772804200966043
+VehOdo is missing : 0.004800044809987458
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.65236 : -0.10188190024763853
+VehOdo > 0.65236 : 0.09772804200966027
+VehOdo is missing : -0.004800044809987557
+
+
+Iteration 9
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a60 : -0.5567262981817538
+aModel != a60 : 0.022022680563519647
+aModel is missing : 0.002588421840536816
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a60 : 0.5567262981817538
+aModel != a60 : -0.02202268056351971
+aModel is missing : -0.002588421840536819
+
+
+Iteration 10
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a11 : -0.19297143295053965
+aVNST != a11 : 0.04799639237582959
+aVNST is missing : 0.0018305843916418072
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a11 : 0.19297143295053967
+aVNST != a11 : -0.047996392375829554
+aVNST is missing : -0.0018305843916417558
+
+
+Iteration 11
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionAuctionAveragePrice <= 0.47507 : 0.004879561060833331
+MMRAcquisitionAuctionAveragePrice > 0.47507 : -2.5910464267638664
+MMRAcquisitionAuctionAveragePrice is missing : 0.0016170179825965364
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionAuctionAveragePrice <= 0.47507 : -0.004879561060833411
+MMRAcquisitionAuctionAveragePrice > 0.47507 : 2.59104642675676
+MMRAcquisitionAuctionAveragePrice is missing : -0.0016170179826118737
+
+
+Iteration 12
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a40 : 1.7144368072470204
+aVNZIP1 != a40 : -0.004130375076912432
+aVNZIP1 is missing : -2.3544750344729157E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a40 : -1.7144368072470204
+aVNZIP1 != a40 : 0.004130375076912603
+aVNZIP1 is missing : 2.3544750344738294E-4
+
+
+Iteration 13
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a22 : 0.33514226953220716
+aVNZIP1 != a22 : -0.01696394525643266
+aVNZIP1 is missing : 3.2576750327182745E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a22 : -0.33514226953220755
+aVNZIP1 != a22 : 0.016963945256432557
+aVNZIP1 is missing : -3.257675032714829E-4
+
+
+Iteration 14
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.277775 : 0.22457495286514859
+VehicleAge > 0.277775 : -0.023192294845851117
+VehicleAge is missing : 0.001450593884872598
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.277775 : -0.2245749528651488
+VehicleAge > 0.277775 : 0.02319229484585134
+VehicleAge is missing : -0.0014505938848726758
+
+
+Iteration 15
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aAUCGUART = a2 : 0.43265412592016933
+aAUCGUART != a2 : -0.011598906857169956
+aAUCGUART is missing : 0.0011780264372053724
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aAUCGUART = a2 : -0.4326541259201696
+aAUCGUART != a2 : 0.011598906857169683
+aAUCGUART is missing : -0.0011780264372058065
+
+
+Iteration 16
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aTopThreeAmericanName = a4 : 0.10576634785196976
+aTopThreeAmericanName != a4 : -0.05072554682033568
+aTopThreeAmericanName is missing : 0.0015414986565390352
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aTopThreeAmericanName = a4 : -0.10576634785196969
+aTopThreeAmericanName != a4 : 0.05072554682033558
+aTopThreeAmericanName is missing : -0.0015414986565390888
+
+
+Iteration 17
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.267615 : 0.0031849199197862455
+VehBCost > 0.267615 : -2.2424479007991116
+VehBCost is missing : 0.0010940688296762183
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.267615 : -0.0031849199197862984
+VehBCost > 0.267615 : 2.2424479007991396
+VehBCost is missing : -0.0010940688296762352
+
+
+Iteration 18
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a77 : -1.3533686122439197
+aVNZIP1 != a77 : 0.003488894397448974
+aVNZIP1 is missing : 4.3623557705259855E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a77 : 1.3533686122439188
+aVNZIP1 != a77 : -0.00348889439744925
+aVNZIP1 is missing : -4.3623557706235996E-5
+
+
+Iteration 19
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a138 : -0.9767519940090337
+aSubModel != a138 : 0.004799009339915354
+aSubModel is missing : 2.9772928400797707E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a138 : 0.9767519940090331
+aSubModel != a138 : -0.004799009339915359
+aSubModel is missing : -2.977292840081183E-4
+
+
+Iteration 20
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a34 : -0.6099767978348848
+aModel != a34 : 0.007778474026199484
+aModel is missing : 5.805468004207783E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a34 : 0.6099767978348856
+aModel != a34 : -0.007778474026199534
+aModel is missing : -5.805468004205261E-4
+
+
+Iteration 21
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.075821 : -0.44397029622102824
+VehBCost > 0.075821 : 0.010926532715048655
+VehBCost is missing : 8.176630710487484E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.075821 : 0.4439702962210285
+VehBCost > 0.075821 : -0.010926532715049153
+VehBCost is missing : -8.17663071049231E-4
+
+
+Iteration 22
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+WarrantyCost <= 0.29881 : 0.016575816201177818
+WarrantyCost > 0.29881 : -0.25578171762359275
+WarrantyCost is missing : 0.001165639100037669
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+WarrantyCost <= 0.29881 : -0.016575816201177613
+WarrantyCost > 0.29881 : 0.25578171762358365
+WarrantyCost is missing : -0.0011656391000376281
+
+
+Iteration 23
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aColor = a16 : 0.9529606526538107
+aColor != a16 : -0.002726411254622083
+aColor is missing : 0.0010787554052881516
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aColor = a16 : -0.9529606526538105
+aColor != a16 : 0.002726411254622209
+aColor is missing : -0.001078755405288008
+
+
+Iteration 24
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a136 : -0.49214692108240626
+aVNZIP1 != a136 : 0.0077302875740032275
+aVNZIP1 is missing : 4.3121717528609636E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a136 : 0.49214692108240615
+aVNZIP1 != a136 : -0.007730287574002987
+aVNZIP1 is missing : -4.3121717528573034E-4
+
+
+Iteration 25
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a34 : 0.24214727938211947
+aVNZIP1 != a34 : -0.012879308741394159
+aVNZIP1 is missing : 6.606351017890594E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a34 : -0.2421472793821194
+aVNZIP1 != a34 : 0.012879308741394186
+aVNZIP1 is missing : -6.606351017890884E-4
+
+
+Iteration 26
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a213 : -1.279053884188734
+aModel != a213 : 0.0034092634249645584
+aModel is missing : 9.854734616100808E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a213 : 1.279053884188734
+aModel != a213 : -0.003409263424964507
+aModel is missing : -9.854734616097517E-4
+
+
+Iteration 27
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a7 : -0.48358164924551644
+aVNST != a7 : 0.006775947954951276
+aVNST is missing : 4.10012790970171E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a7 : 0.48358164924551644
+aVNST != a7 : -0.006775947954951029
+aVNST is missing : -4.1001279097003325E-4
+
+
+Iteration 28
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a106 : -0.7458383334200855
+aModel != a106 : 0.004432382315831104
+aModel is missing : 5.153761005066797E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a106 : 0.7458383334200857
+aModel != a106 : -0.004432382315831084
+aModel is missing : -5.153761005065438E-4
+
+
+Iteration 29
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a2 : 0.06901702272417741
+aWheelType != a2 : -0.04288289471931037
+aWheelType is missing : 4.1908433897731547E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a2 : -0.06901702272417716
+aWheelType != a2 : 0.04288289471931069
+aWheelType is missing : -4.190843389770576E-4
+
+
+Iteration 30
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a2 : -0.3368306787122165
+aVNST != a2 : 0.009653597326788112
+aVNST is missing : 0.0013151716585968359
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a2 : 0.3368306787122166
+aVNST != a2 : -0.009653597326788227
+aVNST is missing : -0.0013151716585969623
+
+
+Iteration 31
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a23 : -0.43416952148665094
+aVNZIP1 != a23 : 0.0068571912488202364
+aVNZIP1 is missing : 5.906879609802784E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a23 : 0.434169521486651
+aVNZIP1 != a23 : -0.006857191248820166
+aVNZIP1 is missing : -5.906879609802833E-4
+
+
+Iteration 32
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a55 : -0.2893681585557023
+aVNZIP1 != a55 : 0.00874085876716675
+aVNZIP1 is missing : 4.018762235389996E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a55 : 0.28936815855570225
+aVNZIP1 != a55 : -0.008740858767166772
+aVNZIP1 is missing : -4.0187622353899185E-4
+
+
+Iteration 33
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aMake = a15 : -0.35499347138209925
+aMake != a15 : 0.006835522969984804
+aMake is missing : 5.745611427149151E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aMake = a15 : 0.3549934713820994
+aMake != a15 : -0.006835522969984387
+aMake is missing : -5.745611427149622E-4
+
+
+Iteration 34
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.86269 : 0.0041739977083626685
+VehOdo > 0.86269 : -0.5542594464355078
+VehOdo is missing : 2.966177354893359E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.86269 : -0.004173997708362663
+VehOdo > 0.86269 : 0.5542594464355017
+VehOdo is missing : -2.966177354893904E-4
+
+
+Iteration 35
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a370 : 0.485925273983893
+aModel != a370 : -0.0038739903349692194
+aModel is missing : 4.961179610150462E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a370 : -0.4859252739838934
+aModel != a370 : 0.0038739903349692077
+aModel is missing : -4.961179610151043E-4
+
+
+Iteration 36
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aTrim = a26 : -0.28794710452427
+aTrim != a26 : 0.007531711760663441
+aTrim is missing : 5.178631575906628E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aTrim = a26 : 0.2879471045242705
+aTrim != a26 : -0.007531711760663245
+aTrim is missing : -5.178631575903723E-4
+
+
+Iteration 37
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.625 : 0.014841942667819576
+WheelTypeID > 0.625 : -0.13624072621690042
+WheelTypeID is missing : 2.5155312082595526E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.625 : -0.014841942667819201
+WheelTypeID > 0.625 : 0.1362407262168971
+WheelTypeID is missing : -2.51553120825965E-4
+
+
+Iteration 38
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a144 : -0.25529947221992183
+aVNZIP1 != a144 : 0.008580664282408348
+aVNZIP1 is missing : 0.0013740572832596776
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a144 : 0.25529947221992155
+aVNZIP1 != a144 : -0.008580664282408435
+aVNZIP1 is missing : -0.0013740572832599397
+
+
+Iteration 39
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a52 : -0.37548081741732875
+aModel != a52 : 0.005488678854673773
+aModel is missing : 6.234179840081429E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a52 : 0.3754808174173285
+aModel != a52 : -0.0054886788546737965
+aModel is missing : -6.23417984008249E-4
+
+
+Iteration 40
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.49290500000000004 : 0.11091056646841471
+VehOdo > 0.49290500000000004 : -0.016702979261793493
+VehOdo is missing : 2.101956253421514E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.49290500000000004 : -0.11091056646841492
+VehOdo > 0.49290500000000004 : 0.016702979261793417
+VehOdo is missing : -2.101956253422542E-4
+
+
+Iteration 41
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a27 : -0.2415990987228341
+aVNST != a27 : 0.007847787693568172
+aVNST is missing : 2.9200170765323816E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a27 : 0.24159909872283356
+aVNST != a27 : -0.007847787693568137
+aVNST is missing : -2.9200170765332554E-4
+
+
+Iteration 42
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a37 : 1.0442887548409783
+aVNZIP1 != a37 : -0.0010312857892128668
+aVNZIP1 is missing : 5.499078572731769E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a37 : -1.0442887548409803
+aVNZIP1 != a37 : 0.0010312857892127957
+aVNZIP1 is missing : -5.49907857273353E-4
+
+
+Iteration 43
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a237 : -1.3315330349081116
+aSubModel != a237 : 0.0016510578441107117
+aSubModel is missing : 4.1393126429899657E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a237 : 1.3315330349081123
+aSubModel != a237 : -0.0016510578441107844
+aSubModel is missing : -4.1393126429889574E-4
+
+
+Iteration 44
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aTransmission = a4 : 2.4992329341748807
+aTransmission != a4 : -4.424476892282573E-4
+aTransmission is missing : 2.1152108726885162E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aTransmission = a4 : -2.4992329341748802
+aTransmission != a4 : 4.4244768922839056E-4
+aTransmission is missing : -2.11521087268761E-4
+
+
+Iteration 45
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a71 : -0.6030042030996084
+aModel != a71 : 0.0027522333906370524
+aModel is missing : 1.3157898564939387E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a71 : 0.6030042030996082
+aModel != a71 : -0.0027522333906370216
+aModel is missing : -1.3157898564905319E-4
+
+
+Iteration 46
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.155765 : -0.030220386623074448
+VehBCost > 0.155765 : 0.05370349332782473
+VehBCost is missing : 1.8269019902412213E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.155765 : 0.03022038662307446
+VehBCost > 0.155765 : -0.05370349332782493
+VehBCost is missing : -1.8269019902415932E-4
+
+
+Iteration 47
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRCurrentAuctionAveragePrice <= 0.11338999999999999 : 0.07154571476015463
+MMRCurrentAuctionAveragePrice > 0.11338999999999999 : -0.03208619379948767
+MMRCurrentAuctionAveragePrice is missing : 6.624040336489389E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRCurrentAuctionAveragePrice <= 0.11338999999999999 : -0.07154571476015464
+MMRCurrentAuctionAveragePrice > 0.11338999999999999 : 0.03208619379948919
+MMRCurrentAuctionAveragePrice is missing : -6.624040336479049E-4
+
+
+Iteration 48
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.38888500000000004 : 0.07223791869647785
+VehicleAge > 0.38888500000000004 : -0.025892241793004766
+VehicleAge is missing : -6.352362250884594E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.38888500000000004 : -0.07223791869647775
+VehicleAge > 0.38888500000000004 : 0.025892241793004995
+VehicleAge is missing : 6.352362250886474E-4
+
+
+Iteration 49
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : -0.04866790399834306
+VehicleAge > 0.5 : 0.041657560811508496
+VehicleAge is missing : 6.541186512115356E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : 0.04866790399834343
+VehicleAge > 0.5 : -0.04165756081150858
+VehicleAge is missing : -6.541186512113903E-4
+
+
+Iteration 50
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.8333349999999999 : 0.010625864507368155
+VehicleAge > 0.8333349999999999 : -0.15840523882222585
+VehicleAge is missing : -6.454724919672245E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.8333349999999999 : -0.010625864507368297
+VehicleAge > 0.8333349999999999 : 0.15840523882222585
+VehicleAge is missing : 6.4547249196712E-4
+
+
+Iteration 51
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a33 : -1.6694206397490443
+aVNST != a33 : 0.0017138206987729286
+aVNST is missing : 7.389192498861676E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a33 : 1.669420639749044
+aVNST != a33 : -0.0017138206987728371
+aVNST is missing : -7.389192498861312E-4
+
+
+Iteration 52
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a351 : -1.1201898841340863
+aSubModel != a351 : 0.0015086161953326517
+aSubModel is missing : 1.470796538822358E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a351 : 1.1201898841340863
+aSubModel != a351 : -0.0015086161953326304
+aSubModel is missing : -1.470796538821321E-4
+
+
+Iteration 53
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a16 : -0.9241873928096269
+aVNZIP1 != a16 : 0.0017495474968031795
+aVNZIP1 is missing : 1.3306254675999265E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a16 : 0.9241873928096273
+aVNZIP1 != a16 : -0.001749547496803196
+aVNZIP1 is missing : -1.3306254675996847E-4
+
+
+Iteration 54
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a591 : -2.8464722505130373
+aSubModel != a591 : 6.90477207762143E-4
+aSubModel is missing : 1.6580123149928492E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a591 : 2.8464722505130373
+aSubModel != a591 : -6.904772077621676E-4
+aSubModel is missing : -1.658012314991302E-4
+
+
+Iteration 55
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a51 : -0.5081292670265325
+aSubModel != a51 : 0.002880982122018769
+aSubModel is missing : 3.263002138956929E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a51 : 0.5081292670265326
+aSubModel != a51 : -0.002880982122018735
+aSubModel is missing : -3.2630021389719285E-5
+
+
+Iteration 56
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitonRetailCleanPrice <= 0.43184 : 0.0038037315486978817
+MMRAcquisitonRetailCleanPrice > 0.43184 : -0.3675890639553706
+MMRAcquisitonRetailCleanPrice is missing : 6.652113089416889E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitonRetailCleanPrice <= 0.43184 : -0.003803731548697677
+MMRAcquisitonRetailCleanPrice > 0.43184 : 0.3675890639553719
+MMRAcquisitonRetailCleanPrice is missing : -6.652113089395554E-5
+
+
+Iteration 57
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a147 : 0.4572091408930209
+aVNZIP1 != a147 : -0.002875284108262252
+aVNZIP1 is missing : 1.452123722484161E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a147 : -0.4572091408930207
+aVNZIP1 != a147 : 0.002875284108262308
+aVNZIP1 is missing : -1.4521237224836755E-4
+
+
+Iteration 58
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a1 : -0.005622664393505073
+aPRIMEUNIT != a1 : 0.2334600661667815
+aPRIMEUNIT is missing : 2.813699749880414E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a1 : 0.005622664393505162
+aPRIMEUNIT != a1 : -0.23346006616678172
+aPRIMEUNIT is missing : -2.8136997498797936E-4
+
+
+Iteration 59
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a673 : -2.4519019268418294
+aModel != a673 : 0.0011137984183742903
+aModel is missing : 5.55557686504527E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a673 : 2.4519019268418294
+aModel != a673 : -0.0011137984183743103
+aModel is missing : -5.555576865045095E-4
+
+
+Iteration 60
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a109 : 0.6572442805533592
+aVNZIP1 != a109 : -0.001926622361222011
+aVNZIP1 is missing : 1.1723542947185582E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a109 : -0.657244280553359
+aVNZIP1 != a109 : 0.0019266223612220395
+aVNZIP1 is missing : -1.1723542947205174E-4
+
+
+Iteration 61
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a38 : -0.7856210998348175
+aModel != a38 : 0.0019969200968559427
+aModel is missing : 3.0497599859903736E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a38 : 0.7856210998348179
+aModel != a38 : -0.0019969200968559414
+aModel is missing : -3.0497599859890596E-4
+
+
+Iteration 62
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a94 : 0.5781619138644356
+aModel != a94 : -0.0021333960976589036
+aModel is missing : 1.5085370787835955E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a94 : -0.5781619138644355
+aModel != a94 : 0.002133396097658876
+aModel is missing : -1.5085370787826049E-4
+
+
+Iteration 63
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aTrim = a12 : 0.0989125540482341
+aTrim != a12 : -0.012453198027173734
+aTrim is missing : 2.3699598003860465E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aTrim = a12 : -0.09891255404823412
+aTrim != a12 : 0.0124531980271737
+aTrim is missing : -2.3699598003864387E-4
+
+
+Iteration 64
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aMake = a17 : 0.4035017503134613
+aMake != a17 : -0.0027268685525111357
+aMake is missing : 3.4872480756394005E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aMake = a17 : -0.4035017503134611
+aMake != a17 : 0.0027268685525111526
+aMake is missing : -3.487248075638793E-4
+
+
+Iteration 65
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a37 : 0.6880059559090094
+aVNST != a37 : -0.0015750574395793444
+aVNST is missing : 2.2043150244851497E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a37 : -0.6880059559090097
+aVNST != a37 : 0.0015750574395793399
+aVNST is missing : -2.2043150244852516E-4
+
+
+Iteration 66
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a663 : -1.6719056057186408
+aSubModel != a663 : 9.011416172083347E-4
+aSubModel is missing : 1.816167909145782E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a663 : 1.6719056057186408
+aSubModel != a663 : -9.011416172083532E-4
+aSubModel is missing : -1.8161679091461115E-4
+
+
+Iteration 67
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a40 : 0.9691438476498426
+aVNZIP1 != a40 : -0.0011105561759719505
+aVNZIP1 is missing : 1.1278962820575905E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNZIP1 = a40 : -0.9691438476498425
+aVNZIP1 != a40 : 0.0011105561759719956
+aVNZIP1 is missing : -1.1278962820578034E-4
+
+
+Iteration 68
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a259 : -1.788962624130464
+aSubModel != a259 : 8.25734521156164E-4
+aSubModel is missing : 1.6431935467246234E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a259 : 1.7889626241304637
+aSubModel != a259 : -8.257345211561948E-4
+aSubModel is missing : -1.643193546727569E-4
+
+
+Iteration 69
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a94 : 0.4013197271459314
+aSubModel != a94 : -0.0027869347304046877
+aSubModel is missing : 4.989129583637304E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a94 : -0.4013197271459306
+aSubModel != a94 : 0.0027869347304047666
+aSubModel is missing : -4.989129583634739E-5
+
+
+Iteration 70
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a127 : 0.6899594058862086
+aSubModel != a127 : -0.001376560665916929
+aSubModel is missing : 2.5687972661399256E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a127 : -0.6899594058862087
+aSubModel != a127 : 0.0013765606659169056
+aSubModel is missing : -2.568797266141357E-4
+
+
+Iteration 71
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a27 : -0.5417256790188922
+aSubModel != a27 : 0.0022283151210221465
+aSubModel is missing : 2.2762693721062685E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a27 : 0.5417256790188922
+aSubModel != a27 : -0.0022283151210221322
+aSubModel is missing : -2.2762693721076977E-4
+
+
+Iteration 72
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a538 : -1.8721786533892648
+aModel != a538 : 8.619007920532898E-4
+aModel is missing : 2.8865326379957E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a538 : 1.8721786533892644
+aModel != a538 : -8.619007920532023E-4
+aModel is missing : -2.886532637995022E-4
+
+
+Iteration 73
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a78 : 0.403605775536395
+aSubModel != a78 : -0.0025213058243241603
+aSubModel is missing : 1.1470152583636683E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a78 : -0.4036057755363942
+aSubModel != a78 : 0.0025213058243241378
+aSubModel is missing : -1.1470152583632148E-4
+
+
+Iteration 74
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.14658500000000002 : 0.054617199396659856
+MMRAcquisitionRetailAveragePrice > 0.14658500000000002 : -0.019711588648043524
+MMRAcquisitionRetailAveragePrice is missing : 1.5945379163846807E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.14658500000000002 : -0.054617199396659856
+MMRAcquisitionRetailAveragePrice > 0.14658500000000002 : 0.019711588648043555
+MMRAcquisitionRetailAveragePrice is missing : -1.5945379163842663E-4
+
+
+Iteration 75
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.09867200000000001 : -0.09082767377969667
+VehBCost > 0.09867200000000001 : 0.017136995553229478
+VehBCost is missing : -2.931942331104178E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.09867200000000001 : 0.0908276737796967
+VehBCost > 0.09867200000000001 : -0.01713699555322952
+VehBCost is missing : 2.931942331104082E-4
+
+
+Iteration 76
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionAuctionCleanPrice <= 0.059619 : -0.2748286823272345
+MMRAcquisitionAuctionCleanPrice > 0.059619 : 0.0045851599503782545
+MMRAcquisitionAuctionCleanPrice is missing : 7.840885002440145E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionAuctionCleanPrice <= 0.059619 : 0.27482868232723434
+MMRAcquisitionAuctionCleanPrice > 0.059619 : -0.00458515995037828
+MMRAcquisitionAuctionCleanPrice is missing : -7.84088500244037E-4
+
+
+Iteration 77
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.086502 : 0.1398312914875743
+MMRAcquisitionRetailAveragePrice > 0.086502 : -0.00846296554581707
+MMRAcquisitionRetailAveragePrice is missing : 3.437029945011337E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.086502 : -0.13983129148757403
+MMRAcquisitionRetailAveragePrice > 0.086502 : 0.008462965545817052
+MMRAcquisitionRetailAveragePrice is missing : -3.4370299450113415E-4
+
+
+Iteration 78
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a20 : 0.6412339922346308
+aVNST != a20 : -0.0017904932009770254
+aVNST is missing : -1.8692241099305728E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a20 : -0.6412339922346311
+aVNST != a20 : 0.0017904932009771316
+aVNST is missing : 1.8692241099310767E-4
+
+
+Iteration 79
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a445 : -1.5481245038497256
+aModel != a445 : 8.38985703410605E-4
+aModel is missing : 1.8369351017431744E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a445 : 1.5481245038497258
+aModel != a445 : -8.389857034106021E-4
+aModel is missing : -1.8369351017429503E-4
+
+
+Iteration 80
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a208 : -0.7451126764379108
+aModel != a208 : 0.0014236936382993938
+aModel is missing : 7.884086969783961E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a208 : 0.7451126764379107
+aModel != a208 : -0.0014236936382994196
+aModel is missing : -7.884086969785861E-5
+
+
+Iteration 81
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a272 : -1.5230502546689666
+aModel != a272 : 7.264673863056125E-4
+aModel is missing : 7.518529517640034E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a272 : 1.5230502546689668
+aModel != a272 : -7.264673863056206E-4
+aModel is missing : -7.518529517638199E-5
+
+
+Iteration 82
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a322 : -1.1032293452934758
+aModel != a322 : 9.565359829544293E-4
+aModel is missing : 6.533080820259872E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a322 : 1.1032293452934756
+aModel != a322 : -9.56535982954441E-4
+aModel is missing : -6.533080820260502E-5
+
+
+Iteration 83
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a145 : -0.9071133907420624
+aModel != a145 : 0.0011312661237794315
+aModel is missing : 5.5478821598093046E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a145 : 0.9071133907420628
+aModel != a145 : -0.0011312661237794007
+aModel is missing : -5.547882159792789E-5
+
+
+Iteration 84
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSize = a9 : -0.2711729689890009
+aSize != a9 : 0.003721332866902391
+aSize is missing : 1.1212115885153289E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSize = a9 : 0.2711729689890007
+aSize != a9 : -0.003721332866902424
+aSize is missing : -1.1212115885151219E-4
+
+
+Iteration 85
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a209 : -0.8065048932192227
+aModel != a209 : 0.0013860354387267562
+aModel is missing : 1.9826781005810855E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a209 : 0.8065048932192227
+aModel != a209 : -0.0013860354387267633
+aModel is missing : -1.9826781005810498E-4
+
+
+Iteration 86
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a315 : -1.0150215563319447
+aModel != a315 : 0.0010502685555535626
+aModel is missing : 1.1758319921477991E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a315 : 1.0150215563319445
+aModel != a315 : -0.0010502685555535281
+aModel is missing : -1.1758319921470439E-4
+
+
+Iteration 87
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.178085 : -0.01539065984146774
+VehBCost > 0.178085 : 0.06832327651855286
+VehBCost is missing : 7.991123326072114E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.178085 : 0.015390659841467577
+VehBCost > 0.178085 : -0.06832327651855218
+VehBCost is missing : -7.99112332607079E-5
+
+
+Iteration 88
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.22795500000000002 : 0.02581691031266709
+MMRAcquisitionRetailAveragePrice > 0.22795500000000002 : -0.04509081881296023
+MMRAcquisitionRetailAveragePrice is missing : 3.4876344030897036E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+MMRAcquisitionRetailAveragePrice <= 0.22795500000000002 : -0.025816910312667387
+MMRAcquisitionRetailAveragePrice > 0.22795500000000002 : 0.045090818812961085
+MMRAcquisitionRetailAveragePrice is missing : -3.487634403088514E-4
+
+
+Iteration 89
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.137735 : -0.0352277263086623
+VehBCost > 0.137735 : 0.0361637825204829
+VehBCost is missing : -2.321711443078002E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.137735 : 0.0352277263086623
+VehBCost > 0.137735 : -0.03616378252048273
+VehBCost is missing : 2.3217114430786967E-4
+
+
+Iteration 90
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSize = a6 : -0.08630713778042752
+aSize != a6 : 0.012928352403754596
+aSize is missing : 6.103241184306253E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSize = a6 : 0.08630713778042753
+aSize != a6 : -0.012928352403754537
+aSize is missing : -6.103241184305966E-4
+
+
+Iteration 91
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.9843 : 5.059992786419839E-4
+VehOdo > 0.9843 : -2.9999999971587927
+VehOdo is missing : 1.9111005702203207E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.9843 : -5.059992786420421E-4
+VehOdo > 0.9843 : 2.999999997151642
+VehOdo is missing : -1.9111005702207633E-4
+
+
+Iteration 92
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a298 : 0.46891408736076645
+aModel != a298 : -0.0019872784018410044
+aModel is missing : 1.0784672395574888E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a298 : -0.46891408736076656
+aModel != a298 : 0.0019872784018410395
+aModel is missing : -1.0784672395552396E-5
+
+
+Iteration 93
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a189 : -0.8878298057557306
+aSubModel != a189 : 0.0011783760451708838
+aSubModel is missing : 1.3177590801671603E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a189 : 0.8878298057557305
+aSubModel != a189 : -0.001178376045170916
+aSubModel is missing : -1.317759080167577E-4
+
+
+Iteration 94
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a306 : 1.0200789847769587
+aSubModel != a306 : -8.51534065726695E-4
+aSubModel is missing : 5.436367331344978E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a306 : -1.0200789847769585
+aSubModel != a306 : 8.515340657266529E-4
+aSubModel is missing : -5.4363673313467875E-5
+
+
+Iteration 95
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a22 : 0.6378606171991574
+aSubModel != a22 : -0.001286465696374058
+aSubModel is missing : 1.47952335244085E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a22 : -0.6378606171991571
+aSubModel != a22 : 0.0012864656963740711
+aSubModel is missing : -1.4795233524403476E-4
+
+
+Iteration 96
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a81 : -0.528828542921397
+aModel != a81 : 0.0019222972585744313
+aModel is missing : 2.027332614331108E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a81 : 0.5288285429213967
+aModel != a81 : -0.0019222972585743769
+aModel is missing : -2.027332614331063E-4
+
+
+Iteration 97
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a436 : 1.469444036739893
+aModel != a436 : -5.82460351367146E-4
+aModel is missing : 3.355074970540096E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a436 : -1.4694440367398929
+aModel != a436 : 5.824603513671384E-4
+aModel is missing : -3.355074970542092E-5
+
+
+Iteration 98
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a393 : -1.611403733112459
+aModel != a393 : 6.772954710934249E-4
+aModel is missing : 1.3806914150664188E-4
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a393 : 1.6114037331124593
+aModel != a393 : -6.772954710934334E-4
+aModel is missing : -1.3806914150665592E-4
+
+
+Iteration 99
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a356 : -2.093308625335606
+aSubModel != a356 : 4.175564327307309E-4
+aSubModel is missing : 2.2824073119885015E-5
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aSubModel = a356 : 2.093308625335606
+aSubModel != a356 : -4.1755643273072216E-4
+aSubModel is missing : -2.282407311996584E-5
+
+
+Iteration 100
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a659 : -2.9118978421003523
+aModel != a659 : 2.914115719165032E-4
+aModel is missing : 9.53994606388946E-6
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a659 : 2.9118978421003527
+aModel != a659 : -2.914115719165005E-4
+aModel is missing : -9.53994606387044E-6
+
+Number of performed iterations: 100
+
+
+Time taken to build model: 241.97 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65425               89.6454 %
+Incorrectly Classified Instances      7557               10.3546 %
+Kappa statistic                          0.3257
+Mean absolute error                      0.1734
+Root mean squared error                  0.2945
+Relative absolute error                 80.369  %
+Root relative squared error             89.6672 %
+Coverage of cases (0.95 level)          99.1244 %
+Mean rel. region size (0.95 level)      87.3339 %
+Total Number of Instances            72982     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.988    0.756    0.903      0.988   0.944      0.386  0.765     0.951     FALSE
+                 0.244    0.012    0.74       0.244   0.367      0.386  0.765     0.448     TRUE
+Weighted Avg.    0.896    0.665    0.883      0.896   0.873      0.386  0.765     0.889
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63236   770 |     a = FALSE
+  6787  2189 |     b = TRUE
+

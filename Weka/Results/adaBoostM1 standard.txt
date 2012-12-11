@@ -1,0 +1,306 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : FALSE
+WheelTypeID > 0.875 : TRUE
+WheelTypeID is missing : FALSE
+
+Class distributions
+
+WheelTypeID <= 0.875
+FALSE	TRUE	
+0.9034563763195966	0.09654362368040337	
+WheelTypeID > 0.875
+FALSE	TRUE	
+0.29441464184285265	0.7055853581571474	
+WheelTypeID is missing
+FALSE	TRUE	
+0.8770107697788496	0.12298923022115042	
+
+
+Weight: 2.14
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : FALSE
+VehicleAge > 0.5 : TRUE
+VehicleAge is missing : FALSE
+
+Class distributions
+
+VehicleAge <= 0.5
+FALSE	TRUE	
+0.6505427212610401	0.34945727873895993	
+VehicleAge > 0.5
+FALSE	TRUE	
+0.422275802131608	0.577724197868392	
+VehicleAge is missing
+FALSE	TRUE	
+0.543678981270181	0.45632101872981895	
+
+
+Weight: 0.47
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : FALSE
+WheelTypeID > 0.875 : FALSE
+WheelTypeID is missing : FALSE
+
+Class distributions
+
+WheelTypeID <= 0.875
+FALSE	TRUE	
+0.5188939645642576	0.48110603543574243	
+WheelTypeID > 0.875
+FALSE	TRUE	
+0.768326641869569	0.23167335813043105	
+WheelTypeID is missing
+FALSE	TRUE	
+0.5383413668516879	0.46165863314831207	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : TRUE
+WheelTypeID > 0.875 : FALSE
+WheelTypeID is missing : TRUE
+
+Class distributions
+
+WheelTypeID <= 0.875
+FALSE	TRUE	
+0.48049608156465684	0.519503918435343	
+WheelTypeID > 0.875
+FALSE	TRUE	
+0.7398558320151646	0.2601441679848355	
+WheelTypeID is missing
+FALSE	TRUE	
+0.49999999999972683	0.5000000000002731	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : FALSE
+BYRNO > 0.999845 : FALSE
+BYRNO is missing : FALSE
+
+Class distributions
+
+BYRNO <= 0.999845
+FALSE	TRUE	
+0.5163393284333669	0.48366067156663295	
+BYRNO > 0.999845
+FALSE	TRUE	
+0.7507480385933513	0.24925196140664868	
+BYRNO is missing
+FALSE	TRUE	
+0.5308092002243886	0.4691907997756115	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : TRUE
+BYRNO > 0.999845 : FALSE
+BYRNO is missing : FALSE
+
+Class distributions
+
+BYRNO <= 0.999845
+FALSE	TRUE	
+0.4855009327924525	0.5144990672075473	
+BYRNO > 0.999845
+FALSE	TRUE	
+0.7269519687849718	0.2730480312150283	
+BYRNO is missing
+FALSE	TRUE	
+0.5000000000005332	0.4999999999994667	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.131795 : TRUE
+VehBCost > 0.131795 : FALSE
+VehBCost is missing : FALSE
+
+Class distributions
+
+VehBCost <= 0.131795
+FALSE	TRUE	
+0.46036338729346327	0.5396366127065367	
+VehBCost > 0.131795
+FALSE	TRUE	
+0.5707685350798394	0.4292314649201607	
+VehBCost is missing
+FALSE	TRUE	
+0.5240547619087864	0.4759452380912136	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : FALSE
+aPRIMEUNIT != a2 : FALSE
+aPRIMEUNIT is missing : FALSE
+
+Class distributions
+
+aPRIMEUNIT = a2
+FALSE	TRUE	
+0.7756040465043801	0.22439595349561983	
+aPRIMEUNIT != a2
+FALSE	TRUE	
+0.5059842360615825	0.4940157639384176	
+aPRIMEUNIT is missing
+FALSE	TRUE	
+0.5154022518137376	0.48459774818626244	
+
+
+Weight: 0.06
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : FALSE
+aPRIMEUNIT != a2 : TRUE
+aPRIMEUNIT is missing : FALSE
+
+Class distributions
+
+aPRIMEUNIT = a2
+FALSE	TRUE	
+0.7646962555034642	0.23530374449653582	
+aPRIMEUNIT != a2
+FALSE	TRUE	
+0.4905785107064089	0.509421489293591	
+aPRIMEUNIT is missing
+FALSE	TRUE	
+0.5000000000000261	0.49999999999997385	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : FALSE
+WheelTypeID > 0.875 : FALSE
+WheelTypeID is missing : FALSE
+
+Class distributions
+
+WheelTypeID <= 0.875
+FALSE	TRUE	
+0.5029138381580611	0.49708616184193877	
+WheelTypeID > 0.875
+FALSE	TRUE	
+0.6964561286717083	0.30354387132829175	
+WheelTypeID is missing
+FALSE	TRUE	
+0.5169670542503327	0.4830329457496672	
+
+
+Weight: 0.07
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 16.9 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65309               89.4864 %
+Incorrectly Classified Instances      7673               10.5136 %
+Kappa statistic                          0.3249
+Mean absolute error                      0.1761
+Root mean squared error                  0.3012
+Relative absolute error                 81.6242 %
+Root relative squared error             91.6992 %
+Coverage of cases (0.95 level)          99.8219 %
+Mean rel. region size (0.95 level)      96.1018 %
+Total Number of Instances            72982     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.985    0.751    0.903      0.985   0.943      0.378  0.729     0.94      FALSE
+                 0.249    0.015    0.706      0.249   0.368      0.378  0.729     0.383     TRUE
+Weighted Avg.    0.895    0.66     0.879      0.895   0.872      0.378  0.729     0.871
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63073   933 |     a = FALSE
+  6740  2236 |     b = TRUE
+

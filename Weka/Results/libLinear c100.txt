@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LibLINEAR -S 1 -C 1000.0 -E 0.01 -B 1.0
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibLINEAR wrapper
+
+Time taken to build model: 55.51 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       57733               79.1058 %
+Incorrectly Classified Instances     15249               20.8942 %
+Kappa statistic                          0.1228
+Mean absolute error                      0.2089
+Root mean squared error                  0.4571
+Relative absolute error                 96.8515 %
+Root relative squared error            139.18   %
+Coverage of cases (0.95 level)          79.1058 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances            72982     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.864    0.728    0.894      0.864   0.879      0.124  0.568     0.892     FALSE
+                 0.272    0.136    0.219      0.272   0.242      0.124  0.568     0.149     TRUE
+Weighted Avg.    0.791    0.655    0.811      0.791   0.801      0.124  0.568     0.801
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 55294  8712 |     a = FALSE
+  6537  2439 |     b = TRUE
+

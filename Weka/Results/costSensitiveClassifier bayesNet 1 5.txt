@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 1.0; 5.0 0.0]" -S 1 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Classifier Model
+Bayes Network Classifier
+not using ADTree
+#attributes=32 #classindex=0
+Network structure (nodes followed by parents)
+IsBadBuy(2): 
+VehYear(5): IsBadBuy 
+VehicleAge(7): IsBadBuy 
+WheelTypeID(3): IsBadBuy 
+VehOdo(5): IsBadBuy 
+MMRAcquisitionAuctionAveragePrice(7): IsBadBuy 
+MMRAcquisitionAuctionCleanPrice(7): IsBadBuy 
+MMRAcquisitionRetailAveragePrice(8): IsBadBuy 
+MMRAcquisitonRetailCleanPrice(9): IsBadBuy 
+MMRCurrentAuctionAveragePrice(8): IsBadBuy 
+MMRCurrentAuctionCleanPrice(7): IsBadBuy 
+MMRCurrentRetailAveragePrice(8): IsBadBuy 
+MMRCurrentRetailCleanPrice(5): IsBadBuy 
+BYRNO(3): IsBadBuy 
+VehBCost(6): IsBadBuy 
+IsOnlineSale(1): IsBadBuy 
+WarrantyCost(8): IsBadBuy 
+Auction(3): IsBadBuy 
+Make(33): IsBadBuy 
+Model(1063): IsBadBuy 
+Trim(130): IsBadBuy 
+SubModel(864): IsBadBuy 
+Color(17): IsBadBuy 
+Transmission(5): IsBadBuy 
+WheelType(4): IsBadBuy 
+Nationality(5): IsBadBuy 
+Size(13): IsBadBuy 
+TopThreeAmericanName(5): IsBadBuy 
+PRIMEUNIT(3): IsBadBuy 
+AUCGUART(3): IsBadBuy 
+VNZIP1(153): IsBadBuy 
+VNST(37): IsBadBuy 
+LogScore Bayes: -3778620.5180609124
+LogScore BDeu: -3820656.295459443
+LogScore MDL: -3812783.0277798166
+LogScore ENTROPY: -3785857.4805025286
+LogScore AIC: -3790666.4805025286
+
+
+Cost Matrix
+ 0 1
+ 5 0
+
+
+Time taken to build model: 3.66 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       50477               69.1627 %
+Incorrectly Classified Instances     22506               30.8373 %
+Kappa statistic                          0.1799
+Mean absolute error                      0.3181
+Root mean squared error                  0.5087
+Relative absolute error                147.4618 %
+Root relative squared error            154.9031 %
+Coverage of cases (0.95 level)          83.9867 %
+Mean rel. region size (0.95 level)      67.5459 %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.703    0.389    0.928      0.703   0.8        0.218  0.721     0.943     false
+                 0.611    0.297    0.224      0.611   0.327      0.218  0.721     0.308     true
+Weighted Avg.    0.692    0.378    0.841      0.692   0.742      0.218  0.721     0.865
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 44997 19010 |     a = false
+  3496  5480 |     b = true
+

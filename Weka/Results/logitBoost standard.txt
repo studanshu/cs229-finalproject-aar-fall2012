@@ -1,0 +1,305 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -F 0 -R 1 -L -1.7976931348623157E308 -H 1.0 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : 1.6138255052783865
+WheelTypeID > 0.875 : -0.8223414326285895
+WheelTypeID is missing : 1.5080430791153983
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : -1.6138255052783865
+WheelTypeID > 0.875 : 0.8223414326285895
+WheelTypeID is missing : -1.5080430791153983
+
+
+Iteration 2
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : 0.6682210382991589
+VehicleAge > 0.5 : 0.0769869048828071
+VehicleAge is missing : 0.4264880856929632
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : -0.6682210382991589
+VehicleAge > 0.5 : -0.0769869048828071
+VehicleAge is missing : -0.4264880856929632
+
+
+Iteration 3
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.120905 : -0.19400535906094782
+VehBCost > 0.120905 : 0.2573647816790119
+VehBCost is missing : 0.12148039435248642
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.120905 : 0.19400535906094782
+VehBCost > 0.120905 : -0.25736478167901194
+VehBCost is missing : -0.12148039435248645
+
+
+Iteration 4
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a3 : -0.5488717412314663
+aWheelType != a3 : 0.08549521105511229
+aWheelType is missing : 0.02946850894349478
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aWheelType = a3 : 0.5488717412314663
+aWheelType != a3 : -0.08549521105511229
+aWheelType is missing : -0.02946850894349478
+
+
+Iteration 5
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : -0.031940423525066736
+BYRNO > 0.999845 : 0.6200864562218109
+BYRNO is missing : 0.012095001132895142
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+BYRNO <= 0.999845 : 0.031940423525066736
+BYRNO > 0.999845 : -0.6200864562218108
+BYRNO is missing : -0.012095001132895135
+
+
+Iteration 6
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : 0.7327017244451293
+aPRIMEUNIT != a2 : -0.02683192287303539
+aPRIMEUNIT is missing : 0.006065409002445923
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aPRIMEUNIT = a2 : -0.7327017244451294
+aPRIMEUNIT != a2 : 0.026831922873035437
+aPRIMEUNIT is missing : -0.006065409002445898
+
+
+Iteration 7
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.722225 : 0.06663656069151405
+VehicleAge > 0.722225 : -0.35281313558463145
+VehicleAge is missing : 0.0050164573036889405
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.722225 : -0.06663656069151405
+VehicleAge > 0.722225 : 0.35281313558463145
+VehicleAge is missing : -0.00501645730368894
+
+
+Iteration 8
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.65236 : 0.10188190024763848
+VehOdo > 0.65236 : -0.09772804200966043
+VehOdo is missing : 0.004800044809987458
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+VehOdo <= 0.65236 : -0.10188190024763853
+VehOdo > 0.65236 : 0.09772804200966027
+VehOdo is missing : -0.004800044809987557
+
+
+Iteration 9
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aModel = a60 : -0.5567262981817538
+aModel != a60 : 0.022022680563519647
+aModel is missing : 0.002588421840536816
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aModel = a60 : 0.5567262981817538
+aModel != a60 : -0.02202268056351971
+aModel is missing : -0.002588421840536819
+
+
+Iteration 10
+	Class 1 (isBadBuy=FALSE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a11 : -0.19297143295053965
+aVNST != a11 : 0.04799639237582959
+aVNST is missing : 0.0018305843916418072
+
+
+	Class 2 (isBadBuy=TRUE)
+
+Decision Stump
+
+Classifications
+
+aVNST = a11 : 0.19297143295053967
+aVNST != a11 : -0.047996392375829554
+aVNST is missing : -0.0018305843916417558
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 28.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65268               89.4303 %
+Incorrectly Classified Instances      7714               10.5697 %
+Kappa statistic                          0.3137
+Mean absolute error                      0.179 
+Root mean squared error                  0.2983
+Relative absolute error                 82.9927 %
+Root relative squared error             90.814  %
+Coverage of cases (0.95 level)          99.8    %
+Mean rel. region size (0.95 level)      95.4311 %
+Total Number of Instances            72982     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.986    0.762    0.902      0.986   0.942      0.37   0.746     0.944     FALSE
+                 0.238    0.014    0.71       0.238   0.356      0.37   0.746     0.415     TRUE
+Weighted Avg.    0.894    0.67     0.879      0.894   0.87       0.37   0.746     0.879
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63136   870 |     a = FALSE
+  6844  2132 |     b = TRUE
+

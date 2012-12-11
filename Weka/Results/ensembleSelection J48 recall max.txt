@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.EnsembleSelection -W C:\Users\Albert\Ensemble-2 -P recall -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+4 weka.classifiers.trees.J48 -S -C 0.25 -B -M 2
+1 weka.classifiers.trees.J48 -S -C 0.25 -B -M 2 -A
+6 weka.classifiers.trees.J48 -S -C 0.5 -B -M 2
+3 weka.classifiers.trees.J48 -S -C 0.5 -B -M 2 -A
+21 weka.classifiers.trees.J48 -U -B -M 2
+17 weka.classifiers.trees.J48 -U -B -M 2 -A
+5 weka.classifiers.trees.J48 -U -M 2
+24 weka.classifiers.trees.J48 -U -M 2 -A
+
+
+Time taken to build model: 2463.75 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 22.4 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       21755               87.6723 %
+Incorrectly Classified Instances      3059               12.3277 %
+Kappa statistic                          0.2927
+Mean absolute error                      0.1974
+Root mean squared error                  0.3129
+Relative absolute error                 92.094  %
+Root relative squared error             96.5218 %
+Coverage of cases (0.95 level)          99.1134 %
+Mean rel. region size (0.95 level)      89.7115 %
+Total Number of Instances            24814     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.957    0.714    0.908      0.957   0.932      0.304  0.71      0.94      FALSE
+                 0.286    0.043    0.472      0.286   0.356      0.304  0.71      0.398     TRUE
+Weighted Avg.    0.877    0.634    0.856      0.877   0.863      0.304  0.71      0.875
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20908   947 |     a = FALSE
+  2112   847 |     b = TRUE
+

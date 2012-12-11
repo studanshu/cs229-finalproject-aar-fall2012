@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 2.0; 1.0 0.0]" -M -S 1 -W weka.classifiers.trees.DecisionStump
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using minimized expected misclasification cost
+
+weka.classifiers.trees.DecisionStump 
+
+Classifier Model
+Decision Stump
+
+Classifications
+
+WheelTypeID <= 0.875 : false
+WheelTypeID > 0.875 : true
+WheelTypeID is missing : false
+
+Class distributions
+
+WheelTypeID <= 0.875
+false	true	
+0.9034577591887014	0.0965422408112986	
+WheelTypeID > 0.875
+false	true	
+0.29441464184285265	0.7055853581571474	
+WheelTypeID is missing
+false	true	
+0.8770124549552636	0.12298754504473644	
+
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 1.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65310               89.4866 %
+Incorrectly Classified Instances      7673               10.5134 %
+Kappa statistic                          0.3249
+Mean absolute error                      0.1051
+Root mean squared error                  0.3242
+Relative absolute error                 48.7337 %
+Root relative squared error             98.7275 %
+Coverage of cases (0.95 level)          89.4866 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.985    0.751    0.903      0.985   0.943      0.378  0.617     0.903     false
+                 0.249    0.015    0.706      0.249   0.368      0.378  0.617     0.268     true
+Weighted Avg.    0.895    0.66     0.879      0.895   0.872      0.378  0.617     0.825
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63074   933 |     a = false
+  6740  2236 |     b = true
+

@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 1.0; 5.0 0.0]" -S 1 -W weka.classifiers.functions.LibLINEAR -- -S 1 -C 1.0 -E 0.01 -B 1.0
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.functions.LibLINEAR -S 1 -C 1.0 -E 0.01 -B 1.0
+
+Classifier Model
+LibLINEAR wrapper
+
+Cost Matrix
+ 0 1
+ 5 0
+
+
+Time taken to build model: 49.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       51076               69.9834 %
+Incorrectly Classified Instances     21907               30.0166 %
+Kappa statistic                          0.1145
+Mean absolute error                      0.3002
+Root mean squared error                  0.5479
+Relative absolute error                139.1384 %
+Root relative squared error            166.8196 %
+Coverage of cases (0.95 level)          69.9834 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.736    0.556    0.904      0.736   0.811      0.131  0.59      0.897     false
+                 0.444    0.264    0.191      0.444   0.267      0.131  0.59      0.153     true
+Weighted Avg.    0.7      0.52     0.816      0.7     0.744      0.131  0.59      0.806
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 47088 16919 |     a = false
+  4988  3988 |     b = true
+

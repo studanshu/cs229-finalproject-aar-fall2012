@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.EnsembleSelection -W C:\Users\Albert\Ensemble-4 -P recall -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72982
+Attributes:   32
+              isBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              aAuction
+              aMake
+              aModel
+              aTrim
+              aSubModel
+              aColor
+              aTransmission
+              aWheelType
+              aNationality
+              aSize
+              aTopThreeAmericanName
+              aPRIMEUNIT
+              aAUCGUART
+              aVNZIP1
+              aVNST
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+5 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -R -P 1 -mbc -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+1 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -mbc -S MDL -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+5 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -R -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+10 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -R -mbc -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+6 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+58 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+
+Time taken to build model: 233.28 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 8.35 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       18866               76.0297 %
+Incorrectly Classified Instances      5948               23.9703 %
+Kappa statistic                          0.2119
+Mean absolute error                      0.2488
+Root mean squared error                  0.4375
+Relative absolute error                116.0511 %
+Root relative squared error            134.9858 %
+Coverage of cases (0.95 level)          90.4771 %
+Mean rel. region size (0.95 level)      66.7365 %
+Total Number of Instances            24814     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.794    0.487    0.923      0.794   0.854      0.232  0.726     0.946     FALSE
+                 0.513    0.206    0.252      0.513   0.338      0.232  0.726     0.345     TRUE
+Weighted Avg.    0.76     0.454    0.843      0.76    0.792      0.232  0.726     0.874
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 17348  4507 |     a = FALSE
+  1441  1518 |     b = TRUE
+

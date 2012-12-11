@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable          false
+=======================
+pCluster_0_0     0.2511
+pCluster_0_1    -0.2511
+Intercept        2.0031
+
+
+Odds Ratios...
+                  Class
+Variable          false
+=======================
+pCluster_0_0     1.2855
+pCluster_0_1     0.7779
+
+
+Time taken to build model: 13.38 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       64007               87.7012 %
+Incorrectly Classified Instances      8976               12.2988 %
+Kappa statistic                          0     
+Mean absolute error                      0.2155
+Root mean squared error                  0.3282
+Relative absolute error                 99.8756 %
+Root relative squared error             99.923  %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)     100      %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 1        1        0.877      1       0.934      ?       0.534     0.889     false
+                 0        0        0          0       0          ?       0.534     0.136     true
+Weighted Avg.    0.877    0.877    0.769      0.877   0.82       0      0.534     0.797
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 64007     0 |     a = false
+  8976     0 |     b = true
+

@@ -1,0 +1,2596 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE object
+[
+   <!ELEMENT object (#PCDATA|object)*>
+   <!ATTLIST object name      CDATA #REQUIRED>
+   <!ATTLIST object class     CDATA #REQUIRED>
+   <!ATTLIST object primitive CDATA "no">
+   <!ATTLIST object array     CDATA "no">   <!-- the dimensions of the array; no=0, yes=1 -->
+   <!ATTLIST object null      CDATA "no">
+   <!ATTLIST object version   CDATA "3.7.7">
+]
+>
+
+<object class="java.util.Vector" name="__root__" version="3.7.7">
+   <object class="weka.classifiers.bayes.BayesNet" name="0">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="1">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="2">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="3">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="4">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="5">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="6">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="7">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="8">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="9">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="10">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">AIC</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="11">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="12">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BDeu</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="13">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">ENTROPY</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="14">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">MDL</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="15">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="16">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="17">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="18">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="19">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="20">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="21">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="22">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="23">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="24">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="25">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">AIC</object>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="26">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">BAYES</object>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="27">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">BDeu</object>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="28">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">ENTROPY</object>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="29">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-N</object>
+         <object class="java.lang.String" name="6">-P</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">MDL</object>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="30">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="31">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="32">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="33">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="34">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="35">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="36">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="37">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="38">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="39">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.HillClimber</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-R</object>
+         <object class="java.lang.String" name="5">-P</object>
+         <object class="java.lang.String" name="6">1</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+         <object class="java.lang.String" name="16">-E</object>
+         <object class="java.lang.String" name="17">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="18">--</object>
+         <object class="java.lang.String" name="19">-A</object>
+         <object class="java.lang.String" name="20">0.5</object>
+         <object class="java.lang.String" name="21"/>
+         <object class="java.lang.String" name="22"/>
+         <object class="java.lang.String" name="23"/>
+         <object class="java.lang.String" name="24"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="40">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="41">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="42">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="43">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="44">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="45">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">AIC</object>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="46">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">BAYES</object>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="47">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">BDeu</object>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="48">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">ENTROPY</object>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="49">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-R</object>
+         <object class="java.lang.String" name="8">-mbc</object>
+         <object class="java.lang.String" name="9">-S</object>
+         <object class="java.lang.String" name="10">MDL</object>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="50">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="51">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="52">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="53">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="54">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="55">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="56">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="57">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="58">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="59">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-N</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="60">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="61">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="62">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="63">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="64">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="65">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">AIC</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="66">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BAYES</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="67">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">BDeu</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="68">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">ENTROPY</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="69">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-R</object>
+         <object class="java.lang.String" name="7">-mbc</object>
+         <object class="java.lang.String" name="8">-S</object>
+         <object class="java.lang.String" name="9">MDL</object>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="70">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">AIC</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="71">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.MultiNomialBMAEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+         <object class="java.lang.String" name="20"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="72">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.MultiNomialBMAEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-k2</object>
+         <object class="java.lang.String" name="15">-A</object>
+         <object class="java.lang.String" name="16">0.5</object>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+         <object class="java.lang.String" name="20"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="73">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.20000000298023224</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="74">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.4000000059604645</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="75">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="76">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.6000000238418579</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="77">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BAYES</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.800000011920929</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="78">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">BDeu</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="79">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">ENTROPY</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="80">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">MDL</object>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="81">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">AIC</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="82">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BAYES</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="83">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">BDeu</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="84">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">ENTROPY</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="85">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.K2</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-P</object>
+         <object class="java.lang.String" name="5">1</object>
+         <object class="java.lang.String" name="6">-mbc</object>
+         <object class="java.lang.String" name="7">-S</object>
+         <object class="java.lang.String" name="8">MDL</object>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11">-E</object>
+         <object class="java.lang.String" name="12">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="13">--</object>
+         <object class="java.lang.String" name="14">-A</object>
+         <object class="java.lang.String" name="15">0.5</object>
+         <object class="java.lang.String" name="16"/>
+         <object class="java.lang.String" name="17"/>
+         <object class="java.lang.String" name="18"/>
+         <object class="java.lang.String" name="19"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="86">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-S</object>
+         <object class="java.lang.String" name="5">AIC</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="87">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-S</object>
+         <object class="java.lang.String" name="5">BAYES</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="88">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-S</object>
+         <object class="java.lang.String" name="5">BDeu</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="89">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-S</object>
+         <object class="java.lang.String" name="5">ENTROPY</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="90">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-S</object>
+         <object class="java.lang.String" name="5">MDL</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="91">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-mbc</object>
+         <object class="java.lang.String" name="5">-S</object>
+         <object class="java.lang.String" name="6">AIC</object>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="92">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-mbc</object>
+         <object class="java.lang.String" name="5">-S</object>
+         <object class="java.lang.String" name="6">BAYES</object>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="93">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-mbc</object>
+         <object class="java.lang.String" name="5">-S</object>
+         <object class="java.lang.String" name="6">BDeu</object>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="94">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-mbc</object>
+         <object class="java.lang.String" name="5">-S</object>
+         <object class="java.lang.String" name="6">ENTROPY</object>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.BayesNet" name="95">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-D</object>
+         <object class="java.lang.String" name="1">-Q</object>
+         <object class="java.lang.String" name="2">weka.classifiers.bayes.net.search.local.TAN</object>
+         <object class="java.lang.String" name="3">--</object>
+         <object class="java.lang.String" name="4">-mbc</object>
+         <object class="java.lang.String" name="5">-S</object>
+         <object class="java.lang.String" name="6">MDL</object>
+         <object class="java.lang.String" name="7">-E</object>
+         <object class="java.lang.String" name="8">weka.classifiers.bayes.net.estimate.SimpleEstimator</object>
+         <object class="java.lang.String" name="9">--</object>
+         <object class="java.lang.String" name="10">-A</object>
+         <object class="java.lang.String" name="11">0.5</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.bayes.NaiveBayes" name="96">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0"/>
+         <object class="java.lang.String" name="1"/>
+         <object class="java.lang.String" name="2"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.functions.Logistic" name="97">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-R</object>
+         <object class="java.lang.String" name="1">1.0</object>
+         <object class="java.lang.String" name="2">-M</object>
+         <object class="java.lang.String" name="3">-1</object>
+         <object class="java.lang.String" name="4"/>
+         <object class="java.lang.String" name="5"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.trees.J48" name="98">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-C</object>
+         <object class="java.lang.String" name="1">0.2</object>
+         <object class="java.lang.String" name="2">-B</object>
+         <object class="java.lang.String" name="3">-M</object>
+         <object class="java.lang.String" name="4">2</object>
+         <object class="java.lang.String" name="5">-A</object>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7"/>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.trees.J48" name="99">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-C</object>
+         <object class="java.lang.String" name="1">0.2</object>
+         <object class="java.lang.String" name="2">-M</object>
+         <object class="java.lang.String" name="3">4</object>
+         <object class="java.lang.String" name="4">-A</object>
+         <object class="java.lang.String" name="5"/>
+         <object class="java.lang.String" name="6"/>
+         <object class="java.lang.String" name="7"/>
+         <object class="java.lang.String" name="8"/>
+         <object class="java.lang.String" name="9"/>
+         <object class="java.lang.String" name="10"/>
+         <object class="java.lang.String" name="11"/>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+         <object class="java.lang.String" name="15"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.trees.REPTree" name="100">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-M</object>
+         <object class="java.lang.String" name="1">4</object>
+         <object class="java.lang.String" name="2">-V</object>
+         <object class="java.lang.String" name="3">0.001</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">3</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">3</object>
+         <object class="java.lang.String" name="8">-L</object>
+         <object class="java.lang.String" name="9">-1</object>
+         <object class="java.lang.String" name="10">-P</object>
+         <object class="java.lang.String" name="11">-I</object>
+         <object class="java.lang.String" name="12">0.0</object>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.trees.REPTree" name="101">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-M</object>
+         <object class="java.lang.String" name="1">4</object>
+         <object class="java.lang.String" name="2">-V</object>
+         <object class="java.lang.String" name="3">0.01</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">3</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">1</object>
+         <object class="java.lang.String" name="8">-L</object>
+         <object class="java.lang.String" name="9">9</object>
+         <object class="java.lang.String" name="10">-P</object>
+         <object class="java.lang.String" name="11">-I</object>
+         <object class="java.lang.String" name="12">0.0</object>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+      </object>
+   </object>
+   <object class="weka.classifiers.trees.REPTree" name="102">
+      <object array="yes" class="java.lang.String" name="options">
+         <object class="java.lang.String" name="0">-M</object>
+         <object class="java.lang.String" name="1">4</object>
+         <object class="java.lang.String" name="2">-V</object>
+         <object class="java.lang.String" name="3">0.01</object>
+         <object class="java.lang.String" name="4">-N</object>
+         <object class="java.lang.String" name="5">3</object>
+         <object class="java.lang.String" name="6">-S</object>
+         <object class="java.lang.String" name="7">3</object>
+         <object class="java.lang.String" name="8">-L</object>
+         <object class="java.lang.String" name="9">1</object>
+         <object class="java.lang.String" name="10">-I</object>
+         <object class="java.lang.String" name="11">0.0</object>
+         <object class="java.lang.String" name="12"/>
+         <object class="java.lang.String" name="13"/>
+         <object class="java.lang.String" name="14"/>
+      </object>
+   </object>
+</object>

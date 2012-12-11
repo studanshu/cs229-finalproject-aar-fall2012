@@ -1,0 +1,452 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 1.0; 2.0 0.0]" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     CarAuction_Parsed_Train_Str
+Instances:    72983
+Attributes:   32
+              IsBadBuy
+              VehYear
+              VehicleAge
+              WheelTypeID
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              BYRNO
+              VehBCost
+              IsOnlineSale
+              WarrantyCost
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Classifier Model
+J48 pruned tree
+------------------
+
+WheelTypeID <= 0.75
+|   VehicleAge <= 0.22222
+|   |   MMRAcquisitionAuctionCleanPrice <= 0.54866: false (10273.49/696.36)
+|   |   MMRAcquisitionAuctionCleanPrice > 0.54866
+|   |   |   VehOdo <= 0.56121: true (23.15)
+|   |   |   VehOdo > 0.56121: false (4.45)
+|   VehicleAge > 0.22222: false (57868.85/11284.19)
+WheelTypeID > 0.75
+|   Auction = a1: true (1967.96/105.08)
+|   Auction = a2
+|   |   VNZIP1 = a1: true (0.0)
+|   |   VNZIP1 = a2: true (0.0)
+|   |   VNZIP1 = a3: true (0.0)
+|   |   VNZIP1 = a4: true (0.0)
+|   |   VNZIP1 = a5: true (0.0)
+|   |   VNZIP1 = a6: true (8.9)
+|   |   VNZIP1 = a7: true (0.0)
+|   |   VNZIP1 = a8: true (0.0)
+|   |   VNZIP1 = a9: true (0.0)
+|   |   VNZIP1 = a10: true (0.0)
+|   |   VNZIP1 = a11: true (47.2/0.89)
+|   |   VNZIP1 = a12: true (0.0)
+|   |   VNZIP1 = a13: true (32.06)
+|   |   VNZIP1 = a14: true (5.34)
+|   |   VNZIP1 = a15: true (0.0)
+|   |   VNZIP1 = a16: true (30.28)
+|   |   VNZIP1 = a17: true (0.0)
+|   |   VNZIP1 = a18: true (0.0)
+|   |   VNZIP1 = a19: true (0.0)
+|   |   VNZIP1 = a20: true (0.0)
+|   |   VNZIP1 = a21: true (0.0)
+|   |   VNZIP1 = a22: true (0.0)
+|   |   VNZIP1 = a23: true (0.0)
+|   |   VNZIP1 = a24: true (0.0)
+|   |   VNZIP1 = a25: true (0.0)
+|   |   VNZIP1 = a26: true (0.0)
+|   |   VNZIP1 = a27: true (45.41/0.89)
+|   |   VNZIP1 = a28: true (105.97/0.89)
+|   |   VNZIP1 = a29
+|   |   |   BYRNO <= 0.53373: true (187.89/20.48)
+|   |   |   BYRNO > 0.53373
+|   |   |   |   VehOdo <= 0.46099: true (6.23/0.89)
+|   |   |   |   VehOdo > 0.46099: false (23.15/1.78)
+|   |   VNZIP1 = a30: false (2.67)
+|   |   VNZIP1 = a31: true (8.9)
+|   |   VNZIP1 = a32: true (0.0)
+|   |   VNZIP1 = a33: true (367.77/61.44)
+|   |   VNZIP1 = a34: true (0.0)
+|   |   VNZIP1 = a35: true (25.82/0.89)
+|   |   VNZIP1 = a36: true (0.0)
+|   |   VNZIP1 = a37: false (7.12)
+|   |   VNZIP1 = a38: true (0.0)
+|   |   VNZIP1 = a39: true (1.78)
+|   |   VNZIP1 = a40: false (43.63/5.34)
+|   |   VNZIP1 = a41: true (0.0)
+|   |   VNZIP1 = a42: true (0.0)
+|   |   VNZIP1 = a43: true (21.37/3.56)
+|   |   VNZIP1 = a44: true (0.0)
+|   |   VNZIP1 = a45: false (0.89)
+|   |   VNZIP1 = a46: true (0.0)
+|   |   VNZIP1 = a47: true (0.0)
+|   |   VNZIP1 = a48: true (0.0)
+|   |   VNZIP1 = a49: true (10.69)
+|   |   VNZIP1 = a50: true (0.0)
+|   |   VNZIP1 = a51: true (5.34)
+|   |   VNZIP1 = a52: true (16.03)
+|   |   VNZIP1 = a53: true (5.34)
+|   |   VNZIP1 = a54: true (86.38/2.67)
+|   |   VNZIP1 = a55: true (0.0)
+|   |   VNZIP1 = a56
+|   |   |   PRIMEUNIT = a1: true (133.57/8.9)
+|   |   |   PRIMEUNIT = a2: false (4.45)
+|   |   |   PRIMEUNIT = a3: true (0.0)
+|   |   VNZIP1 = a57: true (12.47)
+|   |   VNZIP1 = a58: true (0.0)
+|   |   VNZIP1 = a59
+|   |   |   VehBCost <= 0.14185
+|   |   |   |   MMRCurrentAuctionAveragePrice <= 0.19912: true (11.58/0.89)
+|   |   |   |   MMRCurrentAuctionAveragePrice > 0.19912: false (6.23)
+|   |   |   VehBCost > 0.14185: true (162.07/7.12)
+|   |   VNZIP1 = a60: true (0.0)
+|   |   VNZIP1 = a61: true (19.59/3.56)
+|   |   VNZIP1 = a62: true (0.0)
+|   |   VNZIP1 = a63: true (0.0)
+|   |   VNZIP1 = a64: true (109.53/0.89)
+|   |   VNZIP1 = a65: true (5.34)
+|   |   VNZIP1 = a66
+|   |   |   MMRAcquisitionAuctionAveragePrice <= 0.24971: true (2.67/0.89)
+|   |   |   MMRAcquisitionAuctionAveragePrice > 0.24971: false (5.34)
+|   |   VNZIP1 = a67: true (0.0)
+|   |   VNZIP1 = a68: true (0.0)
+|   |   VNZIP1 = a69: true (0.0)
+|   |   VNZIP1 = a70: true (0.0)
+|   |   VNZIP1 = a71: true (24.93)
+|   |   VNZIP1 = a72: true (0.0)
+|   |   VNZIP1 = a73: true (0.0)
+|   |   VNZIP1 = a74: true (0.0)
+|   |   VNZIP1 = a75: true (73.02)
+|   |   VNZIP1 = a76: true (0.0)
+|   |   VNZIP1 = a77: true (7.12)
+|   |   VNZIP1 = a78: true (0.0)
+|   |   VNZIP1 = a79: true (0.0)
+|   |   VNZIP1 = a80: true (0.0)
+|   |   VNZIP1 = a81: true (0.0)
+|   |   VNZIP1 = a82: true (0.0)
+|   |   VNZIP1 = a83: true (0.0)
+|   |   VNZIP1 = a84: true (0.0)
+|   |   VNZIP1 = a85: true (0.0)
+|   |   VNZIP1 = a86: true (0.0)
+|   |   VNZIP1 = a87: true (0.0)
+|   |   VNZIP1 = a88: true (0.0)
+|   |   VNZIP1 = a89: true (0.0)
+|   |   VNZIP1 = a90: true (0.0)
+|   |   VNZIP1 = a91: true (0.0)
+|   |   VNZIP1 = a92: true (0.0)
+|   |   VNZIP1 = a93: true (0.0)
+|   |   VNZIP1 = a94: true (0.0)
+|   |   VNZIP1 = a95: true (0.0)
+|   |   VNZIP1 = a96: true (1.78)
+|   |   VNZIP1 = a97: true (15.14/0.89)
+|   |   VNZIP1 = a98: true (0.0)
+|   |   VNZIP1 = a99: true (0.0)
+|   |   VNZIP1 = a100: true (0.0)
+|   |   VNZIP1 = a101: true (0.0)
+|   |   VNZIP1 = a102: true (0.0)
+|   |   VNZIP1 = a103: true (0.0)
+|   |   VNZIP1 = a104: true (0.0)
+|   |   VNZIP1 = a105: true (0.0)
+|   |   VNZIP1 = a106: true (0.0)
+|   |   VNZIP1 = a107: true (0.0)
+|   |   VNZIP1 = a108: true (5.34)
+|   |   VNZIP1 = a109: true (0.0)
+|   |   VNZIP1 = a110: true (0.0)
+|   |   VNZIP1 = a111: true (0.0)
+|   |   VNZIP1 = a112: true (0.0)
+|   |   VNZIP1 = a113: true (0.0)
+|   |   VNZIP1 = a114: true (0.0)
+|   |   VNZIP1 = a115: true (0.0)
+|   |   VNZIP1 = a116: true (0.0)
+|   |   VNZIP1 = a117: true (1.78)
+|   |   VNZIP1 = a118: true (0.0)
+|   |   VNZIP1 = a119: true (0.0)
+|   |   VNZIP1 = a120: true (0.0)
+|   |   VNZIP1 = a121
+|   |   |   BYRNO <= 0.11437
+|   |   |   |   VehBCost <= 0.14405: true (7.12)
+|   |   |   |   VehBCost > 0.14405: false (6.23/1.78)
+|   |   |   BYRNO > 0.11437: true (28.5)
+|   |   VNZIP1 = a122
+|   |   |   Trim = a1: false (0.0)
+|   |   |   Trim = a2: false (0.0)
+|   |   |   Trim = a3: false (0.89)
+|   |   |   Trim = a4: false (0.0)
+|   |   |   Trim = a5: false (0.0)
+|   |   |   Trim = a6: false (0.0)
+|   |   |   Trim = a7: false (0.89)
+|   |   |   Trim = a8: true (1.78)
+|   |   |   Trim = a9: false (0.0)
+|   |   |   Trim = a10: false (0.0)
+|   |   |   Trim = a11: false (6.23/1.78)
+|   |   |   Trim = a12: false (4.45)
+|   |   |   Trim = a13: true (1.78)
+|   |   |   Trim = a14: false (0.0)
+|   |   |   Trim = a15: false (0.0)
+|   |   |   Trim = a16: false (0.0)
+|   |   |   Trim = a17: false (0.0)
+|   |   |   Trim = a18: true (1.78)
+|   |   |   Trim = a19: false (0.0)
+|   |   |   Trim = a20: false (0.0)
+|   |   |   Trim = a21: false (0.0)
+|   |   |   Trim = a22: false (0.0)
+|   |   |   Trim = a23: false (0.0)
+|   |   |   Trim = a24: false (0.0)
+|   |   |   Trim = a25: true (1.78)
+|   |   |   Trim = a26: false (0.0)
+|   |   |   Trim = a27: false (0.0)
+|   |   |   Trim = a28: true (1.78)
+|   |   |   Trim = a29: false (0.0)
+|   |   |   Trim = a30: false (0.0)
+|   |   |   Trim = a31: false (0.0)
+|   |   |   Trim = a32: false (0.0)
+|   |   |   Trim = a33: false (0.0)
+|   |   |   Trim = a34: false (0.0)
+|   |   |   Trim = a35: false (0.0)
+|   |   |   Trim = a36: false (0.0)
+|   |   |   Trim = a37: false (0.0)
+|   |   |   Trim = a38: false (0.0)
+|   |   |   Trim = a39: false (0.0)
+|   |   |   Trim = a40: false (0.89)
+|   |   |   Trim = a41: false (0.0)
+|   |   |   Trim = a42: false (0.89)
+|   |   |   Trim = a43: false (0.0)
+|   |   |   Trim = a44: false (0.0)
+|   |   |   Trim = a45: false (0.0)
+|   |   |   Trim = a46: false (0.0)
+|   |   |   Trim = a47: false (0.0)
+|   |   |   Trim = a48: false (0.0)
+|   |   |   Trim = a49: false (0.0)
+|   |   |   Trim = a50: false (0.0)
+|   |   |   Trim = a51: false (0.0)
+|   |   |   Trim = a52: false (0.0)
+|   |   |   Trim = a53: false (0.0)
+|   |   |   Trim = a54: false (0.0)
+|   |   |   Trim = a55: false (0.0)
+|   |   |   Trim = a56: false (0.0)
+|   |   |   Trim = a57: false (0.0)
+|   |   |   Trim = a58: false (0.0)
+|   |   |   Trim = a59: false (0.0)
+|   |   |   Trim = a60: false (0.0)
+|   |   |   Trim = a61: false (0.0)
+|   |   |   Trim = a62: false (0.0)
+|   |   |   Trim = a63: false (0.0)
+|   |   |   Trim = a64: false (0.0)
+|   |   |   Trim = a65: false (0.0)
+|   |   |   Trim = a66: false (0.0)
+|   |   |   Trim = a67: false (0.0)
+|   |   |   Trim = a68: false (0.0)
+|   |   |   Trim = a69: false (0.0)
+|   |   |   Trim = a70: false (0.0)
+|   |   |   Trim = a71: false (0.0)
+|   |   |   Trim = a72: false (0.0)
+|   |   |   Trim = a73: false (0.0)
+|   |   |   Trim = a74: false (0.0)
+|   |   |   Trim = a75: false (0.0)
+|   |   |   Trim = a76: false (0.0)
+|   |   |   Trim = a77: false (0.0)
+|   |   |   Trim = a78: false (0.0)
+|   |   |   Trim = a79: false (0.0)
+|   |   |   Trim = a80: true (1.78)
+|   |   |   Trim = a81: false (0.0)
+|   |   |   Trim = a82: false (0.0)
+|   |   |   Trim = a83: false (0.0)
+|   |   |   Trim = a84: false (0.0)
+|   |   |   Trim = a85: false (0.0)
+|   |   |   Trim = a86: false (0.0)
+|   |   |   Trim = a87: false (0.0)
+|   |   |   Trim = a88: false (0.0)
+|   |   |   Trim = a89: false (0.0)
+|   |   |   Trim = a90: false (0.0)
+|   |   |   Trim = a91: false (0.0)
+|   |   |   Trim = a92: false (0.0)
+|   |   |   Trim = a93: false (0.0)
+|   |   |   Trim = a94: false (0.0)
+|   |   |   Trim = a95: false (0.0)
+|   |   |   Trim = a96: false (0.0)
+|   |   |   Trim = a97: false (0.0)
+|   |   |   Trim = a98: false (0.0)
+|   |   |   Trim = a99: false (0.0)
+|   |   |   Trim = a100: false (0.0)
+|   |   |   Trim = a101: false (0.0)
+|   |   |   Trim = a102: false (0.0)
+|   |   |   Trim = a103: false (0.0)
+|   |   |   Trim = a104: false (0.0)
+|   |   |   Trim = a105: false (0.0)
+|   |   |   Trim = a106: false (0.0)
+|   |   |   Trim = a107: false (0.0)
+|   |   |   Trim = a108: false (0.0)
+|   |   |   Trim = a109: false (0.0)
+|   |   |   Trim = a110: false (0.0)
+|   |   |   Trim = a111: false (0.0)
+|   |   |   Trim = a112: false (0.0)
+|   |   |   Trim = a113: false (0.0)
+|   |   |   Trim = a114: false (0.0)
+|   |   |   Trim = a115: false (0.0)
+|   |   |   Trim = a116: false (0.0)
+|   |   |   Trim = a117: false (0.0)
+|   |   |   Trim = a118: false (0.0)
+|   |   |   Trim = a119: false (0.0)
+|   |   |   Trim = a120: false (0.0)
+|   |   |   Trim = a121: false (0.0)
+|   |   |   Trim = a122: false (0.0)
+|   |   |   Trim = a123: false (0.0)
+|   |   |   Trim = a124: false (0.0)
+|   |   |   Trim = a125: false (0.0)
+|   |   |   Trim = a126: false (0.0)
+|   |   |   Trim = a127: false (0.0)
+|   |   |   Trim = a128: false (0.0)
+|   |   |   Trim = a129: false (0.0)
+|   |   |   Trim = a130: false (0.0)
+|   |   VNZIP1 = a123: true (15.14/6.23)
+|   |   VNZIP1 = a124: true (0.0)
+|   |   VNZIP1 = a125: true (0.0)
+|   |   VNZIP1 = a126: true (0.0)
+|   |   VNZIP1 = a127: true (0.0)
+|   |   VNZIP1 = a128: true (44.52/5.34)
+|   |   VNZIP1 = a129: true (0.0)
+|   |   VNZIP1 = a130: true (0.0)
+|   |   VNZIP1 = a131: true (0.0)
+|   |   VNZIP1 = a132: true (0.0)
+|   |   VNZIP1 = a133: true (10.69/3.56)
+|   |   VNZIP1 = a134: true (24.93)
+|   |   VNZIP1 = a135: true (0.0)
+|   |   VNZIP1 = a136: true (0.0)
+|   |   VNZIP1 = a137: true (0.0)
+|   |   VNZIP1 = a138: true (0.0)
+|   |   VNZIP1 = a139: true (0.0)
+|   |   VNZIP1 = a140: true (0.0)
+|   |   VNZIP1 = a141: true (0.0)
+|   |   VNZIP1 = a142: true (0.0)
+|   |   VNZIP1 = a143: true (0.0)
+|   |   VNZIP1 = a144: true (0.0)
+|   |   VNZIP1 = a145: true (0.0)
+|   |   VNZIP1 = a146: true (0.0)
+|   |   VNZIP1 = a147: true (0.0)
+|   |   VNZIP1 = a148: true (0.0)
+|   |   VNZIP1 = a149: true (0.0)
+|   |   VNZIP1 = a150: true (0.0)
+|   |   VNZIP1 = a151: true (0.0)
+|   |   VNZIP1 = a152: true (0.0)
+|   |   VNZIP1 = a153: true (0.0)
+|   Auction = a3
+|   |   VNST = a1: false (181.66/65.9)
+|   |   VNST = a2: true (7.12)
+|   |   VNST = a3: true (0.0)
+|   |   VNST = a4: true (0.0)
+|   |   VNST = a5: true (0.0)
+|   |   VNST = a6
+|   |   |   BYRNO <= 0.17717: false (10.69)
+|   |   |   BYRNO > 0.17717
+|   |   |   |   BYRNO <= 0.18154: true (9.8/0.89)
+|   |   |   |   BYRNO > 0.18154: false (10.69/3.56)
+|   |   VNST = a7: true (1.78)
+|   |   VNST = a8: true (5.34)
+|   |   VNST = a9: true (0.0)
+|   |   VNST = a10: true (0.0)
+|   |   VNST = a11: true (76.58/32.06)
+|   |   VNST = a12: true (1.78)
+|   |   VNST = a13: true (0.0)
+|   |   VNST = a14: true (21.37)
+|   |   VNST = a15: false (65.01/32.06)
+|   |   VNST = a16
+|   |   |   BYRNO <= 0.10535: true (12.47)
+|   |   |   BYRNO > 0.10535: false (214.61/39.18)
+|   |   VNST = a17: true (57.88/0.89)
+|   |   VNST = a18: true (135.35/40.96)
+|   |   VNST = a19: false (0.89)
+|   |   VNST = a20
+|   |   |   VehYear <= 0.99701: true (2.67/0.89)
+|   |   |   VehYear > 0.99701: false (9.8)
+|   |   VNST = a21
+|   |   |   VehicleAge <= 0.66667: false (30.28)
+|   |   |   VehicleAge > 0.66667
+|   |   |   |   VehicleAge <= 0.77778: true (8.01/2.67)
+|   |   |   |   VehicleAge > 0.77778: false (5.34)
+|   |   VNST = a22: true (54.32/6.23)
+|   |   VNST = a23: true (0.0)
+|   |   VNST = a24: true (24.04/9.8)
+|   |   VNST = a25: true (0.0)
+|   |   VNST = a26: true (0.0)
+|   |   VNST = a27: true (0.0)
+|   |   VNST = a28
+|   |   |   BYRNO <= 0.53373: true (17.81)
+|   |   |   BYRNO > 0.53373: false (3.56)
+|   |   VNST = a29: true (0.0)
+|   |   VNST = a30: true (7.12)
+|   |   VNST = a31: true (2.67/0.89)
+|   |   VNST = a32: false (4.45)
+|   |   VNST = a33: true (0.0)
+|   |   VNST = a34: true (1.78)
+|   |   VNST = a35: true (0.0)
+|   |   VNST = a36: true (0.0)
+|   |   VNST = a37: true (0.0)
+
+Number of Leaves  : 	340
+
+Size of the tree : 	363
+
+
+Cost Matrix
+ 0 1
+ 2 0
+
+
+Time taken to build model: 16.15 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       65714               90.0401 %
+Incorrectly Classified Instances      7269                9.9599 %
+Kappa statistic                          0.333 
+Mean absolute error                      0.2357
+Root mean squared error                  0.308 
+Relative absolute error                109.2545 %
+Root relative squared error             93.7675 %
+Coverage of cases (0.95 level)          99.9411 %
+Mean rel. region size (0.95 level)      99.5711 %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.993    0.763    0.903      0.993   0.946      0.412  0.651     0.917     false
+                 0.237    0.007    0.835      0.237   0.369      0.412  0.651     0.358     true
+Weighted Avg.    0.9      0.67     0.894      0.9     0.875      0.412  0.651     0.849
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 63586   421 |     a = false
+  6848  2128 |     b = true
+
