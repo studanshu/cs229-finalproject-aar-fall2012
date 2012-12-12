@@ -12,16 +12,20 @@ load('CarAuction_Parsed_Train');
 
 % Split Y values from X values in training set
 Y = Features_Train(:,1);
-X = Features_Train(:,[2:20,23:26,28:end]);
+X = Features_Train(:,[2:end]);
 
 % Repeat positive examples so that there is a more even distribution
-% X_positive = X(Y==1,:);
-% Y_positive = ones(length(X_positive),1);
-% for i = 1:3
-%     X = [X; X_positive];
-%     Y = [Y; Y_positive];
-% end
-% clear('X_positive','Y_positive');
+X_positive = X(Y==1,:);
+Y_positive = ones(size(X_positive,1),1);
+N_positive = (length(Y)-length(Y_positive))/length(Y_positive);
+N_pos_mod = mod(length(Y)-length(Y_positive),length(Y_positive));
+for i = 1:(floor(N_positive)-1)
+    X = [X; X_positive];
+    Y = [Y; Y_positive];
+end
+X = [X; X_positive(1:N_pos_mod,:)];
+Y = [Y; Y_positive(1:N_pos_mod)];
+clear('X_positive','Y_positive','N_positive','N_pos_mod');
 
 % Create a 70-30 split of training data for cross-validation
 % Record number of samples in 70-30 split
