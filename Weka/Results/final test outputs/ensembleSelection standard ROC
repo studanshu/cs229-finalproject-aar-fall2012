@@ -1,0 +1,127 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.EnsembleSelection -- -W C:\Users\Albert\Ensemble-10 -P roc -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     CarAuction_Parsed_Train_Train_Str
+Instances:    49998
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+12 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 0 -L -1 -I 0.0
+86 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+71 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 2 -L -1 -I 0.0
+57 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 3 -L -1 -I 0.0
+223 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 4 -L -1 -I 0.0
+34 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 5 -L -1 -I 0.0
+24 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 6 -L -1 -I 0.0
+3 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 7 -L -1 -I 0.0
+1 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 8 -L -1 -I 0.0
+42 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 9 -L -1 -I 0.0
+
+Attribute mappings:
+
+Model attributes                             	    Incoming attributes
+---------------------------------------------	    ----------------
+(nominal) IsBadBuy                           	--> 1 (nominal) IsBadBuy
+(numeric) VehYear                            	--> 2 (numeric) VehYear
+(numeric) VehicleAge                         	--> 3 (numeric) VehicleAge
+(numeric) VehOdo                             	--> 4 (numeric) VehOdo
+(numeric) MMRAcquisitionAuctionAveragePrice  	--> 5 (numeric) MMRAcquisitionAuctionAveragePrice
+(numeric) MMRAcquisitionAuctionCleanPrice    	--> 6 (numeric) MMRAcquisitionAuctionCleanPrice
+(numeric) MMRAcquisitionRetailAveragePrice   	--> 7 (numeric) MMRAcquisitionRetailAveragePrice
+(numeric) MMRAcquisitonRetailCleanPrice      	--> 8 (numeric) MMRAcquisitonRetailCleanPrice
+(numeric) MMRCurrentAuctionAveragePrice      	--> 9 (numeric) MMRCurrentAuctionAveragePrice
+(numeric) MMRCurrentAuctionCleanPrice        	--> 10 (numeric) MMRCurrentAuctionCleanPrice
+(numeric) MMRCurrentRetailAveragePrice       	--> 11 (numeric) MMRCurrentRetailAveragePrice
+(numeric) MMRCurrentRetailCleanPrice         	--> 12 (numeric) MMRCurrentRetailCleanPrice
+(numeric) VehBCost                           	--> 13 (numeric) VehBCost
+(numeric) WarrantyCost                       	--> 14 (numeric) WarrantyCost
+(nominal) PurchYear                          	--> 15 (nominal) PurchYear
+(nominal) PurchMonth                         	--> 16 (nominal) PurchMonth
+(nominal) PurchDay                           	--> 17 (nominal) PurchDay
+(nominal) Auction                            	--> 18 (nominal) Auction
+(nominal) Make                               	--> 19 (nominal) Make
+(nominal) Model                              	--> 20 (nominal) Model
+(nominal) Trim                               	--> 21 (nominal) Trim
+(nominal) SubModel                           	--> 22 (nominal) SubModel
+(nominal) Color                              	--> 23 (nominal) Color
+(nominal) Transmission                       	--> 24 (nominal) Transmission
+(nominal) WheelType                          	--> 25 (nominal) WheelType
+(nominal) Nationality                        	--> 26 (nominal) Nationality
+(nominal) Size                               	--> 27 (nominal) Size
+(nominal) TopThreeAmericanName               	--> 28 (nominal) TopThreeAmericanName
+(nominal) PRIMEUNIT                          	--> 29 (nominal) PRIMEUNIT
+(nominal) AUCGUART                           	--> 30 (nominal) AUCGUART
+(nominal) VNZIP1                             	--> 31 (nominal) VNZIP1
+(nominal) VNST                               	--> 32 (nominal) VNST
+(nominal) IsOnlineSale                       	--> 33 (nominal) IsOnlineSale
+
+
+Time taken to build model: 69.8 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 2.97 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       20715               90.124  %
+Incorrectly Classified Instances      2270                9.876  %
+Kappa statistic                          0.325 
+Mean absolute error                      0.1746
+Root mean squared error                  0.2963
+Relative absolute error                 81.0112 %
+Root relative squared error             90.345  %
+Coverage of cases (0.95 level)          99.6519 %
+Mean rel. region size (0.95 level)      97.9552 %
+Total Number of Instances            22985     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.996    0.775    0.902      0.996   0.947      0.416  0.691     0.924     FALSE
+                 0.225    0.004    0.88       0.225   0.359      0.416  0.691     0.41      TRUE
+Weighted Avg.    0.901    0.68     0.899      0.901   0.874      0.416  0.691     0.861
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20080    87 |     a = FALSE
+  2183   635 |     b = TRUE
+

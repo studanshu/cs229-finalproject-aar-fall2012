@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     CarAuction_Parsed_Train_Train_Str
+Instances:    49998
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.04 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       19592               85.2382 %
+Incorrectly Classified Instances      3393               14.7618 %
+Kappa statistic                          0.2575
+Mean absolute error                      0.1452
+Root mean squared error                  0.3636
+Relative absolute error                 67.3668 %
+Root relative squared error            110.8575 %
+Coverage of cases (0.95 level)          88.6578 %
+Mean rel. region size (0.95 level)      52.9585 %
+Total Number of Instances            22985     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.928    0.69     0.906      0.928   0.917      0.259  0.679     0.924     FALSE
+                 0.31     0.072    0.376      0.31    0.34       0.259  0.679     0.333     TRUE
+Weighted Avg.    0.852    0.614    0.841      0.852   0.846      0.259  0.679     0.851
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 18719  1448 |     a = FALSE
+  1945   873 |     b = TRUE
+
