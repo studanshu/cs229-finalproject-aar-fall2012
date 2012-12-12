@@ -1,0 +1,350 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     CarAuction_Parsed_Train_Str_Balanced
+Instances:    128014
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : FALSE
+WheelType is missing : FALSE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.05551934585530604	0.944480654144694	
+WheelType != a3
+FALSE	TRUE	
+0.5674977730188866	0.4325022269811134	
+WheelType is missing
+FALSE	TRUE	
+0.5	0.5	
+
+
+Weight: 0.48
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : TRUE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.0865717585395666	0.9134282414604334	
+WheelType != a3
+FALSE	TRUE	
+0.4486756251958332	0.5513243748041667	
+WheelType is missing
+FALSE	TRUE	
+0.40868713686910135	0.5913128631308987	
+
+
+Weight: 0.37
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : FALSE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.12059201863243448	0.8794079813675656	
+WheelType != a3
+FALSE	TRUE	
+0.5407524460047824	0.4592475539952175	
+WheelType is missing
+FALSE	TRUE	
+0.49999999999979533	0.5000000000002047	
+
+
+Weight: 0.3
+
+Decision Stump
+
+Classifications
+
+VehicleAge <= 0.5 : FALSE
+VehicleAge > 0.5 : TRUE
+VehicleAge is missing : TRUE
+
+Class distributions
+
+VehicleAge <= 0.5
+FALSE	TRUE	
+0.5449967143080772	0.4550032856919228	
+VehicleAge > 0.5
+FALSE	TRUE	
+0.3283912479518235	0.6716087520481765	
+VehicleAge is missing
+FALSE	TRUE	
+0.4393638567544751	0.5606361432455249	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : TRUE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.147678515314066	0.852321484685934	
+WheelType != a3
+FALSE	TRUE	
+0.4624039483034583	0.5375960516965417	
+WheelType is missing
+FALSE	TRUE	
+0.4337113122481736	0.5662886877518265	
+
+
+Weight: 0.27
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : FALSE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.18449259062991066	0.8155074093700893	
+WheelType != a3
+FALSE	TRUE	
+0.5289815464762325	0.4710184535237675	
+WheelType is missing
+FALSE	TRUE	
+0.49999999999989114	0.5000000000001089	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : TRUE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.21873541697342563	0.7812645830265743	
+WheelType != a3
+FALSE	TRUE	
+0.47574557133191864	0.5242544286680814	
+WheelType is missing
+FALSE	TRUE	
+0.45534214563028613	0.5446578543697139	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : FALSE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.2508766434825865	0.7491233565174136	
+WheelType != a3
+FALSE	TRUE	
+0.5204922103129231	0.47950778968707675	
+WheelType is missing
+FALSE	TRUE	
+0.4999999999999445	0.5000000000000555	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+VehBCost <= 0.120885 : TRUE
+VehBCost > 0.120885 : FALSE
+VehBCost is missing : TRUE
+
+Class distributions
+
+VehBCost <= 0.120885
+FALSE	TRUE	
+0.38514336431126733	0.6148566356887326	
+VehBCost > 0.120885
+FALSE	TRUE	
+0.5072952022135404	0.49270479778645965	
+VehBCost is missing
+FALSE	TRUE	
+0.46770188648294136	0.5322981135170586	
+
+
+Weight: 0.17
+
+Decision Stump
+
+Classifications
+
+WheelType = a3 : TRUE
+WheelType != a3 : TRUE
+WheelType is missing : TRUE
+
+Class distributions
+
+WheelType = a3
+FALSE	TRUE	
+0.26771450677322395	0.7322854932267759	
+WheelType != a3
+FALSE	TRUE	
+0.467471867921511	0.5325281320784889	
+WheelType is missing
+FALSE	TRUE	
+0.4525354848287816	0.5474645151712184	
+
+
+Weight: 0.19
+
+Number of performed Iterations: 10
+
+Attribute mappings:
+
+Model attributes                             	    Incoming attributes
+---------------------------------------------	    ----------------
+(nominal) IsBadBuy                           	--> 1 (nominal) IsBadBuy
+(numeric) VehYear                            	--> 2 (numeric) VehYear
+(numeric) VehicleAge                         	--> 3 (numeric) VehicleAge
+(numeric) VehOdo                             	--> 4 (numeric) VehOdo
+(numeric) MMRAcquisitionAuctionAveragePrice  	--> 5 (numeric) MMRAcquisitionAuctionAveragePrice
+(numeric) MMRAcquisitionAuctionCleanPrice    	--> 6 (numeric) MMRAcquisitionAuctionCleanPrice
+(numeric) MMRAcquisitionRetailAveragePrice   	--> 7 (numeric) MMRAcquisitionRetailAveragePrice
+(numeric) MMRAcquisitonRetailCleanPrice      	--> 8 (numeric) MMRAcquisitonRetailCleanPrice
+(numeric) MMRCurrentAuctionAveragePrice      	--> 9 (numeric) MMRCurrentAuctionAveragePrice
+(numeric) MMRCurrentAuctionCleanPrice        	--> 10 (numeric) MMRCurrentAuctionCleanPrice
+(numeric) MMRCurrentRetailAveragePrice       	--> 11 (numeric) MMRCurrentRetailAveragePrice
+(numeric) MMRCurrentRetailCleanPrice         	--> 12 (numeric) MMRCurrentRetailCleanPrice
+(numeric) VehBCost                           	--> 13 (numeric) VehBCost
+(numeric) WarrantyCost                       	--> 14 (numeric) WarrantyCost
+(nominal) PurchYear                          	--> 15 (nominal) PurchYear
+(nominal) PurchMonth                         	--> 16 (nominal) PurchMonth
+(nominal) PurchDay                           	--> 17 (nominal) PurchDay
+(nominal) Auction                            	--> 18 (nominal) Auction
+(nominal) Make                               	--> 19 (nominal) Make
+(nominal) Model                              	--> 20 (nominal) Model
+(nominal) Trim                               	--> 21 (nominal) Trim
+(nominal) SubModel                           	--> 22 (nominal) SubModel
+(nominal) Color                              	--> 23 (nominal) Color
+(nominal) Transmission                       	--> 24 (nominal) Transmission
+(nominal) WheelType                          	--> 25 (nominal) WheelType
+(nominal) Nationality                        	--> 26 (nominal) Nationality
+(nominal) Size                               	--> 27 (nominal) Size
+(nominal) TopThreeAmericanName               	--> 28 (nominal) TopThreeAmericanName
+(nominal) PRIMEUNIT                          	--> 29 (nominal) PRIMEUNIT
+(nominal) AUCGUART                           	--> 30 (nominal) AUCGUART
+(nominal) VNZIP1                             	--> 31 (nominal) VNZIP1
+(nominal) VNST                               	--> 32 (nominal) VNST
+(nominal) IsOnlineSale                       	--> 33 (nominal) IsOnlineSale
+
+
+Time taken to build model: 20.39 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 2.26 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       46310               63.4531 %
+Incorrectly Classified Instances     26673               36.5469 %
+Kappa statistic                          0.1599
+Mean absolute error                      0.4251
+Root mean squared error                  0.4471
+Relative absolute error                 85.0139 %
+Root relative squared error             89.4126 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)     100      %
+Total Number of Instances            72983     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.626    0.303    0.936      0.626   0.75       0.215  0.722     0.931     FALSE
+                 0.697    0.374    0.207      0.697   0.319      0.215  0.722     0.344     TRUE
+Weighted Avg.    0.635    0.312    0.847      0.635   0.697      0.215  0.722     0.859
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 40056 23951 |     a = FALSE
+  2722  6254 |     b = TRUE
+

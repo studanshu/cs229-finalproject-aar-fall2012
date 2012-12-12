@@ -24,15 +24,32 @@ load('CarAuction_Parsed_Train');
 Y = Features_Train(:,1);
 X = Features_Train(:,2:end);
 
-N = size(Y);
+N = length(Y);
 N_train = floor(0.7*N);
 N_CV = N-N_train;
-X_train = X(1:N_train,:);
-Y_train = Y(1:N_train);
-X_test = X(N_train:N,:);
-Y_true = Y(N_train:N);
+% A1 = floor(N_train/2);
+% A2 = floor(size(X,2)-A1);
+% X_train = X(1:A1,A2+1:end);
+% Y_train = Y(1:A1,A2+1:end);
+% X_test = X(A1+1:end-A2,:);
+% Y_true = Y(A1+1:end-A2:N);
 
-%% balance data
+train_index = ceil(N.*rand(N_train,1));
+while (size(unique(train_index),1) ~= size(train_index,1))
+    train_index = unique(train_index);
+    unique_needed = N_train - size(train_index,1);
+    train_index = [train_index ; ceil(N.*rand(unique_needed,1))];
+end
+test_index = setdiff(1:N,train_index)';
+clear('unique_needed');
+
+X_train = X(train_index,:);
+Y_train = Y(train_index);
+X_test = X(test_index,:);
+Y_true = Y(test_index);
+
+
+% balance data
 % Repeat positive examples so that there is a more even distribution
 if (balance == 0)
     X_positive = X_train(Y_train==1,:);
@@ -48,14 +65,14 @@ if (balance == 0)
     clear('X_positive','Y_positive','N_positive','N_pos_mod');
     balance = 1;
 end
-%% run newton's method on 70% of the data set
+% run newton's method on 70% of the data set
 [theta, ll] = logistic_newtons(X_train, Y_train, 10); % X, Y, max_iters
 
 %% calculate the generalization error using 30% of the data set
 %Y_test = sigmoid(X(j,:)*theta);
 Y_test = sigmoid(X_test*theta);
-Y_test(Y_test>=0.63) = 1;
-Y_test(Y_test<0.63) = 0;
+Y_test(Y_test>=0.66) = 1;
+Y_test(Y_test<0.66) = 0;
 error = sum(abs(Y_true - Y_test))/length(Y_true);
 %cross validate data
 %% precision/recall
@@ -89,7 +106,7 @@ recall = tp/(tp+fn)
 output_threshold = 0.1:0.1:1;
 
 for o = 1:length(output_threshold)
-    Y_test = sigmoid(X(N_train:N,:)*theta);
+    Y_test = sigmoid(X_test*theta);
     Y_test(Y_test>=output_threshold(o)) = 1;
     Y_test(Y_test<output_threshold(o)) = 0;
     number_predicted(o) = sum(Y_test>=output_threshold(o));
@@ -137,9 +154,9 @@ plot(recall, precision, 'o')
 xlabel('recall')
 ylabel('precision')
 %%
-auc=colAUC(X_test,Y_test, 'algorithm', 'Wilcoxon', 'plot', false, 'abs', false);
-out = [colLabel; num2cell(auc)];
-disp(out); 
+auc=colAUC(Y_true,Y_test, 'algorithm', 'Wilcoxon', 'plot', false, 'abs', false);
+%out = [colLabel; num2cell(auc)];
+%disp(out); 
 
 %% plot data for testing data
 %{
