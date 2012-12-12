@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.bayes.NaiveBayes --
+Relation:     CarAuction_Parsed_Train_Train_Str
+Instances:    49998
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.21 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       17610               76.6152 %
+Incorrectly Classified Instances      5375               23.3848 %
+Kappa statistic                          0.1912
+Mean absolute error                      0.2465
+Root mean squared error                  0.4364
+Relative absolute error                114.3529 %
+Root relative squared error            133.0575 %
+Coverage of cases (0.95 level)          89.7107 %
+Mean rel. region size (0.95 level)      66.5956 %
+Total Number of Instances            22985     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.811    0.554    0.913      0.811   0.859      0.203  0.708     0.941     FALSE
+                 0.446    0.189    0.248      0.446   0.319      0.203  0.708     0.252     TRUE
+Weighted Avg.    0.766    0.509    0.831      0.766   0.793      0.203  0.708     0.856
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 16353  3814 |     a = FALSE
+  1561  1257 |     b = TRUE
+
