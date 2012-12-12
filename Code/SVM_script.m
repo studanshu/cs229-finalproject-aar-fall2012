@@ -12,7 +12,7 @@ load('CarAuction_Parsed_Train');
 
 % Split Y values from X values in training set
 Y = Features_Train(:,1);
-X = Features_Train(:,[2:end]);
+X = Features_Train(:,2:end);
 
 % Repeat positive examples so that there is a more even distribution
 X_positive = X(Y==1,:);
@@ -31,6 +31,10 @@ clear('X_positive','Y_positive','N_positive','N_pos_mod');
 % Record number of samples in 70-30 split
 N = size(Y,1);
 N_train = floor(0.7*N);
+% train_index = 1:N_train;
+% test_index = N_train+1:N;
+train_index = [1:floor(N_train/2),N-floor(N_train/2)+1:N];
+test_index = floor(N_train/2)+1:N-floor(N_train/2);
 
 % Choose a random set of indices to train on and ensure they are unique
 % train_index = ceil(N.*rand(N_train,1));
@@ -41,8 +45,6 @@ N_train = floor(0.7*N);
 % end
 % test_index = setdiff(1:N,train_index)';
 % clear('unique_needed');
-train_index = 1:N_train;
-test_index = N_train+1:N;
 
 % Split the Y and X data
 Y_train = Y(train_index);
@@ -50,18 +52,26 @@ Y_CV = Y(test_index);
 X_train = X(train_index,:);
 X_CV = X(test_index,:);
 
-
 %%
 % Run SVM using custom SVM function that uses liblinear on cross
 %   validation set
 [Prediction, Accuracy, DV, Precision, Recall] = ...
     SVM_fun(Y_train,X_train,Y_CV,X_CV);
 
+figure(1);
+hold on;
+plot(N,100-Accuracy(1),'b.');
+
+[Prediction, Accuracy, DV, Precision, Recall] = ...
+    SVM_fun(Y_train,X_train,Y_train,X_train);
+
+plot(N,100-Accuracy(1),'g.');
+
 %%
 % Run SVM using custom SVM function that uses liblinear on all
 %   available training data
 % Y_dummy = zeros(size(Features_Test,1),1);
 % Y_dummy = ones(size(Features_Test,1),1);
-
+% 
 % [Submission, Accuracy, DV, Precision, Recall] = ...
 %     SVM_fun(Y,X,Y_dummy,Features_Test);
