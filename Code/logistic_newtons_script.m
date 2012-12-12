@@ -9,6 +9,8 @@
 % edits:
 %   Alice - 11/15/12 - wrote code to run logistic regression using Newton's
 %                      method from HW1
+%   Alice - 12/08/12 - used albert's normalize data, input code for false
+%                      positives/negatives
 
 clear;
 clc;
@@ -35,7 +37,80 @@ Y_test(Y_test>=0.5) = 1;
 Y_test(Y_test<0.5) = 0;
 error = sum(abs(Y_true - Y_test))/length(Y_true);
 %cross validate data
+%% precision/recall
+tp = 0;
+fp = 0;
+tn = 0;
+fn = 0;
+correct_prediction = sum(Y_test)/sum(Y_true);
+
+for i = 1:length(Y_test);
+    if     ((Y_test(i) == 1) && (Y_true(i) == 1))
+        tp = tp+1;
+    elseif ((Y_test(i) == 1) && (Y_true(i) == 0))
+        fp = fp+1;
+    elseif ((Y_test(i) == 0) && (Y_true(i) == 0))
+        tn = tn+1;
+    elseif ((Y_test(i) == 0) && (Y_true(i) == 1))
+        fn = fn+1;
+    else
+        disp('error!!!');
+    end
+end
+
+precision = tp/(tp+fp)
+recall = tp/(tp+fn)
+
+%% change output threshold - stricter criteria
+% calculate the generalization error using 30% of the data set
+%Y_test = sigmoid(X(j,:)*theta);
+
+output_threshold = 0.1:0.1:1;
+
+for o = 1:length(output_threshold)
+    Y_test = sigmoid(X(N_train:N,:)*theta);
+    Y_test(Y_test>=output_threshold(o)) = 1;
+    Y_test(Y_test<output_threshold(o)) = 0;
+    number_predicted(o) = sum(Y_test>=output_threshold(o));
+    error(o) = sum(abs(Y_true - Y_test))/length(Y_true);
+    %cross validate data
+    % precision/recall
+    tp = 0;
+    fp = 0;
+    tn = 0;
+    fn = 0;
+    correct_prediction = sum(Y_test)/sum(Y_true);
+
+    for i = 1:length(Y_test);
+        if ((Y_test(i) == 1) && (Y_true(i) == 1))
+            tp = tp+1;
+        elseif ((Y_test(i) == 1) && (Y_true(i) == 0))
+            fp = fp+1;
+        elseif ((Y_test(i) == 0) && (Y_true(i) == 0))
+            tn = tn+1;
+        elseif ((Y_test(i) == 0) && (Y_true(i) == 1))
+            fn = fn+1;
+        else
+            disp('error!!!');
+        end
+    end
+
+    precision(o) = tp/(tp+fp);
+    recall(o) = tp/(tp+fn);
+end
+
+plot(output_threshold, precision, 'bo-')
+hold on
+plot(output_threshold, recall, 'ro-')
+plot(output_threshold, error, 'go-')
+plot(output_threshold, number_predicted/max(number_predicted), 'mo-')
+hold off
+xlabel('output threshold')
+ylabel('metric (%)')
+legend('precision', 'recall', 'error', 'number predicted', 'location', 'best')
+title('logistic regression ')
 %% plot data for testing data
+%{
 %vehicle age (2)
 %mmrcurrent auction avg price (9)
 %warranty cost (17)
@@ -66,6 +141,7 @@ xlabel('Vehicle Age (Years)');
 ylabel('MMRCurrentAuctionAvgPrice (Dollars)');
 zlabel('Warranty Cost (Dollars)');
 grid on;
+%}
 %% run newton's method on the test data for submission onto Kaggle
 [theta, ll] = logistic_newtons(X, Y, 10); % X, Y, max_iters
 Y_Kaggle = sigmoid(Features_Test*theta);
