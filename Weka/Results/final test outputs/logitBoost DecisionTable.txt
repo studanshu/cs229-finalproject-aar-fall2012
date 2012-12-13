@@ -1,0 +1,449 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.LogitBoost -- -P 100 -F 0 -R 1 -L -Infinity -H 1.0 -S 1 -I 10 -W weka.classifiers.rules.DecisionTable -- -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     CarAuction_Parsed_Train_Train_Str
+Instances:    49998
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 1013
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 259
+	Merit of best subset found:    1.184
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 15,25,29,31,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 1013
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 259
+	Merit of best subset found:    1.184
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 15,25,29,31,1
+
+Iteration 2
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 191
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 258
+	Merit of best subset found:    1.561
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,13,25,29,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 191
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 258
+	Merit of best subset found:    1.561
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,13,25,29,1
+
+Iteration 3
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 40
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 207
+	Merit of best subset found:    1.758
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,28,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 40
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 207
+	Merit of best subset found:    1.758
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,28,1
+
+Iteration 4
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 129
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 256
+	Merit of best subset found:    1.812
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 15,16,25,30,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 129
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 256
+	Merit of best subset found:    1.812
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 15,16,25,30,1
+
+Iteration 5
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 34
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 210
+	Merit of best subset found:    1.832
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 5,9,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 34
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 210
+	Merit of best subset found:    1.832
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 5,9,1
+
+Iteration 6
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 10
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 182
+	Merit of best subset found:    1.839
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 4,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 10
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 182
+	Merit of best subset found:    1.839
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 4,1
+
+Iteration 7
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 155
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 237
+	Merit of best subset found:    1.841
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 19,26,27,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 155
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 237
+	Merit of best subset found:    1.841
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 19,26,27,1
+
+Iteration 8
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 24
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 294
+	Merit of best subset found:    1.84 
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 18,25,33,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 24
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 294
+	Merit of best subset found:    1.84 
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 18,25,33,1
+
+Iteration 9
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 37
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 184
+	Merit of best subset found:    1.852
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 32,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 37
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 184
+	Merit of best subset found:    1.852
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 32,1
+
+Iteration 10
+	Class 1 (IsBadBuy=FALSE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 10
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 183
+	Merit of best subset found:    1.852
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 14,1
+
+	Class 2 (IsBadBuy=TRUE)
+
+Decision Table:
+
+Number of training instances: 49998
+Number of Rules : 10
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 183
+	Merit of best subset found:    1.852
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 14,1
+Number of performed iterations: 10
+
+Attribute mappings:
+
+Model attributes                             	    Incoming attributes
+---------------------------------------------	    ----------------
+(nominal) IsBadBuy                           	--> 1 (nominal) IsBadBuy
+(numeric) VehYear                            	--> 2 (numeric) VehYear
+(numeric) VehicleAge                         	--> 3 (numeric) VehicleAge
+(numeric) VehOdo                             	--> 4 (numeric) VehOdo
+(numeric) MMRAcquisitionAuctionAveragePrice  	--> 5 (numeric) MMRAcquisitionAuctionAveragePrice
+(numeric) MMRAcquisitionAuctionCleanPrice    	--> 6 (numeric) MMRAcquisitionAuctionCleanPrice
+(numeric) MMRAcquisitionRetailAveragePrice   	--> 7 (numeric) MMRAcquisitionRetailAveragePrice
+(numeric) MMRAcquisitonRetailCleanPrice      	--> 8 (numeric) MMRAcquisitonRetailCleanPrice
+(numeric) MMRCurrentAuctionAveragePrice      	--> 9 (numeric) MMRCurrentAuctionAveragePrice
+(numeric) MMRCurrentAuctionCleanPrice        	--> 10 (numeric) MMRCurrentAuctionCleanPrice
+(numeric) MMRCurrentRetailAveragePrice       	--> 11 (numeric) MMRCurrentRetailAveragePrice
+(numeric) MMRCurrentRetailCleanPrice         	--> 12 (numeric) MMRCurrentRetailCleanPrice
+(numeric) VehBCost                           	--> 13 (numeric) VehBCost
+(numeric) WarrantyCost                       	--> 14 (numeric) WarrantyCost
+(nominal) PurchYear                          	--> 15 (nominal) PurchYear
+(nominal) PurchMonth                         	--> 16 (nominal) PurchMonth
+(nominal) PurchDay                           	--> 17 (nominal) PurchDay
+(nominal) Auction                            	--> 18 (nominal) Auction
+(nominal) Make                               	--> 19 (nominal) Make
+(nominal) Model                              	--> 20 (nominal) Model
+(nominal) Trim                               	--> 21 (nominal) Trim
+(nominal) SubModel                           	--> 22 (nominal) SubModel
+(nominal) Color                              	--> 23 (nominal) Color
+(nominal) Transmission                       	--> 24 (nominal) Transmission
+(nominal) WheelType                          	--> 25 (nominal) WheelType
+(nominal) Nationality                        	--> 26 (nominal) Nationality
+(nominal) Size                               	--> 27 (nominal) Size
+(nominal) TopThreeAmericanName               	--> 28 (nominal) TopThreeAmericanName
+(nominal) PRIMEUNIT                          	--> 29 (nominal) PRIMEUNIT
+(nominal) AUCGUART                           	--> 30 (nominal) AUCGUART
+(nominal) VNZIP1                             	--> 31 (nominal) VNZIP1
+(nominal) VNST                               	--> 32 (nominal) VNST
+(nominal) IsOnlineSale                       	--> 33 (nominal) IsOnlineSale
+
+
+Time taken to build model: 460.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 2.2 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       20712               90.1109 %
+Incorrectly Classified Instances      2273                9.8891 %
+Kappa statistic                          0.3329
+Mean absolute error                      0.1673
+Root mean squared error                  0.2903
+Relative absolute error                 77.5848 %
+Root relative squared error             88.5036 %
+Coverage of cases (0.95 level)          98.9906 %
+Mean rel. region size (0.95 level)      86.0757 %
+Total Number of Instances            22985     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.994    0.765    0.903      0.994   0.946      0.415  0.758     0.948     FALSE
+                 0.235    0.006    0.849      0.235   0.368      0.415  0.758     0.47      TRUE
+Weighted Avg.    0.901    0.672    0.896      0.901   0.876      0.415  0.758     0.889
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20049   118 |     a = FALSE
+  2155   663 |     b = TRUE
+
