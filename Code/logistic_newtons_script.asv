@@ -16,62 +16,121 @@ clear;
 clc;
 close all;
 
-balance = 0;
+% balance = 0;
+% 
+% load('CarAuction_Parsed_Test');
+% load('CarAuction_Parsed_Train');
+% 
+% Y = Features_Train(:,1);
+% X = Features_Train(:,2:end);
+% 
+% N = length(Y);
+% N_train = floor(0.7*N);
+% N_CV = N-N_train;
+% % A1 = floor(N_train/2);
+% % A2 = floor(size(X,2)-A1);
+% % X_train = X(1:A1,A2+1:end);
+% % Y_train = Y(1:A1,A2+1:end);
+% % X_test = X(A1+1:end-A2,:);
+% % Y_true = Y(A1+1:end-A2:N);
+% 
+% train_index = ceil(N.*rand(N_train,1));
+% while (size(unique(train_index),1) ~= size(train_index,1))
+%     train_index = unique(train_index);
+%     unique_needed = N_train - size(train_index,1);
+%     train_index = [train_index ; ceil(N.*rand(unique_needed,1))];
+% end
+% test_index = setdiff(1:N,train_index)';
+% clear('unique_needed');
+% 
+% X_train = X(train_index,:);
+% Y_train = Y(train_index);
+% X_test = X(test_index,:);
+% Y_true = Y(test_index);
+% 
+% 
+% % balance data
+% % Repeat positive examples so that there is a more even distribution
+% if (balance == 0)
+%     X_positive = X_train(Y_train==1,:);
+%     Y_positive = ones(size(X_positive,1),1);
+%     N_positive = (length(Y_train)-length(Y_positive))/length(Y_positive);
+%     N_pos_mod = mod(length(Y_train)-length(Y_positive),length(Y_positive));
+%     for i = 1:(floor(N_positive)-1)
+%         X_train = [X_train; X_positive];
+%         Y_train = [Y_train; Y_positive];
+%     end
+%     X_train = [X_train; X_positive(1:N_pos_mod,:)];
+%     Y_train = [Y_train; Y_positive(1:N_pos_mod)];
+%     clear('X_positive','Y_positive','N_positive','N_pos_mod');
+%     balance = 1;
+% end
 
-load('CarAuction_Parsed_Test');
-load('CarAuction_Parsed_Train');
+% Booboo Style
+[Numeric,Txt,Raw] = xlsread('CarAuction_Parsed_Train_Train_Str.csv');
 
-Y = Features_Train(:,1);
-X = Features_Train(:,2:end);
+Y_train = Numeric(:,1);
+X_train = Numeric(:,2:end);
 
-N = size(Y);
-N_train = floor(0.7*N);
-N_CV = N-N_train;
-A1 = floor(N_train/2);
-A2 = floor(size(X,2)-A1);
-X_train = X(1:A1,A2+1:end);
-Y_train = Y(1:A1,A2+1:end);
-X_test = X(A1+1:end-A2,:);
-Y_true = Y(A1+1:end-A2:N);
-
-train_index = ceil(N.*rand(N_train,1));
-while (size(unique(train_index),1) ~= size(train_index,1))
-    train_index = unique(train_index);
-    unique_needed = N_train - size(train_index,1);
-    train_index = [train_index ; ceil(N.*rand(unique_needed,1))];
-end
-test_index = setdiff(1:N,train_index)';
-clear('unique_needed');
-
-X_train = X(1:train_index,:)
-
-%% balance data
-% Repeat positive examples so that there is a more even distribution
-if (balance == 0)
-    X_positive = X_train(Y_train==1,:);
-    Y_positive = ones(size(X_positive,1),1);
-    N_positive = (length(Y_train)-length(Y_positive))/length(Y_positive);
-    N_pos_mod = mod(length(Y_train)-length(Y_positive),length(Y_positive));
-    for i = 1:(floor(N_positive)-1)
-        X_train = [X_train; X_positive];
-        Y_train = [Y_train; Y_positive];
+for feature = size(Numeric,2)+1:size(Raw,2)
+    for sample = 2:size(Raw,1)
+        Raw_mat = cell2mat(Raw(sample,feature));
+        X_train(sample-1,feature-1) = str2double(Raw_mat(2:end));
     end
-    X_train = [X_train; X_positive(1:N_pos_mod,:)];
-    Y_train = [Y_train; Y_positive(1:N_pos_mod)];
-    clear('X_positive','Y_positive','N_positive','N_pos_mod');
-    balance = 1;
 end
-%% run newton's method on 70% of the data set
+
+for feature = 1:size(Raw,2)-1
+    X_train(:,feature) = X_train(:,feature) - min(X_train(:,feature));
+    X_train(:,feature) = X_train(:,feature)/max(X_train(:,feature));
+end
+
+[Numeric,Txt,Raw] = xlsread('CarAuction_Parsed_Train_Test_Str.csv');
+
+Y_true = Numeric(:,1);
+X_test = Numeric(:,2:end);
+
+for feature = size(Numeric,2)+1:size(Raw,2)
+    for sample = 2:size(Raw,1)
+        Raw_mat = cell2mat(Raw(sample,feature));
+        X_test(sample-1,feature-1) = str2double(Raw_mat(2:end));
+    end
+end
+
+for feature = 1:size(Raw,2)-1
+    X_test(:,feature) = X_test(:,feature) - min(X_test(:,feature));
+    X_test(:,feature) = X_test(:,feature)/max(X_test(:,feature));
+end
+
+% % balance data
+% % Repeat positive examples so that there is a more even distribution
+% balance = 0;
+% if (balance == 0)
+%     X_positive = X_train(Y_train==1,:);
+%     Y_positive = ones(size(X_positive,1),1);
+%     N_positive = (length(Y_train)-length(Y_positive))/length(Y_positive);
+%     N_pos_mod = mod(length(Y_train)-length(Y_positive),length(Y_positive));
+%     for i = 1:(floor(N_positive)-1)
+%         X_train = [X_train; X_positive];
+%         Y_train = [Y_train; Y_positive];
+%     end
+%     X_train = [X_train; X_positive(1:N_pos_mod,:)];
+%     Y_train = [Y_train; Y_positive(1:N_pos_mod)];
+%     clear('X_positive','Y_positive','N_positive','N_pos_mod');
+%     balance = 1;
+% end
+
+% run newton's method on 70% of the data set
 [theta, ll] = logistic_newtons(X_train, Y_train, 10); % X, Y, max_iters
 
 %% calculate the generalization error using 30% of the data set
 %Y_test = sigmoid(X(j,:)*theta);
+cutoff = 0.64;
 Y_test = sigmoid(X_test*theta);
-Y_test(Y_test>=0.63) = 1;
-Y_test(Y_test<0.63) = 0;
+Y_test(Y_test>=cutoff) = 1;
+Y_test(Y_test<cutoff) = 0;
 error = sum(abs(Y_true - Y_test))/length(Y_true);
 %cross validate data
-%% precision/recall
+% precision/recall
 tp = 0;
 fp = 0;
 tn = 0;
@@ -94,15 +153,60 @@ end
 
 precision = tp/(tp+fp)
 recall = tp/(tp+fn)
+%% change output threshold - stricter criteria for ROC (hijacked code)
+% calculate the generalization error using 30% of the data set
+%Y_test = sigmoid(X(j,:)*theta);
+
+output_threshold = 0:0.01:1;
+
+for o = 1:length(output_threshold)
+    Y_test = sigmoid(X_test*theta);
+    Y_test(Y_test>=output_threshold(o)) = 1;
+    Y_test(Y_test<output_threshold(o)) = 0;
+    number_predicted(o) = sum(Y_test>=output_threshold(o));
+    error(o) = sum(abs(Y_true - Y_test))/length(Y_true);
+    %cross validate data
+    % precision/recall
+    tp = 0;
+    fp = 0;
+    tn = 0;
+    fn = 0;
+    correct_prediction = sum(Y_test)/sum(Y_true);
+
+    for i = 1:length(Y_test);
+        if ((Y_test(i) == 1) && (Y_true(i) == 1))
+            tp = tp+1;
+        elseif ((Y_test(i) == 1) && (Y_true(i) == 0))
+            fp = fp+1;
+        elseif ((Y_test(i) == 0) && (Y_true(i) == 0))
+            tn = tn+1;
+        elseif ((Y_test(i) == 0) && (Y_true(i) == 1))
+            fn = fn+1;
+        else
+            disp('error!!!');
+        end
+    end
+
+    precision(o) = tp/(tp+fp);
+    recall(o) = tp/(tp+fn);
+    
+    sens(o) = recall(o);    %y-axis
+    spec(o) = tn/(fp+tn);   %x-axis
+end
+
+AUC = 0;
+for o = 2:length(output_threshold);
+    AUC = AUC + 0.5*(spec(o)-spec(o-1))*(sens(o)+sens(o-1));
+end
 
 %% change output threshold - stricter criteria
 % calculate the generalization error using 30% of the data set
 %Y_test = sigmoid(X(j,:)*theta);
 
-output_threshold = 0.1:0.1:1;
+output_threshold = 0:0.01:1;
 
 for o = 1:length(output_threshold)
-    Y_test = sigmoid(X(N_train:N,:)*theta);
+    Y_test = sigmoid(X_test*theta);
     Y_test(Y_test>=output_threshold(o)) = 1;
     Y_test(Y_test<output_threshold(o)) = 0;
     number_predicted(o) = sum(Y_test>=output_threshold(o));
