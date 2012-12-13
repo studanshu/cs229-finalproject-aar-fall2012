@@ -101,23 +101,23 @@ for feature = 1:size(Raw,2)-1
     X_test(:,feature) = X_test(:,feature)/max(X_test(:,feature));
 end
 
-% % balance data
-% % Repeat positive examples so that there is a more even distribution
-% balance = 0;
-% if (balance == 0)
-%     X_positive = X_train(Y_train==1,:);
-%     Y_positive = ones(size(X_positive,1),1);
-%     N_positive = (length(Y_train)-length(Y_positive))/length(Y_positive);
-%     N_pos_mod = mod(length(Y_train)-length(Y_positive),length(Y_positive));
-%     for i = 1:(floor(N_positive)-1)
-%         X_train = [X_train; X_positive];
-%         Y_train = [Y_train; Y_positive];
-%     end
-%     X_train = [X_train; X_positive(1:N_pos_mod,:)];
-%     Y_train = [Y_train; Y_positive(1:N_pos_mod)];
-%     clear('X_positive','Y_positive','N_positive','N_pos_mod');
-%     balance = 1;
-% end
+% balance data
+% Repeat positive examples so that there is a more even distribution
+balance = 0;
+if (balance == 0)
+    X_positive = X_train(Y_train==1,:);
+    Y_positive = ones(size(X_positive,1),1);
+    N_positive = (length(Y_train)-length(Y_positive))/length(Y_positive);
+    N_pos_mod = mod(length(Y_train)-length(Y_positive),length(Y_positive));
+    for i = 1:(floor(N_positive)-1)
+        X_train = [X_train; X_positive];
+        Y_train = [Y_train; Y_positive];
+    end
+    X_train = [X_train; X_positive(1:N_pos_mod,:)];
+    Y_train = [Y_train; Y_positive(1:N_pos_mod)];
+    clear('X_positive','Y_positive','N_positive','N_pos_mod');
+    balance = 1;
+end
 
 % run newton's method on 70% of the data set
 [theta, ll] = logistic_newtons(X_train, Y_train, 10); % X, Y, max_iters
