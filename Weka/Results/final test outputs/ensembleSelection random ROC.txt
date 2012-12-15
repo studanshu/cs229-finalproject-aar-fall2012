@@ -1,0 +1,134 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.meta.EnsembleSelection -- -W C:\Users\Albert\Ensemble-12 -P roc -A forward -B 10 -V 0.25 -E 0.5 -H 100 -I 1.0 -X 1 -R -G -S 1
+Relation:     CarAuction_Parsed_Train_Train_Str
+Instances:    49998
+Attributes:   33
+              IsBadBuy
+              VehYear
+              VehicleAge
+              VehOdo
+              MMRAcquisitionAuctionAveragePrice
+              MMRAcquisitionAuctionCleanPrice
+              MMRAcquisitionRetailAveragePrice
+              MMRAcquisitonRetailCleanPrice
+              MMRCurrentAuctionAveragePrice
+              MMRCurrentAuctionCleanPrice
+              MMRCurrentRetailAveragePrice
+              MMRCurrentRetailCleanPrice
+              VehBCost
+              WarrantyCost
+              PurchYear
+              PurchMonth
+              PurchDay
+              Auction
+              Make
+              Model
+              Trim
+              SubModel
+              Color
+              Transmission
+              WheelType
+              Nationality
+              Size
+              TopThreeAmericanName
+              PRIMEUNIT
+              AUCGUART
+              VNZIP1
+              VNST
+              IsOnlineSale
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+92 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -N -P 1 -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+52 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -N -P 1 -mbc -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+38 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -R -N -P 1 -mbc -S MDL -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+1 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -R -P 1 -mbc -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+72 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -R -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+88 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -R -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+103 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -S ENTROPY -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+132 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -N -mbc -S MDL -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+11 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -R -mbc -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+8 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+13 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+37 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+19 weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -mbc -S BDeu -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+15 weka.classifiers.bayes.NaiveBayes 
+80 weka.classifiers.trees.J48 -C 0.2 -M 4 -A
+4 weka.classifiers.trees.REPTree -M 4 -V 0.001 -N 3 -S 3 -L -1 -P -I 0.0
+51 weka.classifiers.trees.REPTree -M 4 -V 0.01 -N 3 -S 3 -L 1 -I 0.0
+
+Attribute mappings:
+
+Model attributes                             	    Incoming attributes
+---------------------------------------------	    ----------------
+(nominal) IsBadBuy                           	--> 1 (nominal) IsBadBuy
+(numeric) VehYear                            	--> 2 (numeric) VehYear
+(numeric) VehicleAge                         	--> 3 (numeric) VehicleAge
+(numeric) VehOdo                             	--> 4 (numeric) VehOdo
+(numeric) MMRAcquisitionAuctionAveragePrice  	--> 5 (numeric) MMRAcquisitionAuctionAveragePrice
+(numeric) MMRAcquisitionAuctionCleanPrice    	--> 6 (numeric) MMRAcquisitionAuctionCleanPrice
+(numeric) MMRAcquisitionRetailAveragePrice   	--> 7 (numeric) MMRAcquisitionRetailAveragePrice
+(numeric) MMRAcquisitonRetailCleanPrice      	--> 8 (numeric) MMRAcquisitonRetailCleanPrice
+(numeric) MMRCurrentAuctionAveragePrice      	--> 9 (numeric) MMRCurrentAuctionAveragePrice
+(numeric) MMRCurrentAuctionCleanPrice        	--> 10 (numeric) MMRCurrentAuctionCleanPrice
+(numeric) MMRCurrentRetailAveragePrice       	--> 11 (numeric) MMRCurrentRetailAveragePrice
+(numeric) MMRCurrentRetailCleanPrice         	--> 12 (numeric) MMRCurrentRetailCleanPrice
+(numeric) VehBCost                           	--> 13 (numeric) VehBCost
+(numeric) WarrantyCost                       	--> 14 (numeric) WarrantyCost
+(nominal) PurchYear                          	--> 15 (nominal) PurchYear
+(nominal) PurchMonth                         	--> 16 (nominal) PurchMonth
+(nominal) PurchDay                           	--> 17 (nominal) PurchDay
+(nominal) Auction                            	--> 18 (nominal) Auction
+(nominal) Make                               	--> 19 (nominal) Make
+(nominal) Model                              	--> 20 (nominal) Model
+(nominal) Trim                               	--> 21 (nominal) Trim
+(nominal) SubModel                           	--> 22 (nominal) SubModel
+(nominal) Color                              	--> 23 (nominal) Color
+(nominal) Transmission                       	--> 24 (nominal) Transmission
+(nominal) WheelType                          	--> 25 (nominal) WheelType
+(nominal) Nationality                        	--> 26 (nominal) Nationality
+(nominal) Size                               	--> 27 (nominal) Size
+(nominal) TopThreeAmericanName               	--> 28 (nominal) TopThreeAmericanName
+(nominal) PRIMEUNIT                          	--> 29 (nominal) PRIMEUNIT
+(nominal) AUCGUART                           	--> 30 (nominal) AUCGUART
+(nominal) VNZIP1                             	--> 31 (nominal) VNZIP1
+(nominal) VNST                               	--> 32 (nominal) VNST
+(nominal) IsOnlineSale                       	--> 33 (nominal) IsOnlineSale
+
+
+Time taken to build model: 182.63 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 39.32 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       20490               89.1451 %
+Incorrectly Classified Instances      2495               10.8549 %
+Kappa statistic                          0.2197
+Mean absolute error                      0.1762
+Root mean squared error                  0.3   
+Relative absolute error                 81.7503 %
+Root relative squared error             91.4573 %
+Coverage of cases (0.95 level)          98.9993 %
+Mean rel. region size (0.95 level)      86.9741 %
+Total Number of Instances            22985     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.996    0.853    0.893      0.996   0.941      0.319  0.752     0.947     FALSE
+                 0.147    0.004    0.821      0.147   0.249      0.319  0.752     0.426     TRUE
+Weighted Avg.    0.891    0.749    0.884      0.891   0.857      0.319  0.752     0.883
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20077    90 |     a = FALSE
+  2405   413 |     b = TRUE
+
