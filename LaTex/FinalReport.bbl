@@ -1,0 +1,117 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{DBLP:reference/robo/CutkoskyHP08}
+M.~R. Cutkosky, R.~D. Howe, and W.~R. Provancher, ``Force and tactile
+  sensors,'' in \emph{Springer Handbook of Robotics}, B.~Siciliano and
+  O.~Khatib, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2008, pp.
+  455--476.
+
+\bibitem{Ohmura06}
+Y.~Ohmura, Y.~Kuniyoshi, and A.~Nagakubo, ``Conformable and scalable tactile
+  sensor skin for curved surfaces,'' in \emph{Robotics and Automation, 2006.
+  ICRA 2006. Proceedings 2006 IEEE International Conference on}, May 2006, pp.
+  1348--1353.
+
+\bibitem{Yamada05}
+Y.~Yamada, M.~Morizono, U.~Umetani, and T.~Takahashi, ``Highly soft
+  viscoelastic robot skin with a contact object-location-sensing capability,''
+  \emph{Industrial Electronics, IEEE Transactions on}, vol.~52, no.~4, pp.
+  960--968, Aug. 2005.
+
+\bibitem{Maekawa92}
+H.~Maekawa, K.~Tanie, K.~Komoriya, M.~Kaneko, C.~Horiguchi, and T.~Sugawara,
+  ``Development of a finger-shaped tactile sensor and its evaluation by active
+  touch,'' in \emph{Robotics and Automation, 1992. Proceedings., 1992 IEEE
+  International Conference on}, May 1992, pp. 1327--1334 vol.2.
+
+\bibitem{Liu95}
+H.~Liu, P.~Meusel, and G.~Hirzinger, ``{A tactile sensing system for the DLR
+  three-finger robot hand},'' in \emph{International Symposium on Measurement
+  and Control in Robotics}, 1995, pp. 91--96.
+
+\bibitem{Yeung94}
+S.~Yeung, E.~Petriu, W.~McMath, and D.~Petriu, ``{High sampling resolution
+  tactile sensor for object recognition},'' \emph{IEEE Transactions on
+  Instrumentation and Measurement}, vol.~43, no.~2, pp. 277--282, 1994.
+
+\bibitem{Duchaine09}
+V.~Duchaine, N.~Lauzier, M.~Baril, M.-A. Lacasse, and C.~Gosselin, ``A flexible
+  robot skin for safe physical human robot interaction,'' in \emph{Robotics and
+  Automation, 2009. ICRA '09. IEEE International Conference on}, May 2009, pp.
+  3676--3681.
+
+\bibitem{Shimojo04}
+M.~Shimojo, A.~Namiki, M.~Ishikawa, R.~Makino, and K.~Mabuchi, ``A tactile
+  sensor sheet using pressure conductive rubber with electrical-wires stitched
+  method,'' \emph{Sensors Journal, IEEE}, vol.~4, no.~5, pp. 589 -- 596, oct.
+  2004.
+
+\bibitem{Stiehl06}
+W.~Stiehl, J.~Lieberman, C.~Breazeal, L.~Basel, R.~Cooper, H.~Knight, L.~Lalla,
+  A.~Maymin, and S.~Purchase, ``The huggable: a therapeutic robotic companion
+  for relational, affective touch,'' in \emph{Consumer Communications and
+  Networking Conference, 2006. CCNC 2006. 3rd IEEE}, vol.~2, Jan. 2006, pp.
+  1290--1291.
+
+\bibitem{Chu96}
+Z.~Chu, P.~Sarro, and S.~Middelhoek, ``Silicon three-axial tactile sensor,''
+  \emph{Sensors and Actuators A: Physical}, vol.~54, no. 1-3, pp. 505 -- 510,
+  1996.
+
+\bibitem{Schmitz10}
+A.~Schmitz, M.~Maggiali, L.~Natale, B.~Bonino, and G.~Metta, ``A tactile sensor
+  for the fingertips of the humanoid robot icub,'' in \emph{Intelligent Robots
+  and Systems (IROS), 2010 IEEE/RSJ International Conference on}, oct. 2010,
+  pp. 2212 --2217.
+
+\bibitem{Mannsfeld10}
+S.~Mannsfeld, B.~Tee, R.~Stoltenberg, C.~Chen, S.~Barman, B.~Muir, A.~Sokolov,
+  C.~Reese, and Z.~Bao, ``Highly sensitive flexible pressure sensors with
+  microstructured rubber dielectric layers,'' \emph{Nature Materials}, vol.~9,
+  no.~10, pp. 859--864, 2010.
+
+\bibitem{Castelli02}
+F.~Castelli, ``An integrated tactile-thermal robot sensor with capacitive
+  tactile array,'' \emph{Industry Applications, IEEE Transactions on}, vol.~38,
+  no.~1, pp. 85 --90, jan/feb 2002.
+
+\bibitem{Leineweber00}
+M.~Leineweber, G.~Pelz, M.~Schmidt, H.~Kappert, and G.~Zimmer, ``New tactile
+  sensor chip with silicone rubber cover,'' \emph{Sensors and Actuators A:
+  Physical}, vol.~84, no.~3, pp. 236--245, 2000.
+
+\bibitem{Ulmen10}
+J.~Ulmen and M.~Cutkosky, ``A robust, low-cost and low-noise artificial skin
+  for human-friendly robots,'' in \emph{Robotics and Automation (ICRA), 2010
+  IEEE International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2010, pp. 4836--4841.
+
+\bibitem{Dahiya10}
+R.~Dahiya, G.~Metta, M.~Valle, and G.~Sandini, ``Tactile sensing--from humans
+  to humanoids,'' \emph{Robotics, IEEE Transactions on}, vol.~26, no.~1, pp. 1
+  --20, feb. 2010.
+
+\bibitem{schmitz08}
+A.~Schmitz, M.~Maggiali, M.~Randazzo, L.~Natale, and G.~Metta, ``A prototype
+  fingertip with high spatial resolution pressure sensing for the robot icub,''
+  in \emph{Proc. IEEE-RAS Int. Conf. Human. Robots (Human}, 2008, pp. 423--428.
+
+\end{thebibliography}
