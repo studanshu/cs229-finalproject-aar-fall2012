@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  14 DEC 2012 20:24
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.11.16)  14 DEC 2012 23:05
 entering extended mode
 **FinalReport.tex
 
@@ -485,50 +485,50 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 )
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
 oject-aar-fall2012\LaTex\FinalReport.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 79.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 76.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 79.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 79.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 79.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 79.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 76.
 
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 79.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 76.
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -580,39 +580,44 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 82.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 79.
  ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 82
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 79
 .
 
 (C:\Users\Alice\AppData\Roaming\MiKTeX\2.8\tex\latex\fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 82.
+(Font)              scaled to size 13.24796pt on input line 79.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 82.
+(Font)              scaled to size 9.19998pt on input line 79.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 82.
+(Font)              scaled to size 7.35999pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 82.
+(Font)              scaled to size 13.24796pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 82.
+(Font)              scaled to size 9.19998pt on input line 79.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 82.
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+(Font)              scaled to size 7.35999pt on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 2005) in paragraph at lines 86--87
+\T1/futs/m/n/10.95 sec-tions de-scrib-ing our ap-proach to solve this
+ []
+
+
+Underfull \vbox (badness 8019) has occurred while \output is active []
 
  [1
 
@@ -620,179 +625,134 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 1721) in paragraph at lines 103--104
+<figures/HistogramScaled_VehicleAge.png, id=8, 578.16pt x 433.62pt>
+File: figures/HistogramScaled_VehicleAge.png Graphic file (type png)
+
+<use figures/HistogramScaled_VehicleAge.png>
+<figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png, id=9, 578.16pt x 433
+.62pt>
+File: figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png Graphic file (ty
+pe png)
+ <use figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png>
+Underfull \hbox (badness 1721) in paragraph at lines 120--121
 []\T1/futs/m/n/10.95 With the data parsed and some ini-tial in-
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 112--113
+Underfull \hbox (badness 1817) in paragraph at lines 129--130
 \T1/futs/m/n/10.95 promis-ing re-sults. Upon fur-ther in-ves-ti-ga-tion,
  []
 
-
-Underfull \vbox (badness 1360) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 1389) in paragraph at lines 122--124
-[]\T1/futs/m/n/10.95 As men-tioned ear-lier, we found that us-ing
+[2 <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-final
+project-aar-fall2012/LaTex/figures/HistogramScaled_VehicleAge.png (PNG copy)> <
+C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-finalproj
+ect-aar-fall2012/LaTex/figures/HistogramRatio_MMRCurrentAuctionAveragePrice.png
+ (PNG copy)>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 141.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 141.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 141.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 141.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 141.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 141.
+ [3]
+Underfull \hbox (badness 1137) in paragraph at lines 166--167
+[]\T1/futs/m/n/10.95 AdaBoostM1 is a gen-eral nom-i-nal clas-si-fier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 gen-er-al-iza-tion er-ror alone as a per-for-mance
+Underfull \hbox (badness 1107) in paragraph at lines 166--167
+\T1/futs/m/n/10.95 clas-si-fier, it per-formed rea-son-ably well with an
+ []
+
+<ModelOutputSummary.pdf, id=18, 463.0098pt x 206.6922pt>
+File: ModelOutputSummary.pdf Graphic file (type pdf)
+
+<use ModelOutputSummary.pdf>
+Underfull \hbox (badness 1072) in paragraph at lines 188--189
+[]\T1/futs/m/n/10.95 Total_Profit rep-re-sents the profit that a car
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 met-ric was mis-lead-ing due to the bias of our
+Underfull \hbox (badness 1348) in paragraph at lines 193--194
+[]\T1/futs/m/n/10.95 There are sev-eral strate-gies we would pur-
  []
 
-
-Underfull \hbox (badness 2035) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 to eval-u-ate an al-go-rith-m’s per-for-mance based
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 TP/TP+FN) than pre-dic-tive ac-cu-racy, since the
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 re-lated to mon-e-tary loss and op-por-tu-nity cost,
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 that when study-ing prob-lems with im-bal-anced
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 ma-chine learn-ing al-go-rithms with-out ad-just-ing
- []
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 ficity over the en-tire range of pos-si-ble out-put
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 of one clas-si-fier's abil-ity for cor-rect pre-dic-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 (http://www.hpl.hp.com/techreports/2009/HPL-
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 2009-359.pdf) We de-fine F1 as the har-monic
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 mean be-tween pre-ci-sion and re-call (2*pre-ci-
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 sion*recall/(precision+recall)). If pre-ci-sion and
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 122--124
-\T1/futs/m/n/10.95 change. That way we can iden-tify a su-pe-rior
- []
-
-[3]
-Underfull \hbox (badness 1394) in paragraph at lines 145--146
+[4]
+Underfull \hbox (badness 1394) in paragraph at lines 195--196
 \T1/futs/m/n/10.95 and Chris Lengerich) for all their help on this
  []
 
 ! Misplaced alignment tab character &.
-l.177 \bibitem{Graf} Graf, A., &
+l.228 \bibitem{Graf} Graf, A., &
                                  Borer, S. (2001). Normalization in support ...
 
 ? 
 
-Underfull \hbox (badness 3260) in paragraph at lines 179--180
-[]\T1/futs/m/n/10.95 Menardi G, Torelli N. (2010) \T1/futs/m/it/10.95 Train-ing
- and
+Underfull \hbox (badness 2961) in paragraph at lines 234--235
+[]\T1/futs/m/n/9 Japkowicz, N. (2000). \T1/futs/m/it/9 The Class Im-bal-ance Pr
+ob-lem:
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 183--184
-[]\T1/futs/m/n/10.95 Japkowicz, N. (2000). \T1/futs/m/it/10.95 The Class Im-bal
--ance
+Underfull \hbox (badness 1048) in paragraph at lines 234--235
+\T1/futs/m/n/9 In-ter-na-tional Con-fer-ence on Ar-tif-cial In-tel-li-gence (IC
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[]\T1/futs/m/n/9 Hastie, T. (2003). \T1/futs/m/it/9 Boost-ing. \T1/futs/m/n/9 R
+e-trieved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+\T1/futs/m/n/9 from Stan-ford Uni-ver-sity Web Site:
  []
 
 ! Misplaced alignment tab character &.
-l.185 ...tem{Friedman} Friedman, J., Hastie, T., &
+l.240 ...tem{Friedman} Friedman, J., Hastie, T., &
                                                    Tibshirani, R. (2000). {\...
 
 ? 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-[]\T1/futs/m/n/10.95 Hastie, T. (2003). \T1/futs/m/it/10.95 Boost-ing. \T1/futs
-/m/n/10.95 Re-trieved
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-\T1/futs/m/n/10.95 from Stan-ford Uni-ver-sity Web Site:
- []
-
-
-Overfull \hbox (18.15056pt too wide) in paragraph at lines 187--188
-\T1/futs/m/n/10.95 http://www.stanford.edu/ hastie/TALKS/boost.pdf 
- []
-
 ! Misplaced alignment tab character &.
-l.189 \bibitem{Dettling} Dettling, M., &
-                                         Bühlmann, P. (2003). {\em Boosting ...
+l.242 \bibitem{Das} Das, B., Krishnan, N. C., &
+                                                Cook, D. J. (2012) {\em Hand...
 
 ? 
 ! Misplaced alignment tab character &.
-l.191 ...ana, R., Niculescu-Mizil, A., Crew, G., &
-                                                   Ksikes, A. (2004, July). ...
+l.244 ...C., Khoshgoftaar, T. M., Van Hulse, J., &
+                                                   Napolitano, A. (2008, Dec...
 
 ? 
-
-Underfull \hbox (badness 2020) in paragraph at lines 191--192
-[]\T1/futs/m/n/10.95 Caruana, R., Niculescu-Mizil, A., Crew, G.,
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 191--192
-\T1/futs/m/it/10.95 li-braries of mod-els. \T1/futs/m/n/10.95 In Pro-ceed-ings 
-of the
- []
-
-[5
-
-]
+[5 <C:/Users/Alice/Documents/Stanford/Fall 2012/CS229/Final Project/cs229-final
+project-aar-fall2012/LaTex/ModelOutputSummary.pdf>]
 ("C:\Users\Alice\Documents\Stanford\Fall 2012\CS229\Final Project\cs229-finalpr
 oject-aar-fall2012\LaTex\FinalReport.aux") ) 
 Here is how much of TeX's memory you used:
- 6273 strings out of 495285
- 92757 string characters out of 3179877
- 272296 words of memory out of 3000000
- 9359 multiletter control sequences out of 15000+200000
- 62584 words of font info for 63 fonts, out of 3000000 for 9000
+ 6344 strings out of 495285
+ 94223 string characters out of 3179877
+ 272335 words of memory out of 3000000
+ 9414 multiletter control sequences out of 15000+200000
+ 87640 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 40i,10n,47p,1046b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,16n,47p,1046b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.8/
 fonts/enc/dvips/fontname/8r.enc} <C:\Users\Alice\AppData\Local\MiKTeX\2.8\fonts
 \pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\Alice\AppData\Local\MiKTeX
-\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk><C:/Program Files (x86)/MiK
-TeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/
-fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on FinalReport.pdf (5 pages, 87053 bytes).
+\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk><C:/Users/Alice/AppData/Roa
+ming/MiKTeX/2.8/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x8
+6)/MiKTeX 2.8/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.8/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on FinalReport.pdf (5 pages, 1128848 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
